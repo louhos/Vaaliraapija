@@ -1,0 +1,75 @@
+#    VaaliRaapija - Yksinkertainen web scraper Vaalivalvontaviraston sivujen 
+#                   raapimiseen
+#    Tekijänoikeus (C) 2011 Joona Lehtomäki
+#
+# Tämä on vapaa ohjelma: tätä ohjelmaa saa levittää edelleen ja muuttaa Free 
+# Software Foundationin julkaiseman GNU General Public Licensen (GPL-lisenssi) 
+# version 3 tai (valinnan mukaan) myöhemmän version ehtojen mukaisesti
+#
+# Tätä ohjelmaa levitetään siinä toivossa, että se olisi hyödyllinen mutta 
+# ILMAN MITÄÄN TAKUUTA; edes hiljaista takuuta KAUPALLISESTI HYVÄKSYTTÄVÄSTÄ 
+# LAADUSTA tai SOVELTUVUUDESTA TIETTYYN TARKOITUKSEEN. Katso GPL-lisenssistä 
+# lisää yksityiskohtia.
+#
+# Tämän ohjelman mukana pitäisi tulla kopio GPL-lisenssistä. Jos näin ei ole, 
+# katso <http://www.gnu.org/licenses/>. 
+
+Vaaliraapija on tarkoitettu noutamaan tietoa eduskantavaalien ehdokkaiden 
+ennakkoon tekemistä vaalirahoitusilmoituksista vaalirahoitusviraston sivuilta
+(http://www.vaalirahoitusvalvonta.fi/fi/index/vaalirahailmoituksia/ilmoituslistaus/EV2011.html).
+
+Toistaiseksi ohjelma hakee seuraavat tiedot puolue- ja vaalirahoitusvalvonnan
+sivuilta:
+
+A. Ilmoittajan tiedot
+ 1. Nimi
+ 2. Ammatti
+ 3. Puolue
+ 4. Kunta
+B. Vaalikampanjan kulujen ja rahoituksen yhteenveto
+ 1. Vaalikampanjan kulut yhteensä
+ 2. Vaalikampanjan rahoitus yhteensä
+ 2.1 Rahoitus sisältää omia varoja yhteensä
+ 2.2 Rahoitus sisältää ehdokkaan ja tukiryhmän ottamia lainoja yhteensä
+ 2.3 Rahoitus sisältää yksityishenkilöiltä saatua tukea yhteensä
+ 2.4 Rahoitus sisältää yrityksiltä saatua tukea yhteensä
+ 2.5 Rahoitus sisältää puolueelta saatua tukea yhteensä
+ 2.6 Rahoitus sisältää puolueyhdistyksiltä saatua tukea yhteensä
+ 2.7 Rahoitus sisältää muilta tahoilta saatua tukea yhteensä
+ 2.8 Rahoitus sisältää välitettyä tukea yhteensä
+
+Ohjelma on hyvin yksinkertainen Scrapy-sovellus ja sen laajentaminen (kts. TODO) 
+hakemaan muuta tietoa vaalirahoitusvalvonnan sivuilta pitäisi olla kohtuullisen 
+helppoa (http://doc.scrapy.org/index.html).
+
+Kaikki tulokset tallennetaan projektin juuressa olevaan kansioon "aineisto". 
+Samassa kansiossa on myös www.vaalit.fi sivuilta 10.4.2011 noudettu 
+xls-tiedosto (e2011ehd.xls), jossa on listattu kaikki vuoden 2011 
+eduskuntavaaleissa ehdolla olevat henkilöt.
+
+1. Asentaminen
+
+Vaaliraapija riippu seuraavistaa ohjelmista/paketeista:
+
+ * Python 2.7 (testattu ainoastaan 2.7:lla, voi toimia vanhemmillakin 
+   versioilla)
+ * Scrapy 0.12
+
+2. Käyttö
+
+2.1 Windows
+
+Vaaliraapijaa ei ole testattu Windows-koneella, mutta periaatteessa pitäisi
+toimia.
+
+2.2 Unix
+
+Ohjelma on testattu 32-bittisellä (Fedora 14) ja 64-bittisellä (OpenSUSE 11.4)
+asennuksilla.
+
+Projektin juuressa (vaalirahoitus-kansio) on run.sh-skripti, joka kutsuu Scrapya
+tarvittavilla parametreillä ja tallentaa tulokset aineisto-kansioon.
+
+2.3 Mac
+
+Vaaliraapijaa ei ole testattu Mac-koneella.
