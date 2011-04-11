@@ -22,14 +22,18 @@ if (!require("Deducer")) {
   install.packages("Deducer")
 }
 
+if (!require("plyr")) {
+  install.packages("plyr")
+}
+
 setwd('/home/jlehtoma/Dropbox/Code/vaalirahoitus/R/')
 
 # Kaikki ehdokkaat
 ehdokkaat <- read.csv('../aineisto/e2011ehd.csv',
                  header=TRUE, as.is=TRUE, sep="\t")
 # Vaalirahoitustiedot
-data <- read.csv('../aineisto/ennakkoilmoitus_2011-04-10T13-03-54.csv',
-                 header=TRUE, as.is=TRUE, sep="\t")
+data <- read.csv('../aineisto/ennakkoilmoitus_2011-04-11T05-43-55.csv',
+                 header=TRUE, as.is=TRUE, sep=",")
                  
 # Muunna puoluelyhenne ja vaalipiiri faktoreiksi
 ehdokkaat$puolueen_lyhenne <- as.factor(ehdokkaat$puolue_lyh)
@@ -44,11 +48,19 @@ data.sum.yritys <- aggregate(yritys_tuki~puolue_lyh, data, sum)
 data.count <- aggregate(etunimi~puolue_lyh, data, length)
 ehdokkaat.count <- aggregate(ehdokasnumero~puolue_lyh, ehdokkaat, length)
 
+
 # Ota mukaan vain yli 10 ehdokkaan puolueet
 ehdokkaat.count.isot <- subset(ehdokkaat.count, ehdokasnumero >= 10)
 ehdokkaat.isot <- subset(ehdokkaat, puolue_lyh %in% ehdokkaat.count.isot$puolue_lyh)
 ehdokkaat.isot$puolueen_lyh <- as.factor(ehdokkaat.isot$puolue_lyh)
 ehdokkaat.isot$vaalipiiri <- as.factor(ehdokkaat.isot$vaalipiiri)
+# Puolue ja vaalipiirikohtaiset tilastot
+ehdokkaat.count.vpiiri <- ddply(ehdokkaat.isot, c("puolue_lyh", "vaalipiiri"),
+                          function(df)length(df$ehdokasnumero))
+colnames(ehdokkaat.count.vpiiri)[3] <- "ehdokkaita_tot"
+data.count.vpiiri <- ddply(data, c("puolue_lyh", "vaalipiiri"),
+                          function(df)length(df$etunimi))
+colnames(data.count.vpiiri)[3] <- "ilmoittaneita"
 
 # %-ilmoituksia kaikista ehdokkaista
 data.puolueet <- merge(ehdokkaat.count.isot, data.count)
@@ -62,6 +74,12 @@ data.puolueet <- as.data.frame(cbind(data.puolueet[1:3],
 'suht_rahoitus'=round(data.puolueet$tot_rahoitus / data.puolueet$ilmoittaneita,2),
                     data.puolueet[5],
 'suht_yritys_rahoitus'=round(data.puolueet$yritys_rahoitus / data.puolueet$ilmoittaneita,2)))
+
+# Laske puolue- ja vaalipiirikohtaiset ennakkoilmoitusprosentit
+data.puolueet.vpiiri <- merge(ehdokkaat.count.vpiiri, data.count.vpiiri)
+data.puolueet.vpiiri <- as.data.frame(cbind(data.puolueet.vpiiri[1:4],
+   'ilmoittaneita_pros'=round(data.puolueet.vpiiri$ilmoittaneita / 
+   data.puolueet.vpiiri$ehdokkaita_tot, 2)))
 
 # Ehdokkaita / puolue / vaalipiiri
 ggplot(ehdokkaat.isot, aes(puolue_lyh, fill=vaalipiiri)) + geom_bar() + labs(x=NULL, y="Ehdokkaiden lkm")
