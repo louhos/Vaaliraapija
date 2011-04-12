@@ -32,7 +32,7 @@ setwd('/home/jlehtoma/Dropbox/Code/vaalirahoitus/R/')
 ehdokkaat <- read.csv('../aineisto/e2011ehd.csv',
                  header=TRUE, as.is=TRUE, sep="\t")
 # Vaalirahoitustiedot
-data <- read.csv('../aineisto/ennakkoilmoitus_2011-04-11T05-43-55.csv',
+data <- read.csv('../aineisto/ennakkoilmoitus_2011-04-12T08-17-32.csv',
                  header=TRUE, as.is=TRUE, sep=",")
                  
 # Muunna puoluelyhenne ja vaalipiiri faktoreiksi
@@ -54,32 +54,43 @@ ehdokkaat.count.isot <- subset(ehdokkaat.count, ehdokasnumero >= 10)
 ehdokkaat.isot <- subset(ehdokkaat, puolue_lyh %in% ehdokkaat.count.isot$puolue_lyh)
 ehdokkaat.isot$puolueen_lyh <- as.factor(ehdokkaat.isot$puolue_lyh)
 ehdokkaat.isot$vaalipiiri <- as.factor(ehdokkaat.isot$vaalipiiri)
-# Puolue ja vaalipiirikohtaiset tilastot
-ehdokkaat.count.vpiiri <- ddply(ehdokkaat.isot, c("puolue_lyh", "vaalipiiri"),
-                          function(df)length(df$ehdokasnumero))
-colnames(ehdokkaat.count.vpiiri)[3] <- "ehdokkaita_tot"
-data.count.vpiiri <- ddply(data, c("puolue_lyh", "vaalipiiri"),
-                          function(df)length(df$etunimi))
-colnames(data.count.vpiiri)[3] <- "ilmoittaneita"
 
+# Puolue- ja vaalipiirikohtaiset tilastot
+ehdokkaat.count.vpiiri <- ddply(ehdokkaat.isot, c("puolue_lyh", "vaalipiiri"),
+                          function(df)length(df$ehdokasnumero))                       
+colnames(ehdokkaat.count.vpiiri)[3] <- "ehdokkaita_tot"
+
+# Puoluekohtaiset tilastot
+data.puolueet <- ddply(data, 
+                       c('puolue_lyh'), 
+                       function(df)summarise(df, 
+                                 ilmoittaneita = length(df$etunimi),
+                                 rahoitus_tot = sum(df$rahoitus_kaikki),
+                                 kulut_tot = sum(df$kulut_kaikki),
+                                 omat_varat = sum(df$omat_varat),
+                                 lainat = sum(df$lainat),
+                                 yksityinen_tuki = sum(df$yksityinen_tuki),
+                                 yritys_tuki = sum(df$yritys_tuki),
+                                 puolue_tuki = sum(df$puolue_tuki),
+                                 puolueyhdistys_tuki = sum(df$puolueyhdistys_tuki),
+                                 valitettu_tuki = sum(df$valitetty_tuki),
+                                 muu_tuki = sum(df$muu_tuki)))
+data.puolueet <- merge(data.puolueet, ehdokkaat.count.isot)
+colnames(data.puolueet)[length(data.puolueet)] <- "ehdokkaita_tot"
 # %-ilmoituksia kaikista ehdokkaista
-data.puolueet <- merge(ehdokkaat.count.isot, data.count)
-data.puolueet <- merge(data.puolueet, data.sum)
-data.puolueet <- merge(data.puolueet, data.sum.yritys)
-colnames(data.puolueet) <- c("puolue_lyh", "ehdokkaita", "ilmoittaneita",  
-                              "tot_rahoitus", 'yritys_rahoitus')
-data.puolueet <- as.data.frame(cbind(data.puolueet[1:3],
-'ilmoittaneita_pros'=round(data.puolueet$ilmoittaneita / data.puolueet$ehdokkaita, 2),
-                    data.puolueet[4],
-'suht_rahoitus'=round(data.puolueet$tot_rahoitus / data.puolueet$ilmoittaneita,2),
-                    data.puolueet[5],
-'suht_yritys_rahoitus'=round(data.puolueet$yritys_rahoitus / data.puolueet$ilmoittaneita,2)))
+data.puolueet$ilmoittaneita_pros <- round(data.puolueet$ilmoittaneita / 
+                                          data.puolueet$ehdokkaita, 2)
+data.puolueet$suht_rahoitus  <- round(data.puolueet$rahoitus_tot / 
+                                      data.puolueet$ilmoittaneita,2)
+
+
+
 
 # Laske puolue- ja vaalipiirikohtaiset ennakkoilmoitusprosentit
 data.puolueet.vpiiri <- merge(ehdokkaat.count.vpiiri, data.count.vpiiri)
 data.puolueet.vpiiri <- as.data.frame(cbind(data.puolueet.vpiiri[1:4],
    'ilmoittaneita_pros'=round(data.puolueet.vpiiri$ilmoittaneita / 
-   data.puolueet.vpiiri$ehdokkaita_tot, 2)))
+                                       data.puolueet.vpiiri$ehdokkaita_tot, 2)))
 
 # Ehdokkaita / puolue / vaalipiiri
 ggplot(ehdokkaat.isot, aes(puolue_lyh, fill=vaalipiiri)) + geom_bar() + labs(x=NULL, y="Ehdokkaiden lkm")
@@ -107,5 +118,5 @@ p + geom_text(aes(size=ehdokkaita)) + scale_size(to=c(3,10)) +
 p <- ggplot(data.puolueet, aes(x=suht_yritys_rahoitus, y=ilmoittaneita_pros, 
             label=puolue_lyh)) 
 p + geom_text(aes(size=ehdokkaita)) + scale_size(to=c(3,10)) + 
-    labs(x="Ilmoitettu yritys rahoitus / ilmoittanut ehdokas", 
+    labs(x="Ilmoitettu yritysrahoitus / ilmoittanut ehdokas", 
          y="Ennakkoilmoitusprosentti")

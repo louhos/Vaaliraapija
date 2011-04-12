@@ -1,0 +1,581 @@
+kunta,ammatti,muu_tuki,lainat,etunimi,omat_varat,kulut_kaikki,yritys_tuki,puolue_lyh,rahoitus_kaikki,valitetty_tuki,puolueyhdistys_tuki,puolue,vaalipiiri,sukunimi,yksityinen_tuki,puolue_tuki
+Vaasa,opiskelija,0,0,Olli Vili Johannes,300,300,0,PIR,300,0,0,Piraattipuolue r.p.,Vaasan vaalipiiri,Kopakkala,0,0
+Kokkola,vartija,500,0,Ari Juhani,50,550,0,VP,550,0,0,Vapauspuolue (VP) - Suomen tulevaisuus r.p.,Vaasan vaalipiiri,Laakso,0,0
+Kokkola,media-assistentti,0,0,Jussi Sakari,0,0,0,VP,0,0,0,Vapauspuolue (VP) - Suomen tulevaisuus r.p.,Vaasan vaalipiiri,Siitarinen,0,0
+Seinäjoki,"kasvatustieteiden maisteri, luokanopettaja",0,0,Henna,300,1390,0,VIHR,1390,0,220,Vihreä liitto r.p.,Vaasan vaalipiiri,Rantasaari,870,0
+Vaasa,aikuiskouluttaja,0,0,Juha,455,890,0,VIHR,890,0,175,Vihreä liitto r.p.,Vaasan vaalipiiri,Tuomikoski,260,0
+Kokkola,lääkäri,0,0,Hanna,3123,3210,12,VIHR,3210,0,0,Vihreä liitto r.p.,Vaasan vaalipiiri,Cygnel,75,0
+Kokkola,"teatteri-ilmaisun ohjaaja, opiskelija",0,0,Petri,50,100,0,VIHR,100,0,0,Vihreä liitto r.p.,Vaasan vaalipiiri,Lappalainen,50,0
+Vaasa,"yhteisöpedagogi, nuoriso-ohjaaja",0,0,Outi,261,1161,0,VIHR,1161,0,175,Vihreä liitto r.p.,Vaasan vaalipiiri,Pantsar,725,0
+Vaasa,rakennusinsinööri,0,0,Juha,425,550,0,VIHR,550,0,125,Vihreä liitto r.p.,Vaasan vaalipiiri,Ossi,0,0
+Vaasa,opiskelija,0,0,Eppu,200,1350,0,VIHR,1350,0,0,Vihreä liitto r.p.,Vaasan vaalipiiri,Saarela,1150,0
+Kokkola,ahtaaja,4000,0,Vesa-Pekka,500,7000,0,VAS,7000,0,2000,Vasemmistoliitto r.p.,Vaasan vaalipiiri,Pohjola,500,0
+Joensuu,ekonomi,0,0,Ritva Seija Annukka,350,1500,0,KESK,1150,0,1150,Suomen Keskusta r.p.,Pohjois-Karjalan vaalipiiri,Mikkola,0,0
+Iisalmi,"eduskunnan varapuhemies, valtiotieteiden tohtori",1500,0,Seppo Arimo,16400,34000,7500,KESK,34000,0,4000,Suomen Keskusta r.p.,Pohjois-Savon vaalipiiri,Kääriäinen,4600,0
+Turku,"taksinkuljettaja, teol.yo.",0,0,Juho Pekka Olavi,0,500,0,KD,500,0,500,Suomen Kristillisdemokraatit (KD),Varsinais-Suomen vaalipiiri,Jääskeläinen,0,0
+Rovaniemi,kasvatustieteen kandidaatti,0,3000,Liisa Maria Esteri,1000,24400,1500,KESK,24400,0,2520,Suomen Keskusta r.p.,Lapin vaalipiiri,Ansala,16380,0
+Leppävirta,varastomies,0,0,Tomi Juhani,80,80,0,VP,0,0,0,Vapauspuolue (VP) - Suomen tulevaisuus r.p.,Pohjois-Savon vaalipiiri,Hämäläinen,0,0
+Kerimäki,"kansanedustaja, toimittaja",0,0,Heli Maria,15000,0,0,VIHR,16000,0,500,Vihreä liitto r.p.,Etelä-Savon vaalipiiri,Järvinen,190,0
+Kuopio,järjestötyöntekijä,0,0,Mari Tytti Johanna,30,456,0,VIHR,459,256,0,Vihreä liitto r.p.,Pohjois-Savon vaalipiiri,Kauhanen,173,0
+Kuopio,"sairaanhoitaja, opiskelija",0,0,Marja Liisa,250,250,0,VP,250,0,0,Vapauspuolue (VP) - Suomen tulevaisuus r.p.,Pohjois-Savon vaalipiiri,Luomanmäki,0,0
+Mikkeli,nuorisotutkija,0,0,Veli Ilmari,500,2300,0,VIHR,2300,0,200,Vihreä liitto r.p.,Etelä-Savon vaalipiiri,Liikanen,1600,0
+Savonlinna,"luontokuvaaja, dokumentaristi",0,0,Juha Tapani,890,280,0,VIHR,1200,0,0,Vihreä liitto r.p.,Etelä-Savon vaalipiiri,Taskinen,310,0
+Kerimäki,"luomuviljelijä, eläkkeellä",250,0,Iikka Eemeli,100,850,0,VIHR,850,0,500,Vihreä liitto r.p.,Etelä-Savon vaalipiiri,Muhonen,0,0
+Pieksämäki,ympäristöpolitiikan opiskelija,316,0,Martta Emilia,400,1286,0,VIHR,1286,0,200,Vihreä liitto r.p.,Etelä-Savon vaalipiiri,Kantele,570,0
+Savonlinna,kansanedustajan avustaja,0,0,Heikki Tuomas,1300,4000,0,VIHR,4000,0,0,Vihreä liitto r.p.,Etelä-Savon vaalipiiri,Vento,2700,0
+Savonlinna,"yritysjohtaja, DI",0,2570,Sari Helena,370,3000,0,VIHR,3000,0,0,Vihreä liitto r.p.,Etelä-Savon vaalipiiri,Nyrhinen,60,0
+Ristiina,historian ja yhteiskuntaopin lehtori,0,0,Mikko Juhani,396,1177,0,VIHR,1177,0,0,Vihreä liitto r.p.,Etelä-Savon vaalipiiri,Siitonen,781,0
+Mikkeli,terveyskeskuslääkäri,0,0,Rauni Kyllikki,496,1009,0,VIHR,1009,0,363,Vihreä liitto r.p.,Etelä-Savon vaalipiiri,Berndt,150,0
+Savonlinna,"toiminnanjohtaja, pääluottamusmies",0,0,Heikki Johannes,350,350,0,VIHR,350,0,0,Vihreä liitto r.p.,Etelä-Savon vaalipiiri,Härkönen,0,0
+Pieksämäki,aikuiskouluttaja,1500,0,Jorma Antti Johannes,100,1600,0,VIHR,1500,0,0,Vihreä liitto r.p.,Etelä-Savon vaalipiiri,Karjalainen,0,0
+Mikkeli,"miestyön kehittäjä, YTM",0,0,Maija Anna-Lisa,300,550,0,VIHR,550,0,250,Vihreä liitto r.p.,Etelä-Savon vaalipiiri,Pietiläinen,0,0
+Mikkeli,yo-merkonomi,0,0,Kauko Kalevi,300,1000,0,VIHR,1000,0,500,Vihreä liitto r.p.,Etelä-Savon vaalipiiri,Väisänen,0,200
+Savonlinna,työterveyslääkäri,0,0,Pekka Olavi,750,750,0,VIHR,750,0,0,Vihreä liitto r.p.,Etelä-Savon vaalipiiri,Peltonen,0,0
+Pieksämäki,kehitysvammaisten ohjaaja,500,0,Risto Juha Antero,100,900,0,VAS,800,0,0,Vasemmistoliitto r.p.,Etelä-Savon vaalipiiri,Mykkänen,0,300
+Pieksämäki,kulttuurituottaja,0,0,Venla Julia,150,642,0,VAS,642,0,492,Vasemmistoliitto r.p.,Etelä-Savon vaalipiiri,Vatanen,0,0
+Savonlinna,johdon erityisasiantuntija,3200,0,Jouni Ensio,5500,12700,0,SDP,12700,0,3000,Suomen Sosialidemokraattinen Puolue,Etelä-Savon vaalipiiri,Backman,1000,0
+Pieksämäki,"sosionomi (AMK),kehitysvammaisten ohjaaja",0,0,Katja Annastina Varvara,200,2800,0,SDP,2600,0,1000,Suomen Sosialidemokraattinen Puolue,Etelä-Savon vaalipiiri,Tsutsunen,1600,0
+Pieksämäki,sekatyömies,1000,0,Ville Tapani,0,1150,0,VAS,1150,0,150,Vasemmistoliitto r.p.,Etelä-Savon vaalipiiri,Vehviläinen,0,0
+Mikkeli,diplomi-insinööri,0,0,Mika Daniel,200,200,0,PIR,200,0,0,Piraattipuolue r.p.,Etelä-Savon vaalipiiri,Letonsaari,0,0
+Savonlinna,yrittäjä,0,0,Kaj Valentin,5501,0,1699,PS,7200,0,0,Perussuomalaiset r.p.,Etelä-Savon vaalipiiri,Turunen,0,0
+Pieksämäki,opiskelija,1250,0,Sini Suvi Annikki,0,0,0,VAS,1250,0,0,Vasemmistoliitto r.p.,Etelä-Savon vaalipiiri,Savolainen,0,0
+Joroinen,"kansanedustaja, MMM",500,0,Katri Helena,24300,26000,1000,KESK,26000,0,0,Suomen Keskusta r.p.,Etelä-Savon vaalipiiri,Komi,200,0
+Mikkeli,opiskelija,0,0,Simo Topias,0,0,0,M11,0,0,0,Muutos 2011 r.p.,Etelä-Savon vaalipiiri,Lipsanen,0,0
+Enonkoski,"kirkkoherra, TM",0,0,Toivo Ilmari,1100,3170,0,KESK,3170,0,940,Suomen Keskusta r.p.,Etelä-Savon vaalipiiri,Loikkanen,1130,0
+Hollola,"historian ja yhteiskuntaopin lehtori, filosofian maisteri",0,0,Kristiina,4520,4670,0,VIHR,4670,0,0,Vihreä liitto r.p.,Hämeen vaalipiiri,Vanhala-Selin,150,0
+Rantasalmi,"yrittäjä, projektipäällikkö",0,0,Toni Petteri,3321,7091,1000,KESK,7091,0,1300,Suomen Keskusta r.p.,Etelä-Savon vaalipiiri,Auvinen,1470,0
+Mikkeli,"isännöitsijä, yrittäjä",0,0,Martti Ilmari,14000,20000,2000,KESK,20000,0,1000,Suomen Keskusta r.p.,Etelä-Savon vaalipiiri,Lokka,3000,0
+Orimattila,"yrittäjyyden lehtori, kauppatieteiden maisteri",0,0,Jukka Sakari,500,770,0,VIHR,1505,0,0,Vihreä liitto r.p.,Hämeen vaalipiiri,Ilmonen,1005,0
+Lahti,"toimitusjohtaja, ympäristöasiantuntija",0,0,Aleksi Aarne Tapio,2530,3500,0,VIHR,3500,0,0,Vihreä liitto r.p.,Hämeen vaalipiiri,Mäntylä,970,0
+Riihimäki,koulunkäyntiohjaaja,0,0,Pepe Matinpoika,150,50,0,VP,100,0,0,Vapauspuolue (VP) - Suomen tulevaisuus r.p.,Hämeen vaalipiiri,Viljanen,0,0
+Hämeenlinna,"ympäristötarkastaja, maatalous- ja metsätieteiden maisteri",0,0,Päivi Tellervo,955,4200,0,VIHR,4200,0,220,Vihreä liitto r.p.,Hämeen vaalipiiri,Sieppi,3025,0
+Lahti,"näytelmäkirjailija, teatterinjohtaja",0,0,Jari Tuomas Kalevi,350,500,0,VIHR,150,0,0,Vihreä liitto r.p.,Hämeen vaalipiiri,Juutinen,150,0
+Hämeenlinna,"kansanedustaja, luokanopettaja",1750,14030,Kirsi Johanna,0,18000,0,VIHR,18000,0,220,Vihreä liitto r.p.,Hämeen vaalipiiri,Ojansuu,2000,0
+Riihimäki,"toiminnanjohtaja, valtiotieteiden maisteri",0,0,Eero Lauri Sakari,250,6200,0,VIHR,6200,0,750,Vihreä liitto r.p.,Hämeen vaalipiiri,Yrjö-Koskinen,5200,0
+Lahti,"lastentarhanopettaja, sosionomi (AMK)",0,0,Sami Juhani,682,828,50,VIHR,828,0,0,Vihreä liitto r.p.,Hämeen vaalipiiri,Hietanen,96,0
+Hausjärvi,"toimintaterapeutti, yrittäjä",0,0,Auli Maarit,500,1035,0,VIHR,1035,0,500,Vihreä liitto r.p.,Hämeen vaalipiiri,Laine,35,0
+Riihimäki,liiketoiminnan kehitysjohtaja,0,0,Marko Eerik,3200,6810,3000,VIHR,6810,0,500,Vihreä liitto r.p.,Hämeen vaalipiiri,Romppanen,110,0
+Forssa,valmentaja,0,16500,Alpo Juhani,0,17500,0,VIHR,17500,0,1000,Vihreä liitto r.p.,Hämeen vaalipiiri,Suhonen,0,0
+Janakkala,"terveydenhuollon opettaja, sairaanhoitaja-terveydenhoitaja",1250,0,Aira Helena,0,1412,0,VAS,2250,0,1000,Vasemmistoliitto r.p.,Hämeen vaalipiiri,Puistola,0,0
+Heinola,sosiaalipäällikkö,0,0,Minna Maarika,710,1000,0,VIHR,1000,0,270,Vihreä liitto r.p.,Hämeen vaalipiiri,Remes-Sievänen,20,0
+Lahti,lääkäri,0,0,Antti Juho,23000,30000,1000,VAS,30000,0,2000,Vasemmistoliitto r.p.,Hämeen vaalipiiri,Holopainen,4000,0
+Orimattila,"kuvataiteilija, kuvataiteen maisteri",0,0,Marko Aki Johannes,853,853,0,VIHR,853,0,0,Vihreä liitto r.p.,Hämeen vaalipiiri,Suomi,0,0
+Janakkala,koulunjohtaja,0,0,Anssi Juhani,4500,5000,0,VIHR,5000,0,500,Vihreä liitto r.p.,Hämeen vaalipiiri,Lepistö,0,0
+Lahti,kirvesmies,4000,0,Pekka Antero,2000,9000,0,VAS,9000,0,2700,Vasemmistoliitto r.p.,Hämeen vaalipiiri,Järvinen,300,0
+Forssa,teurastaja,7849,0,Janne Matti,1701,10000,0,VAS,10000,0,450,Vasemmistoliitto r.p.,Hämeen vaalipiiri,Nieminen,0,0
+Riihimäki,lähihoitaja,4500,0,Aino-Kaisa Ilona,7825,30000,1400,VAS,30000,7105,5068,Vasemmistoliitto r.p.,Hämeen vaalipiiri,Pekonen,4100,0
+Hattula,"vuokraamotyöntekijä, ylioppilas",0,0,Mikko Juhani,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Hämeen vaalipiiri,Väätäinen,0,0
+Hattula,opiskelija,1000,0,Sami Pekka Mikael,0,1500,0,VAS,1500,0,0,Vasemmistoliitto r.p.,Hämeen vaalipiiri,Varsell,0,500
+Lahti,"sosiaalityöntekijä, yhteiskuntatieteiden maisteri",1000,0,Vuokko Anneli,6000,11000,1000,VAS,12000,4500,2500,Vasemmistoliitto r.p.,Hämeen vaalipiiri,Kautto,1000,900
+Hartola,elämysterapeutti,0,0,Heikki Simo Juhani,100,600,0,VAS,600,0,0,Vasemmistoliitto r.p.,Hämeen vaalipiiri,Leisti,100,400
+Hattula,postimies,0,0,Hannu Ilmari,53,53,0,PIR,0,0,0,Piraattipuolue r.p.,Hämeen vaalipiiri,Kaskela,0,0
+Forssa,"tutkija, diplomi-insinööri",0,0,Olli Ilmari,420,420,0,PIR,420,0,0,Piraattipuolue r.p.,Hämeen vaalipiiri,Heikkilä,0,0
+Lahti,tuotekehityspäällikkö,0,0,Ilari Juho Johan,100,100,0,PIR,0,0,0,Piraattipuolue r.p.,Hämeen vaalipiiri,Mäkimattila,0,0
+Orimattila,diplomi-insinööri,0,0,Juho Oskari,300,300,0,PIR,300,0,0,Piraattipuolue r.p.,Hämeen vaalipiiri,Rutila,0,0
+Hausjärvi,teollisuustyöntekijä,0,0,Juha Olavi,200,200,0,PIR,200,0,0,Piraattipuolue r.p.,Hämeen vaalipiiri,Pätsi,0,0
+Riihimäki,yrittäjä,0,0,Harry Mikko,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Hämeen vaalipiiri,Storbacka,0,0
+Lahti,yhdistelmäajoneuvon kuljettaja,0,0,Toni Eino Mikael,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Hämeen vaalipiiri,Kaskela,0,0
+Hollola,hevostenhoitaja,0,0,Mari Pauliina,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Hämeen vaalipiiri,Palmulehto,0,0
+Lahti,"datanomi, merkonomi",0,0,Antti Ilari,25,225,0,M11,225,0,0,Muutos 2011 r.p.,Hämeen vaalipiiri,Papinniemi,200,0
+Hattula,sekatyömies,0,0,Veli Jalmari,235,265,0,M11,425,0,0,Muutos 2011 r.p.,Hämeen vaalipiiri,Karimies,195,0
+Helsinki,"oikeustieteen maisteri, lakimies",0,0,Husein,4500,9000,0,VIHR,8900,0,300,Vihreä liitto r.p.,Helsingin vaalipiiri,Muhammed,5000,0
+Helsinki,"diplomi-insinööri, puolueen varapuheenjohtaja",0,0,Mari,21707,27957,0,VIHR,27957,0,350,Vihreä liitto r.p.,Helsingin vaalipiiri,Puoskari,5900,0
+Orimattila,"parturi-kampaaja, yrittäjä",0,0,Riitta Aulikki,5000,17480,0,KESK,17480,0,1060,Suomen Keskusta r.p.,Hämeen vaalipiiri,Lonka,1880,0
+Helsinki,opiskelija,0,0,Verna,340,4510,450,VIHR,4510,0,1420,Vihreä liitto r.p.,Helsingin vaalipiiri,Castrén,2300,0
+Helsinki,"kansainvälisten asiain koordinaattori, valtiotieteiden maist",0,0,Sanna,7300,20000,1500,VIHR,20000,0,600,Vihreä liitto r.p.,Helsingin vaalipiiri,Vesikansa,10600,0
+Helsinki,"viestintäpäällikkö, Master of Laws",0,0,Tuuli,23440,29126,0,VIHR,29126,0,486,Vihreä liitto r.p.,Helsingin vaalipiiri,Kousa,5399,0
+Helsinki,"filosofian maisteri, opintojohtaja",0,0,Ville,6000,23000,0,VIHR,23000,0,500,Vihreä liitto r.p.,Helsingin vaalipiiri,Ylikahri,16500,0
+Helsinki,erityisopettaja,0,0,Sirkku,330,1700,0,VIHR,1700,0,660,Vihreä liitto r.p.,Helsingin vaalipiiri,Ingervo,710,0
+Riihimäki,"kansanedustaja, lääkäri",0,0,Päivi Maria,5011,18053,2389,KD,18053,0,2700,Suomen Kristillisdemokraatit (KD),Hämeen vaalipiiri,Räsänen,2800,5153
+Helsinki,opiskelija,1457,0,Emma,10000,19546,0,VIHR,19213,0,1621,Vihreä liitto r.p.,Helsingin vaalipiiri,Kari,6135,0
+Helsinki,"kansanedustaja, tutkija",0,34900,Outi,37151,41316,0,VIHR,41316,0,760,Vihreä liitto r.p.,Helsingin vaalipiiri,Alanko-Kahiluoto,4165,0
+Savonlinna,"rehtori, kirjailija",0,0,Teuvo Viktor,4000,25000,0,KD,25000,0,0,Suomen Kristillisdemokraatit (KD),Etelä-Savon vaalipiiri,Riikonen,0,0
+Helsinki,"tekniikan tohtori, tutkija",0,0,Marko,4039,5069,0,VIHR,5069,0,900,Vihreä liitto r.p.,Helsingin vaalipiiri,Kosunen,130,0
+Helsinki,"puolueen puheenjohtaja, työministeri",0,0,Anni,41000,42912,0,VIHR,42912,0,412,Vihreä liitto r.p.,Helsingin vaalipiiri,Sinnemäki,1527,0
+Helsinki,"psykologi, filosofian maisteri",0,0,Riitta,3897,7588,300,VIHR,7588,0,0,Vihreä liitto r.p.,Helsingin vaalipiiri,Skoglund,3391,0
+Helsinki,"vs. pääsihteeri, tohtorikoulutettava, tf. generalsekreterare",0,0,Anna,3700,5485,0,VIHR,5390,0,640,Vihreä liitto r.p.,Helsingin vaalipiiri,Moring,1050,0
+Helsinki,"pääsihteeri, hallintotieteiden maisteri",0,0,Leo,11732,13698,0,VIHR,13698,0,0,Vihreä liitto r.p.,Helsingin vaalipiiri,Stranius,1966,0
+Helsinki,kolumnisti,0,20000,Jukka,600,24600,0,VIHR,24600,0,0,Vihreä liitto r.p.,Helsingin vaalipiiri,Relander,4000,0
+Helsinki,ylioppilas,0,0,Henrik,1889,4400,0,VIHR,4411,250,1105,Vihreä liitto r.p.,Helsingin vaalipiiri,Jaakkola,1166,0
+Helsinki,valtiotieteen lisensiaatti,0,0,Osmo,10000,23044,0,VIHR,19368,0,0,Vihreä liitto r.p.,Helsingin vaalipiiri,Soininvaara,9368,0
+Helsinki,"kansanedustaja, ulkoministerin erityisedustaja",2000,0,Pekka,28360,39500,6000,VIHR,39500,0,140,Vihreä liitto r.p.,Helsingin vaalipiiri,Haavisto,3000,0
+Helsinki,kätilö,0,0,Zahra,0,2568,0,VIHR,2631,0,274,Vihreä liitto r.p.,Helsingin vaalipiiri,Abdulla,2356,0
+Helsinki,"valtiotieteiden kandidaatti, opiskelija",2400,0,Meri Katri Maria,570,5800,0,VAS,5800,0,1470,Vasemmistoliitto r.p.,Helsingin vaalipiiri,Immonen,960,0
+Helsinki,"YTM, Vasemmistonuorten pj, magister i samhällsvetenskaper, o",8300,0,Dan Mikael,10800,25100,0,VAS,25100,0,0,Vasemmistoliitto r.p.,Helsingin vaalipiiri,Koivulaakso,5150,850
+Helsinki,"yhteiskuntatieteiden maisteri, puoluesihteeri",100,0,Sirpa Liisa,17300,30000,100,VAS,30000,6900,1000,Vasemmistoliitto r.p.,Helsingin vaalipiiri,Puhakka,4600,0
+Helsinki,"kansanedustaja, valtiotieteiden maisteri",0,0,Johanna,26090,28796,0,VIHR,28796,0,706,Vihreä liitto r.p.,Helsingin vaalipiiri,Sumuvuori,1999,0
+Helsinki,"ylioppilasmerkonomi, valtiotieteiden kandidaatti",1650,0,Riku Jussi,225,4735,0,VAS,4735,0,900,Vasemmistoliitto r.p.,Helsingin vaalipiiri,Ahola,1960,0
+Helsinki,"toimittaja, journalist",0,0,Anna Silvia,0,5750,0,VAS,5750,0,400,Vasemmistoliitto r.p.,Helsingin vaalipiiri,Modig,3000,2350
+Helsinki,psykologi,0,0,Anna Tuulikki,300,3340,0,VAS,3340,0,400,Vasemmistoliitto r.p.,Helsingin vaalipiiri,Vuorjoki,2640,0
+Helsinki,"valtiotieteiden tohtori, professori",0,0,Heikki Olavi,1200,2700,0,VAS,0,0,600,Vasemmistoliitto r.p.,Helsingin vaalipiiri,Patomäki,900,0
+Helsinki,"puolueen puheenjohtaja, kansanedustaja",9000,0,Paavo Erkki,10000,32000,0,VAS,32000,0,10000,Vasemmistoliitto r.p.,Helsingin vaalipiiri,Arhinmäki,3000,0
+Helsinki,"tutkijatohtori, valtiotieteiden tohtori",4000,0,Pilvi Tuulia,7000,35500,2750,SDP,35500,0,0,Suomen Sosialidemokraattinen Puolue,Helsingin vaalipiiri,Torsti,21750,0
+Helsinki,"filosofian maisteri, apurahatutkija, filosofie magister, sti",0,0,Joonas,95,1015,0,VAS,1015,0,850,Vasemmistoliitto r.p.,Helsingin vaalipiiri,Leppänen,70,0
+Helsinki,kansanedustaja,0,00,Lea Rakel,18300,20000,0,SDP,20000,0,500,Suomen Sosialidemokraattinen Puolue,Helsingin vaalipiiri,Hiltunen,1200,0
+Helsinki,"ylioppilas, student",2000,0,Henrik John Mikael,2000,3000,0,VAS,4240,0,0,Vasemmistoliitto r.p.,Helsingin vaalipiiri,Nyholm,240,0
+Helsinki,henkilökohtainen avustaja,0,0,Stacy Sofia,0,0,0,SKP,0,0,0,Suomen Kommunistinen Puolue,Helsingin vaalipiiri,Siivonen,0,0
+Helsinki,näyttelijä,1880,0,Sara Johanna,0,6500,0,SDP,6500,0,620,Suomen Sosialidemokraattinen Puolue,Helsingin vaalipiiri,Paavolainen,4000,0
+Helsinki,"opiskelija, valtiotieteiden kandidaatti",400,0,Matti Nestori,4000,8300,0,SDP,8300,0,1250,Suomen Sosialidemokraattinen Puolue,Helsingin vaalipiiri,Niemi,2650,0
+Helsinki,"diplomi-insinööri, ohjelmistokehittäjä",0,0,Jari Tapani,0,30,0,PIR,30,0,0,Piraattipuolue r.p.,Helsingin vaalipiiri,Metsälä,30,0
+Helsinki,"programdirektör, ohjelmajohtaja",0,0,Georg Henrik Wilhelm,0,1000,0,RKP,1000,0,0,Suomen ruotsalainen kansanpuolue r.p.,Helsingin vaalipiiri,Wrede,0,1000
+Helsinki,tiedottaja,0,0,Britta Kristina,8300,11000,500,PS,11000,0,300,Perussuomalaiset r.p.,Helsingin vaalipiiri,Ljungqvist,1900,0
+Helsinki,tuottaja,1000,0,Osku Markus Oskari,2000,9650,2000,SDP,9650,0,900,Suomen Sosialidemokraattinen Puolue,Helsingin vaalipiiri,Pajamäki,3750,0
+Helsinki,"konsult, politices magister",230,0,Janina Teresa,0,5100,795,RKP,4845,0,930,Suomen ruotsalainen kansanpuolue r.p.,Helsingin vaalipiiri,Mackiewicz,1890,1000
+Helsinki,EU-asiantuntija,3750,0,Reijo Veli Erik,2940,7700,0,SDP,7700,0,750,Suomen Sosialidemokraattinen Puolue,Helsingin vaalipiiri,Paananen,260,0
+Helsinki,"luonnontieteiden kandidaatti, opiskelija",0,0,Toni-Petri,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Helsingin vaalipiiri,Tiilikainen,0,0
+Helsinki,"tietotekniikka-asiantuntija, filosofian maisteri",0,0,Mikko Johannes,200,200,0,PIR,200,0,0,Piraattipuolue r.p.,Helsingin vaalipiiri,Rauhala,0,0
+Helsinki,"filosofian ylioppilas, tietotekniikkasuunnittelija",0,0,Ville Uolevi,400,500,0,PIR,500,0,0,Piraattipuolue r.p.,Helsingin vaalipiiri,Hautakangas,101,0
+Helsinki,tietoliikenneasiantuntija,0,0,Len Lauri,2,302,300,PIR,300,0,0,Piraattipuolue r.p.,Helsingin vaalipiiri,Merikanto,0,0
+Helsinki,"säveltäjä, opettaja",0,0,Joonas Mikael,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Helsingin vaalipiiri,Mäkinen,0,0
+Helsinki,"luonnontieteiden kandidaatti, opiskelija",0,0,Charlotta Mari,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Helsingin vaalipiiri,Söderholm,0,0
+Helsinki,"kauppatieteiden kandidaatti, tekniikan ylioppilas",0,0,Raoul Scott,50,50,0,PIR,50,0,0,Piraattipuolue r.p.,Helsingin vaalipiiri,Plommer,0,0
+Mikkeli,"tutkija, kirjailija",0,0,Jan-Markus,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Helsingin vaalipiiri,Laasonen,0,0
+Helsinki,filosofian ylioppilas,0,0,Satu Ilona,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Helsingin vaalipiiri,Immonen,0,0
+Helsinki,"filosofian ylioppilas, tutkimusavustaja",0,0,Janne Petri,268,268,0,PIR,268,0,0,Piraattipuolue r.p.,Helsingin vaalipiiri,Hukkinen,0,0
+Helsinki,"opiskelija, kirjailija",0,0,Kaj Markus,0,30,0,PIR,100,0,0,Piraattipuolue r.p.,Helsingin vaalipiiri,Sotala,100,0
+Helsinki,"merkonomi, promootiotyöntekijä",0,0,Antti,0,300,0,PIR,300,0,0,Piraattipuolue r.p.,Helsingin vaalipiiri,Kurhinen,0,0
+Helsinki,"puolueen varapuheenjohtaja, filosofian ylioppilas",0,0,Ahto Aleksis,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Helsingin vaalipiiri,Apajalahti,0,0
+Helsinki,opiskelija,0,0,Aleksi Eemeli,0,207,0,M11,207,0,0,Muutos 2011 r.p.,Helsingin vaalipiiri,Pousar,207,0
+Helsinki,"diplomi-insinööri, tutkija",0,0,Lauri Ilmari,500,1000,0,M11,1000,0,0,Muutos 2011 r.p.,Helsingin vaalipiiri,Ahlroth,500,0
+Helsinki,disc jockey,0,0,Nicolas Theodoros,0,0,0,M11,0,0,0,Muutos 2011 r.p.,Helsingin vaalipiiri,Mavromichalis,0,0
+Helsinki,"säveltaiteilija, päätoimittaja",0,0,Petri Kalevi,200,200,0,M11,0,0,0,Muutos 2011 r.p.,Helsingin vaalipiiri,Kaivanto,0,0
+Helsinki,"pappi, tutkija",0,0,Sanna Katriina,1580,1880,0,KESK,1880,0,550,Suomen Keskusta r.p.,Helsingin vaalipiiri,Lehtinen,0,0
+Helsinki,professori,0,0,Laura Kristina,17000,20000,0,KESK,20000,0,0,Suomen Keskusta r.p.,Helsingin vaalipiiri,Kolbe,3000,0
+Helsinki,"yrittäjä, oikeustieteen kandidaatti",0,50000,Pia Riika Birgitta,0,55200,0,KOK,55200,0,2200,Kansallinen Kokoomus r.p.,Helsingin vaalipiiri,Pakarinen,3000,0
+Helsinki,"konsultti, kääntäjä",0,0,Abdirahim Hussein,300,3500,0,KESK,3500,0,150,Suomen Keskusta r.p.,Helsingin vaalipiiri,Mohamed,3050,0
+Helsinki,"kansanedustaja, pääministeri",0,0,Mari Johanna,0,41650,2000,KESK,41650,2650,0,Suomen Keskusta r.p.,Helsingin vaalipiiri,Kiviniemi,3655,35995
+Helsinki,"diplomi-insinööri, yrittäjä",0,0,Olli Antero,3500,3500,0,KESK,3500,0,0,Suomen Keskusta r.p.,Helsingin vaalipiiri,Alku,0,0
+Helsinki,"filosofian maisteri, liiketoimintapäällikkö",0,0,Juha Antero,2275,4550,400,KESK,4550,0,125,Suomen Keskusta r.p.,Helsingin vaalipiiri,Sarlund,1750,0
+Helsinki,ylioppilas,0,0,Teppo Aleksi,2225,4725,0,KESK,4725,0,1400,Suomen Keskusta r.p.,Helsingin vaalipiiri,Säkkinen,1100,0
+Helsinki,"lastenlääkäri, valtiosihteeri",1800,0,Eeva Maija Kaarina,6300,19600,0,KESK,19600,0,300,Suomen Keskusta r.p.,Helsingin vaalipiiri,Kuuskoski,11300,0
+Helsinki,rahoituspäällikkö,400,0,Markus Eemeli,7183,10053,0,KESK,10053,0,2200,Suomen Keskusta r.p.,Helsingin vaalipiiri,Kinnunen,270,0
+Nurmijärvi,"myyntineuvottelija, eläkeläinen",0,0,Seija Tuulikki,1600,1900,0,KESK,1900,0,300,Suomen Keskusta r.p.,Helsingin vaalipiiri,Suorsa-Pahl,0,0
+Helsinki,"puoluesihteeri, hallintotieteiden maisteri",0,0,Timo Kaleva,20000,30000,9000,KESK,30000,0,0,Suomen Keskusta r.p.,Helsingin vaalipiiri,Laaninen,1000,0
+Helsinki,"yhteiskuntatieteiden kandidaatti, pääsihteeri",0,5000,Maria Kristiina,6300,11000,0,KESK,11000,0,1700,Suomen Keskusta r.p.,Helsingin vaalipiiri,Ruuskanen,3000,0
+Kotka,suomen kielen lehtori,0,0,Leena,2500,7500,500,VIHR,7500,1330,720,Vihreä liitto r.p.,Kymen vaalipiiri,Griinari,2450,0
+Kotka,erityisperhetyöntekijä,750,0,Sami,1200,4000,570,VIHR,4000,0,330,Vihreä liitto r.p.,Kymen vaalipiiri,Virtanen,1150,0
+Kouvola,yrittäjä,0,0,Pekka,125,1000,500,VIHR,1000,0,350,Vihreä liitto r.p.,Kymen vaalipiiri,Raukko,25,0
+Kouvola,"teologian tohtori, pappi",0,0,Matti,4550,5900,500,VIHR,5900,0,350,Vihreä liitto r.p.,Kymen vaalipiiri,Perälä,500,0
+Kouvola,"FK, kansalaisopiston opettaja",0,0,Ritva,716,1566,500,VIHR,1566,0,350,Vihreä liitto r.p.,Kymen vaalipiiri,Sorvali,0,0
+Kotka,"meribiologi, FM",0,0,Annika,1894,2816,0,VIHR,2816,0,850,Vihreä liitto r.p.,Kymen vaalipiiri,Aalto-Partanen,72,0
+Hamina,"jatko-opiskelija, BBA",0,0,Katja,722,1450,0,VIHR,1450,0,220,Vihreä liitto r.p.,Kymen vaalipiiri,Andrejev,265,0
+Lemi,"yrittäjä, psykoterapeutti",0,0,Risto,15123,15223,0,VIHR,15223,0,0,Vihreä liitto r.p.,Kymen vaalipiiri,Pietiläinen,100,0
+Lappeenranta,tieteellisen laskennan professori,0,0,Matti,4525,4525,0,VIHR,4525,0,0,Vihreä liitto r.p.,Kymen vaalipiiri,Alatalo,0,0
+Lappeenranta,diplomi-insinööri,416,0,Hanna,5586,6992,0,VIHR,6992,0,220,Vihreä liitto r.p.,Kymen vaalipiiri,Holopainen,770,0
+Imatra,"yhteiskuntatieteiden ylioppilas, kulttuurituottaja AMK",0,0,Hanna-Kaisa,400,1100,300,VIHR,1000,0,0,Vihreä liitto r.p.,Kymen vaalipiiri,Lähde,400,0
+Imatra,kauppateknikko,0,0,Ilkka Tapio,790,860,0,VIHR,860,0,0,Vihreä liitto r.p.,Kymen vaalipiiri,Johansson,70,0
+Lappeenranta,rakennussiivooja,1000,0,Maija Liisa,0,2120,0,VAS,2300,300,700,Vasemmistoliitto r.p.,Kymen vaalipiiri,Hyyrynen,120,0
+Hamina,paloesimies,1500,0,Jarmo Juhani,500,3000,0,VAS,3000,0,500,Vasemmistoliitto r.p.,Kymen vaalipiiri,Tammilehto,0,500
+Lappeenranta,sosionomiopiskelija,0,0,Tiia Eveliina,0,810,0,VAS,810,0,800,Vasemmistoliitto r.p.,Kymen vaalipiiri,Meuronen,10,0
+Parikkala,"pukuompelija, ympäristönhoitaja",0,0,Anne,200,200,0,VIHR,0,0,0,Vihreä liitto r.p.,Kymen vaalipiiri,Venjärvi,0,0
+Pyhtää,"yrittäjä, hortonomi",0,0,Jukka Esko,125,925,200,VIHR,925,0,550,Vihreä liitto r.p.,Kymen vaalipiiri,Söderholm,100,0
+Lappeenranta,"ylioppilas, opiskelija",0,0,Mirka Marjaana,100,790,0,PS,550,0,300,Perussuomalaiset r.p.,Kymen vaalipiiri,Salo,150,0
+Kotka,"kansanedustaja, kirurgian erikoislääkäri",1000,0,Pentti Uolevi,29000,30000,0,VAS,30000,0,0,Vasemmistoliitto r.p.,Kymen vaalipiiri,Tiusanen,0,0
+Kotka,ohjaaja,1500,0,Seija Tuulikki,200,2000,300,VAS,2000,0,0,Vasemmistoliitto r.p.,Kymen vaalipiiri,Piipponen-Pekkola,0,0
+Hamina,"kauppateknikko, metsätalouden harjoittaja",0,0,Hannu Kalervo,2000,2000,0,PS,2000,0,0,Perussuomalaiset r.p.,Kymen vaalipiiri,Järvinen,0,0
+Pyhtää,"metsätalousinsinööri, työnjohtaja",2500,0,Raul Sauli Lennart,930,4930,0,PS,4930,0,0,Perussuomalaiset r.p.,Kymen vaalipiiri,Lehto,500,1000
+Lappeenranta,diplomi-insinööri,5000,0,Tuomas Taneli,10000,24550,0,KOK,24550,0,4000,Kansallinen Kokoomus r.p.,Kymen vaalipiiri,Telkkä,5550,0
+Kouvola,"levyseppähitsaaja, lvi-asentaja",0,0,Tomi Tapani,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Kymen vaalipiiri,Simola,0,0
+Kouvola,opiskelija,0,0,Tero Antti,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Kymen vaalipiiri,Keinänen,0,0
+Lappeenranta,työteknikko,0,0,Teemu Samuli,0,120,0,M11,120,0,0,Muutos 2011 r.p.,Kymen vaalipiiri,Lavikka,120,0
+Kouvola,"graafinen suunnittelija, järjestelmätukihenkilö",0,0,Markus Mika Samuli,50,50,0,PIR,50,0,0,Piraattipuolue r.p.,Kymen vaalipiiri,Koskelainen,0,0
+Lappeenranta,toiminnanjohtaja,0,0,Henna Tytti Maria,12000,20399,0,KESK,20399,0,3900,Suomen Keskusta r.p.,Kymen vaalipiiri,Kaijanen,4499,0
+Jyväskylä,"eduskunta-avustaja, luonnontieteiden kandidaatti",0,0,Rauha Paloma,2700,6333,0,VIHR,6333,0,1000,Vihreä liitto r.p.,Keski-Suomen vaalipiiri,Hannonen,2633,0
+Lappeenranta,"työnjohtaja, sähköasentaja",50,0,Jouni Ensio,14000,18850,1800,KESK,18850,0,2100,Suomen Keskusta r.p.,Kymen vaalipiiri,Kemppi,900,0
+Vantaa,"poliittinen sihteeri, yhteiskuntatieteiden tohtori",0,0,Jouni Tapio,7500,10000,750,VIHR,10000,0,0,Vihreä liitto r.p.,Keski-Suomen vaalipiiri,Vauhkonen,1800,0
+Jyväskylä,"rehtori, kasvatustieteen maisteri",0,0,Meri Johanna,4280,4800,0,VIHR,4800,0,220,Vihreä liitto r.p.,Keski-Suomen vaalipiiri,Lumela,300,0
+Äänekoski,"toimittaja, yrittäjä",0,0,Kalevi Johannes,1000,2500,0,VIHR,2500,0,1500,Vihreä liitto r.p.,Keski-Suomen vaalipiiri,Tiitinen,0,0
+Jyväskylä,"amanuenssi, yhteiskuntatieteiden maisteri",0,0,Niina Johanna,736,1520,0,VIHR,1520,0,220,Vihreä liitto r.p.,Keski-Suomen vaalipiiri,Simanainen,564,0
+Petäjävesi,"psykologian maisteri, tutkija",195,0,Nina Birgitta,755,1696,200,VIHR,1696,0,520,Vihreä liitto r.p.,Keski-Suomen vaalipiiri,Hirsiaho,25,0
+Jyväskylä,"sosiaalityöntekijä, yhteiskuntatieteiden maisteri",400,0,Maia Ilona,150,1920,0,VIHR,1920,0,220,Vihreä liitto r.p.,Keski-Suomen vaalipiiri,Fandi,1150,0
+Jyväskylä,"opiskelija, yhteiskuntatieteiden kandidaatti",0,0,Touko Juhani,5000,9000,0,VIHR,8000,0,1000,Vihreä liitto r.p.,Keski-Suomen vaalipiiri,Aalto,3000,0
+Jyväskylä,"projektipäällikkö, filosofian maisteri",0,0,Minna Kaarina,1177,2077,0,VIHR,2077,0,0,Vihreä liitto r.p.,Keski-Suomen vaalipiiri,Kilpala,900,0
+Jämsä,"opettaja, yhteiskuntatieteiden maisteri",0,0,Mari Eeva Erika,800,1500,0,VIHR,1500,0,500,Vihreä liitto r.p.,Keski-Suomen vaalipiiri,Äikäs,500,0
+Jyväskylä,"koulukuraattori, yhteiskuntatieteiden maisteri",0,4000,Tuija Kristiina,750,5070,0,VIHR,5070,0,220,Vihreä liitto r.p.,Keski-Suomen vaalipiiri,Mäkinen,100,0
+Laukaa,"tutkija, liikuntatieteiden tohtori",200,0,Elina,2600,5500,0,VIHR,5500,0,0,Vihreä liitto r.p.,Keski-Suomen vaalipiiri,Sillanpää,2700,0
+Jyväskylä,"sosiaaliohjaaja, potilaskuljettaja",50,0,Nico MIkael,2900,3000,0,VIHR,3000,0,0,Vihreä liitto r.p.,Keski-Suomen vaalipiiri,Holmberg,50,0
+Laukaa,filosofian ylioppilas,0,0,Katariina,0,2650,0,VAS,2650,0,2500,Vasemmistoliitto r.p.,Keski-Suomen vaalipiiri,Kautto,150,0
+Jyväskylä,opiskelija (amk),1200,0,Johannes Ilari,0,2330,0,VAS,2330,0,0,Vasemmistoliitto r.p.,Keski-Suomen vaalipiiri,Kuhmonen,1130,0
+Jyväskylä,"opettaja, tutkija",0,0,Tero Tapio,500,1300,0,VAS,1300,0,0,Vasemmistoliitto r.p.,Keski-Suomen vaalipiiri,Toivanen,800,0
+Jyväskylä,koneistaja,4700,0,Kalle Markku Tapani,1700,11830,0,VAS,10130,3730,0,Vasemmistoliitto r.p.,Keski-Suomen vaalipiiri,Kolari,0,0
+Laukaa,"biologi, filosofian tohtori",0,0,Ari Juhani,100,500,0,VIHR,500,0,0,Vihreä liitto r.p.,Keski-Suomen vaalipiiri,Jäntti,400,0
+Jyväskylä,"toimistosihteeri, eläkeläinen",0,0,Marja Leena,1450,1448,0,VAS,2877,0,0,Vasemmistoliitto r.p.,Keski-Suomen vaalipiiri,Makkonen,927,500
+Jämsä,"prosessimies, hydrauliikka-asentaja",0,0,Pertti Eelis,2600,9000,0,VAS,6400,0,6200,Vasemmistoliitto r.p.,Keski-Suomen vaalipiiri,Riihinen,100,0
+Jyväskylä,"opettaja, historian- ja yhteiskuntaopin lehtori",6660,0,Jarmo Antero,500,8500,0,VAS,8500,0,650,Vasemmistoliitto r.p.,Keski-Suomen vaalipiiri,Ritanen,690,0
+Jyväskylä,"tradenomi, isännöitsijä",1900,0,Katja Maarit,7700,10000,0,VAS,0,0,0,Vasemmistoliitto r.p.,Keski-Suomen vaalipiiri,Minkkinen,400,0
+Jyväskylä,fysiikan opiskelija,0,0,Jyri Pekka,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Keski-Suomen vaalipiiri,Hämäläinen,0,0
+Uurainen,"sairaanhoitaja, lääke-esittelijä",0,0,Anja Anitta,3430,6000,0,PS,6000,0,2000,Perussuomalaiset r.p.,Keski-Suomen vaalipiiri,Kangas,570,0
+Jyväskylä,kulttuurituottaja,0,0,Arto Matias,500,500,0,PIR,500,0,0,Piraattipuolue r.p.,Keski-Suomen vaalipiiri,Lampila,0,0
+Jyväskylä,"tietotekniikan maisteri, työtön",0,0,Joanna Pauliina,300,500,0,PIR,500,0,0,Piraattipuolue r.p.,Keski-Suomen vaalipiiri,Kurki,200,0
+Jyväskylä,filosofian maisteri,0,0,Jani Tapani,100,100,0,PIR,100,0,0,Piraattipuolue r.p.,Keski-Suomen vaalipiiri,Korhonen,0,0
+Jyväskylä,filosofian ylioppilas,0,0,Matti Aleksanteri,150,150,0,PIR,150,0,0,Piraattipuolue r.p.,Keski-Suomen vaalipiiri,Eskelinen,0,0
+Jyväskylä,suomen kielen opiskelija,0,0,Dorrit Martina,100,20,0,PIR,100,0,0,Piraattipuolue r.p.,Keski-Suomen vaalipiiri,Näsi,0,0
+Jyväskylä,filosofian ylioppilas,0,0,Eetu Matias,250,250,0,PIR,250,0,0,Piraattipuolue r.p.,Keski-Suomen vaalipiiri,Rantakangas,0,0
+Jyväskylä,matematiikan opiskelija,0,0,Tommi Olavi,150,150,0,PIR,150,0,0,Piraattipuolue r.p.,Keski-Suomen vaalipiiri,Brander,0,0
+Jyväskylä,"opetusministeri, kansanedustaja",0,0,Henna Maria,20000,30000,9500,KOK,30000,0,500,Kansallinen Kokoomus r.p.,Keski-Suomen vaalipiiri,Virkkunen,0,0
+Pihtipudas,"tuottaja, yrittäjä",0,0,Seppo Juhani,5226,17126,0,KOK,11900,0,0,Kansallinen Kokoomus r.p.,Keski-Suomen vaalipiiri,Kahilainen,0,0
+Muurame,"vanhusten palvelutalon johtaja, yhteiskuntatieteiden maister",0,0,Aino Pauliina,5000,11000,3700,KESK,11000,0,800,Suomen Keskusta r.p.,Keski-Suomen vaalipiiri,Takala,1500,0
+Saarijärvi,"yhteiskuntatieteiden maisteri, kuntayhtymän johtaja",0,0,Ari Juhana Mikael,5000,43900,27220,KOK,43900,0,1990,Kansallinen Kokoomus r.p.,Keski-Suomen vaalipiiri,Palola,9720,0
+Viitasaari,"yhteiskuntatieteiden ylioppilas, opiskelija",0,0,Anssi Kristian,0,13000,300,KESK,13000,0,5350,Suomen Keskusta r.p.,Keski-Suomen vaalipiiri,Kekkonen,7350,0
+Jyväskylä,"kasvatustieteen maisteri, apulaisrehtori",0,0,Tuulia Anne-Mari,4250,5700,0,KESK,5700,0,0,Suomen Keskusta r.p.,Keski-Suomen vaalipiiri,Ikkelä-Koski,1450,0
+Uurainen,kansanedustaja,0,0,Toimi Olavi,14480,17000,0,KD,17000,520,1800,Suomen Kristillisdemokraatit (KD),Keski-Suomen vaalipiiri,Kankaanniemi,200,0
+Kivijärvi,"kansanedustaja, maa- ja metsätalousyrittäjä",1000,0,Anne Inkeri,14500,29500,4000,KESK,29500,0,0,Suomen Keskusta r.p.,Keski-Suomen vaalipiiri,Kalmari,10000,0
+Turku,"tietokoneyliasentaja, atk-tukihenkilö",500,0,Tomi Matias Olavi,0,500,0,SIT,500,0,0,Yhteislista sitoutumattomat,Varsinais-Suomen vaalipiiri,Viitanen,0,0
+Parikkala,"kasvatustieteiden maisteri, koulunjohtaja",0,2000,Antti Pekka,1000,6000,0,KESK,6000,0,2500,Suomen Keskusta r.p.,Kymen vaalipiiri,Pesonen,500,0
+Helsinki,toiminnanjohtaja,0,0,Vesa Lassi Kalevi,2200,2200,0,KESK,2200,0,0,Suomen Keskusta r.p.,Helsingin vaalipiiri,Lappalainen,0,0
+Turku,"yksityisetsivä, eläinsuojeluvalvoja",0,0,Olavi Juhani,300,600,0,VP,600,0,0,Vapauspuolue (VP) - Suomen tulevaisuus r.p.,Varsinais-Suomen vaalipiiri,Mäenpää,300,0
+Kaarina,"valtiotieteiden maisteri, liiketalouden tradenomi",0,0,Lisbet Anne-Marie,2361,3000,0,VP,3000,0,0,Vapauspuolue (VP) - Suomen tulevaisuus r.p.,Varsinais-Suomen vaalipiiri,Puttonen,500,139
+Raisio,"yhdyskuntateknikko, yrittäjä",0,0,Rauno Oiva,200,275,0,SIT,275,0,25,Yhteislista sitoutumattomat,Varsinais-Suomen vaalipiiri,Rantanen,50,0
+Pöytyä,kuorma-autonkuljettaja,0,300,Angélica Elizabeth Elleonor Cl,150,800,0,VP,550,0,0,Vapauspuolue (VP) - Suomen tulevaisuus r.p.,Varsinais-Suomen vaalipiiri,Skywolf,200,0
+Salo,konsultti,0,0,Kalevi Albert,2000,2000,0,VP,0,0,0,Vapauspuolue (VP) - Suomen tulevaisuus r.p.,Varsinais-Suomen vaalipiiri,Satopää,0,0
+Turku,"FM, suomen kielen ja viestinnän lehtori",0,0,Riitta,7000,9000,0,VIHR,9000,0,0,Vihreä liitto r.p.,Varsinais-Suomen vaalipiiri,Koskimies,2000,0
+Salo,"kulttuurituottaja (yamk), projektipäällikkö",500,0,Anu,2200,3500,0,VIHR,3500,0,0,Vihreä liitto r.p.,Varsinais-Suomen vaalipiiri,Taivainen,800,0
+Turku,"ylihoitaja, perheterapeutti",0,0,Anita,0,0,658,VIHR,0,0,420,Vihreä liitto r.p.,Varsinais-Suomen vaalipiiri,Birstolin,0,0
+Turku,"fil. yo., kestävän kehityksen opiskelija (amk)",0,0,Ville-Veikko,300,2265,0,VIHR,2526,0,0,Vihreä liitto r.p.,Varsinais-Suomen vaalipiiri,Mastomäki,2226,0
+Salo,"DI, innovaatiopäällikkö",0,0,Otso,8500,8500,0,VIHR,8500,0,0,Vihreä liitto r.p.,Varsinais-Suomen vaalipiiri,Ylönen,0,0
+Turku,"biotekniikan insinööri, LuK",0,0,Heikki,500,2700,200,VIHR,2700,0,300,Vihreä liitto r.p.,Varsinais-Suomen vaalipiiri,Hölttä,1710,0
+Paimio,"yrittäjä, FT",0,0,Saska,6500,8400,700,VIHR,8400,0,700,Vihreä liitto r.p.,Varsinais-Suomen vaalipiiri,Tuomasjukka,500,0
+Turku,"VTM, tutkija",0,0,Elina,8000,12400,0,VIHR,12400,0,400,Vihreä liitto r.p.,Varsinais-Suomen vaalipiiri,Rantanen,4000,0
+Rusko,"socialpolitisk sekreterare, museo-opas",0,0,Monika,6000,12000,0,VIHR,12000,0,900,Vihreä liitto r.p.,Varsinais-Suomen vaalipiiri,Antikainen,5100,0
+Turku,"fil. yo., koulutuspoliittinen sihteeri",0,0,Jukka,2680,5080,0,VIHR,5080,0,150,Vihreä liitto r.p.,Varsinais-Suomen vaalipiiri,Vornanen,2250,0
+Turku,"toimitusjohtaja, yrittäjä",0,0,Martti,1140,3850,1860,VIHR,3850,0,350,Vihreä liitto r.p.,Varsinais-Suomen vaalipiiri,Wallasvaara,500,0
+Turku,"kansanedustaja, riksdagsledamot",250,0,Ville,17730,19980,0,VIHR,19980,0,0,Vihreä liitto r.p.,Varsinais-Suomen vaalipiiri,Niinistö,2000,0
+Loimaa,"maatalousyrittäjä, luomuviljelijä",0,0,Teppo,3150,5000,500,VIHR,5000,0,500,Vihreä liitto r.p.,Varsinais-Suomen vaalipiiri,Heikkilä,700,0
+Turku,"oikeustieteen ylioppilas, juridikstuderande",0,0,Saara,3000,7130,0,VIHR,7130,0,1000,Vihreä liitto r.p.,Varsinais-Suomen vaalipiiri,Ilvessalo,3130,0
+Turku,"tulkki, kääntäjä",500,0,Roda,2180,3000,0,VIHR,3000,0,0,Vihreä liitto r.p.,Varsinais-Suomen vaalipiiri,Hassan,320,0
+Turku,"kirjailija, kirjoittajakouluttaja",0,0,Niina,5065,8380,245,VIHR,8380,0,0,Vihreä liitto r.p.,Varsinais-Suomen vaalipiiri,Repo-Kouki,3070,0
+Kaarina,"FM, ympäristöasiantuntija",0,0,Mari,5600,12000,750,VIHR,12000,0,1245,Vihreä liitto r.p.,Varsinais-Suomen vaalipiiri,Saario,4405,0
+Turku,opiskelija,3142,0,Elias Antti Samuli,1493,5002,0,VAS,5002,0,0,Vasemmistoliitto r.p.,Varsinais-Suomen vaalipiiri,Laitinen,367,0
+Turku,"kansanedustaja, varatuomari",3300,7000,Annika Anita,0,15000,1000,VAS,15000,0,2100,Vasemmistoliitto r.p.,Varsinais-Suomen vaalipiiri,Lapintie,1600,0
+Turku,emäntä,1300,0,Mirka Maria,1000,6600,1000,VAS,6600,0,800,Vasemmistoliitto r.p.,Varsinais-Suomen vaalipiiri,Muukkonen,2000,500
+Turku,työmies,1120,0,Jari Juhani,7020,9000,0,VAS,9000,0,480,Vasemmistoliitto r.p.,Varsinais-Suomen vaalipiiri,Suominen,380,0
+Mynämäki,pääluottamusmies,8540,0,Jari Juhani,0,3773,0,VAS,0,3500,0,Vasemmistoliitto r.p.,Varsinais-Suomen vaalipiiri,Aalto,0,0
+Turku,"valtiotieteen maisteri, kuntoutusohjaaja",0,0,Pirjo Inkeri,6000,6350,0,VAS,6350,0,280,Vasemmistoliitto r.p.,Varsinais-Suomen vaalipiiri,Rinne,80,0
+Turku,"kääntäjä, opiskelija",0,0,Sari Annika,40,50,0,VAS,50,0,0,Vasemmistoliitto r.p.,Varsinais-Suomen vaalipiiri,Karvonen,10,0
+Turku,"valt.kand., opiskelija, pol.kand., studerande",3720,0,Li Sigrid,0,7554,0,VAS,7600,0,300,Vasemmistoliitto r.p.,Varsinais-Suomen vaalipiiri,Andersson,2230,1350
+Loimaa,lähihoitaja,2500,0,Anni Eveliina,500,9000,0,VAS,9000,0,4600,Vasemmistoliitto r.p.,Varsinais-Suomen vaalipiiri,Mäkilä,1000,400
+Uusikaupunki,postityöntekijä,700,0,Sanna-Mari Anneli,100,1600,0,VAS,1600,0,300,Vasemmistoliitto r.p.,Varsinais-Suomen vaalipiiri,Lovén,0,500
+Turku,"VTM, kv-koordinaattori",2350,0,Piia Hannele,5000,14070,1000,SDP,14500,0,2700,Suomen Sosialidemokraattinen Puolue,Varsinais-Suomen vaalipiiri,Elo,4200,0
+Raisio,erikoissairaanhoitaja,0,0,Satu-Maarit,0,1000,0,SDP,1000,0,1000,Suomen Sosialidemokraattinen Puolue,Varsinais-Suomen vaalipiiri,Hildén,0,0
+Turku,"ekonomie studerande, kauppatieteiden opiskelija",0,0,Niklas Jan Anders,0,1040,0,RKP,1040,0,0,Suomen ruotsalainen kansanpuolue r.p.,Varsinais-Suomen vaalipiiri,Mannfolk,40,1000
+Kaarina,"valtiotieteen maisteri, politices magister",6000,0,Mikael Sebastian,1000,14600,200,SDP,14600,6000,900,Suomen Sosialidemokraattinen Puolue,Varsinais-Suomen vaalipiiri,Hiltunen,500,0
+Salo,yrittäjä,0,0,Sanna Maria,2000,2000,0,PS,2000,0,0,Perussuomalaiset r.p.,Varsinais-Suomen vaalipiiri,Leivonen,0,0
+Turku,"sähköasentaja, luottamusmies",0,0,Antti Kullervo,1500,1500,0,PS,1500,0,0,Perussuomalaiset r.p.,Varsinais-Suomen vaalipiiri,Hautamäki,0,0
+Uusikaupunki,opiskelija,0,0,Veijo Samuli,700,750,0,PS,750,0,0,Perussuomalaiset r.p.,Varsinais-Suomen vaalipiiri,Nummi,50,0
+Turku,"opiskelija, LuK",0,0,Jetro Joonatan,100,150,0,PIR,150,0,0,Piraattipuolue r.p.,Varsinais-Suomen vaalipiiri,Vesti,50,0
+Turku,palomies,0,0,Erkki Veikko Juhani,2000,0,0,PS,2000,0,0,Perussuomalaiset r.p.,Varsinais-Suomen vaalipiiri,Koskinen,0,0
+Turku,"levyseppä, ylioppilas",0,0,Matias Rafael Johannes,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Varsinais-Suomen vaalipiiri,Pajulahti,0,0
+Turku,opiskelija,0,0,Tuomas Mikael,200,200,0,PIR,200,0,0,Piraattipuolue r.p.,Varsinais-Suomen vaalipiiri,Ruuhijärvi,0,0
+Turku,"insinööriopiskelija (amk), automaatioasentaja",0,0,Jukka Tapio,280,350,0,PIR,70,0,0,Piraattipuolue r.p.,Varsinais-Suomen vaalipiiri,Tuohimetsä,70,0
+Salo,yrittäjä,0,0,Petri Kalevi,500,500,0,PIR,0,0,0,Piraattipuolue r.p.,Varsinais-Suomen vaalipiiri,Lagus,0,0
+Kaarina,"pääsihteeri, toimitusjohtaja",0,0,Oskar Kimmo Mikael,4000,11000,2150,KOK,11000,0,300,Kansallinen Kokoomus r.p.,Varsinais-Suomen vaalipiiri,Hollmén,4550,0
+Turku,atk-suunnittelija,0,0,Maria Birgitta,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Varsinais-Suomen vaalipiiri,Pinjanainen,0,0
+Turku,datanomi,0,0,Janne Asko Tapani,750,750,0,PIR,750,0,0,Piraattipuolue r.p.,Varsinais-Suomen vaalipiiri,Karvinen,0,0
+Paimio,kirkkoherra,440,0,Jouni Juhani,6030,11580,1685,KESK,11580,0,1500,Suomen Keskusta r.p.,Varsinais-Suomen vaalipiiri,Lehikoinen,925,1000
+Turku,alkoholiylitarkastaja,0,0,Heikki Kalevi,2000,5000,0,KESK,5000,0,0,Suomen Keskusta r.p.,Varsinais-Suomen vaalipiiri,Mäki,2000,1000
+Helsinki,"koulutussuunnittelija, YTM",0,0,Taru,950,1770,0,VIHR,1770,0,220,Vihreä liitto r.p.,Pohjois-Karjalan vaalipiiri,Anttonen,600,0
+Joensuu,"yhteiskuntapolitiikan opiskelija, kaupunginvaltuutettu",0,0,Roope,1400,1560,0,VIHR,1560,0,0,Vihreä liitto r.p.,Pohjois-Karjalan vaalipiiri,Tahvanainen,160,0
+Joensuu,"terveystieteiden maisteri, lehtori",0,0,Mikko,1850,2200,0,VIHR,2200,0,0,Vihreä liitto r.p.,Pohjois-Karjalan vaalipiiri,Häkkinen,350,0
+Joensuu,hallintotieteiden ylioppilas,0,0,Jussi,415,1450,0,VIHR,1450,0,0,Vihreä liitto r.p.,Pohjois-Karjalan vaalipiiri,Airaksinen,1035,0
+Joensuu,"yliopistonlehtori, KT",0,0,Risto,500,500,0,VIHR,500,0,0,Vihreä liitto r.p.,Pohjois-Karjalan vaalipiiri,Ikonen,0,0
+Joensuu,"seurakehittäjä, FM",0,0,Krista,8000,10220,0,VIHR,10220,0,220,Vihreä liitto r.p.,Pohjois-Karjalan vaalipiiri,Mikkonen,2000,0
+Ilomantsi,"toimittaja, muusikko",0,0,Kari,450,500,0,VIHR,500,0,0,Vihreä liitto r.p.,Pohjois-Karjalan vaalipiiri,Rissanen,50,0
+Joensuu,"teatteriohjaaja, FM",0,0,Hannele,150,150,0,VIHR,150,0,0,Vihreä liitto r.p.,Pohjois-Karjalan vaalipiiri,Autti,0,0
+Joensuu,ympäristöteknologian opiskelija,0,0,Johannes,125,150,0,VIHR,150,0,0,Vihreä liitto r.p.,Pohjois-Karjalan vaalipiiri,Hänninen,25,0
+Polvijärvi,"mehiläistarhuri AMK, musiikkiterapeutti B.M.",0,0,Christiana,900,900,0,VIHR,900,0,0,Vihreä liitto r.p.,Pohjois-Karjalan vaalipiiri,Harle,0,0
+Helsinki,"erityislastentarhanopettaja, toiminnanohjaaja",0,0,Inka,280,500,0,VIHR,500,0,220,Vihreä liitto r.p.,Pohjois-Karjalan vaalipiiri,Kivi,0,0
+Joensuu,sekatyömies,0,0,Juha,320,500,0,VIHR,500,0,0,Vihreä liitto r.p.,Pohjois-Karjalan vaalipiiri,Hakulinen,180,0
+Joensuu,pääsihteeri,0,0,Minttu,963,1965,0,VIHR,1965,0,0,Vihreä liitto r.p.,Pohjois-Karjalan vaalipiiri,Massinen,1002,0
+Kitee,"kirvesmies, kolumnisti",1000,0,Auvo Isto Juhani,2600,5000,0,VAS,5000,0,0,Vasemmistoliitto r.p.,Pohjois-Karjalan vaalipiiri,Rouvinen,1400,0
+Kontiolahti,atk-suunnittelija,0,0,Tuomo Erik,250,1000,0,VAS,1000,0,0,Vasemmistoliitto r.p.,Pohjois-Karjalan vaalipiiri,Tormulainen,750,0
+Outokumpu,koneenasentaja,0,0,Timo Olavi,0,6600,0,VAS,6600,0,0,Vasemmistoliitto r.p.,Pohjois-Karjalan vaalipiiri,Vänskä,0,0
+Joensuu,yhteiskuntatieteiden kandidaatti,1700,0,Milla Marianne,100,2000,0,VAS,2000,1900,0,Vasemmistoliitto r.p.,Pohjois-Karjalan vaalipiiri,Pyykkönen,200,0
+Joensuu,kirvesmies,2000,0,Heikki Petteri,1000,0,0,VAS,4000,0,500,Vasemmistoliitto r.p.,Pohjois-Karjalan vaalipiiri,Tahvanainen,500,0
+Joensuu,"YTT, pääluottamusmies",0,0,Antero Olavi,2010,2200,0,VAS,2200,0,0,Vasemmistoliitto r.p.,Pohjois-Karjalan vaalipiiri,Puhakka,190,0
+Juuka,"opiskelija, toimistosihteeri",500,0,Ritva Johanna,500,3200,0,VAS,3200,0,200,Vasemmistoliitto r.p.,Pohjois-Karjalan vaalipiiri,Väyrynen,2000,0
+Joensuu,yhteiskuntatieteiden ylioppilas,1350,0,Jaakko Juhani,0,2250,0,VAS,2250,0,0,Vasemmistoliitto r.p.,Pohjois-Karjalan vaalipiiri,Turunen,900,0
+Joensuu,"suurtalouskokki, yhteiskuntatieteiden ylioppilas",1100,0,Antti Juhani,0,1100,0,VAS,1100,0,0,Vasemmistoliitto r.p.,Pohjois-Karjalan vaalipiiri,Saarelainen,0,0
+Liperi,"KM, luokanopettaja",0,0,Sanna Marja Annukka,3000,7000,0,SDP,7000,0,3000,Suomen Sosialidemokraattinen Puolue,Pohjois-Karjalan vaalipiiri,Parkkinen,1000,0
+Nurmes,toimitsija,6245,0,Ritva Tuulikki,0,7955,0,SDP,7955,0,1000,Suomen Sosialidemokraattinen Puolue,Pohjois-Karjalan vaalipiiri,Rautiainen,710,0
+Joensuu,opettaja,0,0,Pekka Tero Tuomas,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Pohjois-Karjalan vaalipiiri,Mustonen,0,0
+Joensuu,yhteiskuntatieteiden maisteri,3300,0,Riitta Mailis Mirjami,10000,17000,0,SDP,17000,0,3500,Suomen Sosialidemokraattinen Puolue,Pohjois-Karjalan vaalipiiri,Myller,200,0
+Liperi,"opiskelija, YTK",0,0,Jussi Heikki Oskari,5000,11000,0,KESK,11000,0,3000,Suomen Keskusta r.p.,Pohjois-Karjalan vaalipiiri,Sallinen,3000,0
+Tornio,terveyskeskuslääkäri,0,0,Liisa,1200,1667,0,VIHR,1667,0,467,Vihreä liitto r.p.,Lapin vaalipiiri,Virtanen,0,0
+Rovaniemi,ammattilukion abiturientti,0,0,Miikka,250,500,0,VIHR,500,0,250,Vihreä liitto r.p.,Lapin vaalipiiri,Keränen,0,0
+Kemijärvi,psykiatrian erikoislääkäri,0,0,Mirja,4528,5000,0,VIHR,5000,0,466,Vihreä liitto r.p.,Lapin vaalipiiri,Remes,5,0
+Joensuu,"terveystieteiden tohtori, työyhteisökouluttaja",0,0,Merja Elina,10250,14000,0,SDP,14000,0,3500,Suomen Sosialidemokraattinen Puolue,Pohjois-Karjalan vaalipiiri,Mäkisalo-Ropponen,250,0
+Inari,"lehtori, eläkeläinen",0,0,Esko,5000,5000,0,VIHR,0,0,0,Vihreä liitto r.p.,Lapin vaalipiiri,Sirjola,0,0
+Rovaniemi,"filosofian maisteri, kieltenopettaja",0,0,Sari,300,300,0,VIHR,300,0,0,Vihreä liitto r.p.,Lapin vaalipiiri,Ylipulli,0,0
+Rovaniemi,"tutkija, yhteiskuntatieteiden maisteri",0,3000,Mika,1000,5972,0,VIHR,6055,0,0,Vihreä liitto r.p.,Lapin vaalipiiri,Flöjt,2055,0
+Tornio,lehtori,0,0,Matti,3000,3500,0,VIHR,3500,0,400,Vihreä liitto r.p.,Lapin vaalipiiri,Korteniemi,100,0
+Rovaniemi,"pastori, perheasiain neuvottelukeskuksen johtaja",0,0,Sari,450,700,0,VIHR,700,0,250,Vihreä liitto r.p.,Lapin vaalipiiri,Arponen,0,0
+"Kautokeino, Norja","opettaja, muusikko",0,0,Niko,250,255,0,VIHR,255,0,0,Vihreä liitto r.p.,Lapin vaalipiiri,Valkeapää,5,0
+Enontekiö,yhteiskuntatieteiden ylioppilas,0,0,Birgitta,150,150,0,VIHR,150,0,0,Vihreä liitto r.p.,Lapin vaalipiiri,Eira,0,0
+Kemi,ammattikorkeakoulun lehtori,0,0,Tuula,1503,1969,0,VIHR,1969,0,466,Vihreä liitto r.p.,Lapin vaalipiiri,Sykkö,0,0
+Espoo,"liiketoimintayksikön johtaja, opiskelija",0,0,Antti,600,1120,0,VIHR,1165,0,250,Vihreä liitto r.p.,Lapin vaalipiiri,Brunni,315,0
+Inari,"media-assistentti, yrittäjä",0,0,Eetu,50,255,0,VIHR,255,0,100,Vihreä liitto r.p.,Lapin vaalipiiri,Suominen,55,0
+Kemi,catering-alan palveluvastaava,0,0,Doris,0,1086,0,VIHR,1086,0,686,Vihreä liitto r.p.,Lapin vaalipiiri,Tuohimaa,400,0
+Kemi,"opiskelija, kasvatustieteen ylioppilas",1000,0,Markus Tapani,0,0,0,VAS,1147,0,0,Vasemmistoliitto r.p.,Lapin vaalipiiri,Korjonen,147,0
+Tornio,nuoriso-ohjaaja,1500,0,Jan-Mikael,0,6500,0,VAS,6500,0,5000,Vasemmistoliitto r.p.,Lapin vaalipiiri,Hakomäki,0,0
+Rovaniemi,"huilunsoitonopettaja, opiskelija",0,0,Laura Maria Aleksandra,0,900,0,VAS,900,0,600,Vasemmistoliitto r.p.,Lapin vaalipiiri,Raudaskoski,300,0
+Simo,terveydenhoitaja,0,0,Helvi Kyllikki,350,1500,0,VAS,1150,0,1000,Vasemmistoliitto r.p.,Lapin vaalipiiri,Hamari,150,0
+Kemijärvi,kansanedustaja,5000,10000,Markus,0,25000,0,VAS,25000,0,10000,Vasemmistoliitto r.p.,Lapin vaalipiiri,Mustajärvi,0,0
+Pello,suunnittelija,650,0,Maija Johanna,395,1946,0,SDP,1946,0,0,Suomen Sosialidemokraattinen Puolue,Lapin vaalipiiri,Oksman,901,0
+Rovaniemi,palveluneuvoja,2000,0,Laila Marketta,600,3600,0,VAS,3600,0,600,Vasemmistoliitto r.p.,Lapin vaalipiiri,Tuisku,400,0
+Kemi,insinööriopiskelija,10000,0,Sari Johanna,0,26210,0,VAS,26760,6500,4000,Vasemmistoliitto r.p.,Lapin vaalipiiri,Moisanen,4750,1510
+Rovaniemi,ylilääkäri,0,0,Vesa Antti Johannes,10000,12000,0,SDP,12000,0,1000,Suomen Sosialidemokraattinen Puolue,Lapin vaalipiiri,Liikkanen,1000,0
+Rovaniemi,"DJ, musiikkituottaja",0,0,Jarno Mikael,5,80,75,M11,80,0,0,Muutos 2011 r.p.,Lapin vaalipiiri,Siivola,0,0
+Siuntio,"företagare, toimitusjohtaja",0,0,Kristian,4500,7000,0,VIHR,7000,0,300,Vihreä liitto r.p.,Uudenmaan vaalipiiri,von Essen,2200,0
+Savukoski,"varatuomari, agrologi",600,20000,Eeva Maria Kustaava,6000,40000,0,KESK,40000,0,400,Suomen Keskusta r.p.,Lapin vaalipiiri,Maijala,13000,0
+Kirkkonummi,"terveystieteiden maisteri, opettaja",0,0,Pauliina,34750,35700,0,VIHR,36000,0,1250,Vihreä liitto r.p.,Uudenmaan vaalipiiri,Juntunen,0,0
+Espoo,"diplomi-insinööri, kansanedustaja",416,0,Johanna,22361,28542,0,VIHR,28542,0,490,Vihreä liitto r.p.,Uudenmaan vaalipiiri,Karimäki,5274,0
+Raasepori,"marinbiolog, dosentti",0,0,Marko,4000,10500,300,VIHR,10500,0,2500,Vihreä liitto r.p.,Uudenmaan vaalipiiri,Reinikainen,3700,0
+Espoo,"tulkki, konsultti",0,0,Said,700,745,0,VIHR,865,0,100,Vihreä liitto r.p.,Uudenmaan vaalipiiri,Yusuf,65,0
+Espoo,"tekniikan tohtori, erikoistutkija",0,0,Jari,8423,9663,0,VIHR,9663,0,1020,Vihreä liitto r.p.,Uudenmaan vaalipiiri,Ihonen,220,0
+Helsinki,"kansanedustaja, oikeusministeri",500,0,Tuija,22780,26000,0,VIHR,26000,0,220,Vihreä liitto r.p.,Uudenmaan vaalipiiri,Brax,2500,0
+Loviisa,luomuyrittäjä,0,0,Janne,600,1400,250,VIHR,1400,0,450,Vihreä liitto r.p.,Uudenmaan vaalipiiri,Länsipuro,150,0
+Askola,maatalous-metsätieteiden ylioppilas,0,0,Reija-Riikka,590,1439,0,VIHR,1439,0,849,Vihreä liitto r.p.,Uudenmaan vaalipiiri,Stenbäck,0,0
+Porvoo,"sarjakuvapiirtäjä, serietecknare",0,5000,Kaisa,3830,16000,0,VIHR,16000,0,5670,Vihreä liitto r.p.,Uudenmaan vaalipiiri,Leka,1500,0
+Järvenpää,"rehtori, pianonsoitonopettaja",0,5000,Kaisa,610,12,0,VIHR,12,0,2500,Vihreä liitto r.p.,Uudenmaan vaalipiiri,Saarikorpi,4000,0
+Espoo,koreografi,0,0,Tuomo,2630,3100,0,VIHR,3100,0,100,Vihreä liitto r.p.,Uudenmaan vaalipiiri,Railo,100,270
+Turku,pastori,0,0,Kari,1590,1650,0,VIHR,1650,0,0,Vihreä liitto r.p.,Uudenmaan vaalipiiri,Kanala,60,0
+Kerava,"terveydenhoitaja, sairaanhoitaja",125,0,Kirsi,9000,20200,1628,VIHR,20200,1745,6220,Vihreä liitto r.p.,Uudenmaan vaalipiiri,Kanerva-Poranen,1482,0
+Vantaa,"erityisopettaja, kansanedustaja",0,0,Timo,25578,26843,0,VIHR,26843,0,0,Vihreä liitto r.p.,Uudenmaan vaalipiiri,Juurikkala,1265,0
+Helsinki,tutkimusprofessori,0,0,Heikki,7000,9345,0,VIHR,10000,0,0,Vihreä liitto r.p.,Uudenmaan vaalipiiri,Hiilamo,3000,0
+Vantaa,"kasvatustieteiden maisteri, päivähoidon suunnittelija",0,0,Mikko,4285,5850,812,VIHR,5850,0,88,Vihreä liitto r.p.,Uudenmaan vaalipiiri,Mäkelä,665,0
+Vantaa,"filosofian maisteri, tiedottaja MTi",0,0,Erja,8800,18635,250,VIHR,18635,0,340,Vihreä liitto r.p.,Uudenmaan vaalipiiri,Hakkarainen,9245,0
+Espoo,"maatalous- ja metsätieteiden maisteri, kunta-asioiden sihtee",0,0,Tiina,6000,27560,0,VIHR,27560,0,470,Vihreä liitto r.p.,Uudenmaan vaalipiiri,Elo,21090,0
+Vantaa,"ympäristötekniikan Master of Science, kouluttaja",2900,0,Sirpa Siru,14000,23000,0,VIHR,23000,0,100,Vihreä liitto r.p.,Uudenmaan vaalipiiri,Kauppinen,6000,0
+Vantaa,"maa- ja metsätaloustieteiden maisteri, metsänhoitaja",0,480,Anniina,8750,12750,300,VIHR,12750,0,220,Vihreä liitto r.p.,Uudenmaan vaalipiiri,Kostilainen,3000,0
+Hyvinkää,toimittaja,0,0,Helena,1200,3398,0,VIHR,3719,15,2069,Vihreä liitto r.p.,Uudenmaan vaalipiiri,Lustig,435,0
+Sipoo,"biologi, ympäristötarkastaja",0,0,Sini-Pilvi,300,2145,1000,VIHR,2390,0,620,Vihreä liitto r.p.,Uudenmaan vaalipiiri,Saarnio,470,0
+Helsinki,"näyttelijä, yrittäjä",0,0,Jani,3282,11400,400,VIHR,11400,0,0,Vihreä liitto r.p.,Uudenmaan vaalipiiri,Toivola,7718,0
+Helsinki,"tiedetoimittaja, arkkitehti",500,0,Pasi,1000,3000,0,VIHR,3000,0,0,Vihreä liitto r.p.,Uudenmaan vaalipiiri,Toiviainen,1500,0
+Kirkkonummi,"sovittelija, terapeut",0,0,Jens,1400,3669,0,VIHR,3669,0,1650,Vihreä liitto r.p.,Uudenmaan vaalipiiri,Gellin,619,0
+Vantaa,opiskelija,500,0,Juhis,2030,4975,0,VIHR,4975,0,0,Vihreä liitto r.p.,Uudenmaan vaalipiiri,Ranta,2445,0
+Espoo,opiskelija,0,1800,Satu,0,2270,200,VIHR,2380,0,270,Vihreä liitto r.p.,Uudenmaan vaalipiiri,Raudasoja,120,0
+Karkkila,"artesaani, tukiperheäiti",0,0,Anu,500,1300,0,VIHR,1300,0,800,Vihreä liitto r.p.,Uudenmaan vaalipiiri,Frosterus,0,0
+Espoo,"tekniikan tohtori, kansanedustaja",0,0,Jyrki,11480,15000,250,VIHR,15000,0,270,Vihreä liitto r.p.,Uudenmaan vaalipiiri,Kasvi,3000,0
+Nummi-Pusula,"yhteiskuntatieteiden maisteri, espanjankielen opettaja",0,0,Ana Maria,740,800,0,VIHR,800,0,0,Vihreä liitto r.p.,Uudenmaan vaalipiiri,Gutiérrez Sorainen,60,0
+Espoo,"apulaisrehtori, opettaja",0,0,Inka,3250,9150,1800,VIHR,9150,0,600,Vihreä liitto r.p.,Uudenmaan vaalipiiri,Hopsu,3500,0
+Lohja,"sihteeri, opiskelija",600,0,Paula,230,2200,0,VIHR,2200,0,1620,Vihreä liitto r.p.,Uudenmaan vaalipiiri,Nordström,200,0
+Askola,teollisuustyöntekijä,4000,0,Tero Martti,500,4700,0,VAS,4700,0,0,Vasemmistoliitto r.p.,Uudenmaan vaalipiiri,Aaltonen,200,0
+Nurmijärvi,"sairaanhoitaja, työnohjaaja",0,0,Marja Leena,0,2000,0,VAS,2000,0,1900,Vasemmistoliitto r.p.,Uudenmaan vaalipiiri,Tuomisto,100,0
+Tampere,"puheenjohtaja, yrittäjä",0,0,Kalevi,700,700,0,VP,700,0,0,Vapauspuolue (VP) - Suomen tulevaisuus r.p.,Pirkanmaan vaalipiiri,Helo,0,0
+Tampere,"vahtimestari, järjestyksenvalvoja",0,0,Arja Johanna,200,200,0,VP,200,0,0,Vapauspuolue (VP) - Suomen tulevaisuus r.p.,Pirkanmaan vaalipiiri,Hirvenoja,0,0
+Tampere,tekniikan ylioppilas,0,0,Jukka Matti,200,200,0,VP,0,0,0,Vapauspuolue (VP) - Suomen tulevaisuus r.p.,Pirkanmaan vaalipiiri,Raiskio,0,0
+Tampere,konesähköasentaja,0,0,Timo Eljas,300,300,0,VP,300,0,0,Vapauspuolue (VP) - Suomen tulevaisuus r.p.,Pirkanmaan vaalipiiri,Tukia,0,0
+Nokia,grilli-elintarvikemyyjä,0,0,Tarja Marjaana,200,200,0,VP,200,0,0,Vapauspuolue (VP) - Suomen tulevaisuus r.p.,Pirkanmaan vaalipiiri,Juvonen,0,0
+Tampere,artesaani,0,0,Petra Johanna,180,180,0,VP,180,0,0,Vapauspuolue (VP) - Suomen tulevaisuus r.p.,Pirkanmaan vaalipiiri,Hietalahti,0,0
+Nokia,yrittäjä,0,0,Keijo Veikko Juhani,800,800,0,VP,800,0,0,Vapauspuolue (VP) - Suomen tulevaisuus r.p.,Pirkanmaan vaalipiiri,Kirstua,0,0
+Tampere,"yrittäjä, kouluttaja",0,0,Arja-Liisa,300,300,0,VP,300,0,0,Vapauspuolue (VP) - Suomen tulevaisuus r.p.,Pirkanmaan vaalipiiri,Kangas,0,0
+Tampere,"arkkitehti, kaupunkisuunnittelija",0,0,Kirsikka,6700,8000,0,VIHR,8000,0,0,Vihreä liitto r.p.,Pirkanmaan vaalipiiri,Siik,1300,0
+Tampere,"gynekologi, lääketieteen lisensiaatti",0,0,Aino,2641,3466,0,VIHR,3466,0,0,Vihreä liitto r.p.,Pirkanmaan vaalipiiri,Kajan,825,0
+Tampere,"diplomi-insinööri, koripallovalmentaja",0,0,Pieti,850,6300,4550,VIHR,6300,0,0,Vihreä liitto r.p.,Pirkanmaan vaalipiiri,Poikola,900,0
+Sastamala,"biologi, tutkija",0,0,Paula Eveliina,9661,11206,280,VIHR,11206,0,1000,Vihreä liitto r.p.,Pirkanmaan vaalipiiri,Asikainen,295,0
+Ylöjärvi,"terveystieteiden maisteri, kehittämiskoordinaattori",0,0,Minna,4244,9468,478,VIHR,9468,0,2232,Vihreä liitto r.p.,Pirkanmaan vaalipiiri,Sorsa,2513,0
+Tampere,"ylikonstaapeli, yhteiskuntatieteiden maisteri",0,0,Anna-Kaisa,4387,9641,0,VIHR,9641,0,230,Vihreä liitto r.p.,Pirkanmaan vaalipiiri,Heinämäki,5024,0
+Pirkkala,"opiskelija, tekniikan kandidaatti",0,0,Riku,1000,4900,140,VIHR,4900,0,1560,Vihreä liitto r.p.,Pirkanmaan vaalipiiri,Merikoski,2200,0
+Tampere,"kansanedustaja, yhteiskuntatieteiden maisteri",0,0,Oras,18669,20129,0,VIHR,20129,0,0,Vihreä liitto r.p.,Pirkanmaan vaalipiiri,Tynkkynen,1245,0
+Tampere,"opiskelija, hallintotieteiden kandidaatti",0,0,Hanna,1000,4020,500,VIHR,4020,0,220,Vihreä liitto r.p.,Pirkanmaan vaalipiiri,Hakko,2300,0
+Tampere,"kehittämispäällikkö, sosiaalityöntekijä",0,0,Mervi,5900,9288,90,VIHR,9288,0,638,Vihreä liitto r.p.,Pirkanmaan vaalipiiri,Janhunen,2750,0
+Bryssel,Senior Climate Policy Officer,0,0,Ulriikka,4403,8988,0,VIHR,8988,0,0,Vihreä liitto r.p.,Pirkanmaan vaalipiiri,Aarnio,4585,0
+Lempäälä,"perhetyöntekijä, pariterapeutti",0,0,Kirsi,2000,4820,140,VIHR,4820,0,2249,Vihreä liitto r.p.,Pirkanmaan vaalipiiri,Jokila,430,0
+Kuopio,"YTM, toiminnanjohtaja",0,0,Minna Maria,442,692,0,VIHR,692,0,0,Vihreä liitto r.p.,Pohjois-Savon vaalipiiri,Heikka,250,0
+Kuopio,"kaupunginvaltuutettu, lukion lehtori",0,0,Hetti Haria,12000,15000,0,VIHR,15000,0,2200,Vihreä liitto r.p.,Pohjois-Savon vaalipiiri,Rytsy,225,0
+Maaninka,"FM, agrologi (AMK)",0,0,Liisa Inkeri,600,1153,0,VIHR,1153,0,553,Vihreä liitto r.p.,Pohjois-Savon vaalipiiri,Pietikäinen,0,0
+Siilinjärvi,"opiskelija, maakuntavaltuuston jäsen",0,0,Iiro-Pekka,436,1824,0,VIHR,1824,0,333,Vihreä liitto r.p.,Pohjois-Savon vaalipiiri,Airola,1055,0
+Lapinlahti,"filosofian maisteri, metsäasiantuntija",0,1000,Harri Markus Olavi,3967,5397,0,VIHR,5397,0,0,Vihreä liitto r.p.,Pohjois-Savon vaalipiiri,Hölttä,430,0
+Kuopio,opiskelija,0,0,Tero Tapani,640,750,0,VIHR,750,0,0,Vihreä liitto r.p.,Pohjois-Savon vaalipiiri,Kankaanperä,110,0
+Kuopio,"luonnontieteiden ylioppilas, ympäristötieteiden opiskelija",0,0,Sara Irene,1150,7300,6000,VIHR,7300,0,0,Vihreä liitto r.p.,Pohjois-Savon vaalipiiri,Sajaniemi,150,0
+Siilinjärvi,"salkunhoitaja, kauppatieteiden kandidaatti",0,0,Toni Kristian,910,1343,0,VIHR,1343,0,333,Vihreä liitto r.p.,Pohjois-Savon vaalipiiri,Juvonen,100,0
+Kuopio,sihteeri,0,0,Eija Anneli,410,460,0,VIHR,0,0,0,Vihreä liitto r.p.,Pohjois-Savon vaalipiiri,Luostarinen,50,0
+Kuopio,"dosentti, yliopiston lehtori",0,0,Erkki Antero,950,1000,0,VIHR,1000,0,0,Vihreä liitto r.p.,Pohjois-Savon vaalipiiri,Björk,50,0
+Iisalmi,"FM, hankeohjaaja",0,0,Mika Petri,830,1530,0,VIHR,1530,0,200,Vihreä liitto r.p.,Pohjois-Savon vaalipiiri,Karhu,500,0
+Kuopio,"YTM, sosiaalityöntekijä",0,0,Heidi Kaarina Annukka,2000,9000,500,VAS,9000,0,5500,Vasemmistoliitto r.p.,Pohjois-Savon vaalipiiri,Komulainen,500,500
+Kuopio,"tekniikan tohtori, filosofian maisteri",0,0,Harri Kristian,5800,6000,0,VIHR,6000,0,0,Vihreä liitto r.p.,Pohjois-Savon vaalipiiri,Auvinen,160,0
+Lapinlahti,toimittaja,0,0,Pia Riitta Maria,600,1000,400,VAS,0,0,0,Vasemmistoliitto r.p.,Pohjois-Savon vaalipiiri,Valkonen,0,0
+Kuopio,"FM, amanuenssi",0,0,Marianna Aino Elisa,3950,5700,0,VIHR,5700,0,0,Vihreä liitto r.p.,Pohjois-Savon vaalipiiri,Falkenberg,1750,0
+Leppävirta,"VTM, koulutuspäällikkö",300,0,Hanna-Kaisa,1100,8600,0,VAS,8600,0,2000,Vasemmistoliitto r.p.,Pohjois-Savon vaalipiiri,Korhonen,5200,0
+Kuopio,"kansanedustaja, yhteiskuntatieteiden kandidaatti",600,0,Erkki Alvar,9950,18400,800,VAS,18400,3300,3700,Vasemmistoliitto r.p.,Pohjois-Savon vaalipiiri,Virtanen,50,0
+Varkaus,"rakennusmies, luottamusmies",6800,0,Veli Matti,3000,0,0,VAS,13900,0,2000,Vasemmistoliitto r.p.,Pohjois-Savon vaalipiiri,Semi,600,1500
+Kuopio,kulttuuriteknikko,0,0,Kari Ensio,0,3300,0,VAS,3300,0,3300,Vasemmistoliitto r.p.,Pohjois-Savon vaalipiiri,Turunen,0,0
+Varkaus,"koneasentaja, varapääluottamusmies",4450,0,Timo Paavo Johannes,1757,10192,0,SDP,10192,600,450,Suomen Sosialidemokraattinen Puolue,Pohjois-Savon vaalipiiri,Suhonen,1948,0
+Kuopio,"rovasti, teologian maisteri",0,0,Kimmo Kyösti Väinämö,11000,12000,0,PS,12000,0,0,Perussuomalaiset r.p.,Pohjois-Savon vaalipiiri,Kivelä,1000,0
+Lapinlahti,"yht.yo, opiskelija",0,0,Juha-Pekka Aleksanteri,1500,11000,0,KESK,11000,500,2500,Suomen Keskusta r.p.,Pohjois-Savon vaalipiiri,Rusanen,6500,0
+Kuopio,kirvesmies,0,0,Esa Jaakko Antero,390,390,0,M11,390,0,0,Muutos 2011 r.p.,Pohjois-Savon vaalipiiri,Nyyssönen,0,0
+Kuopio,valtiotieteiden kandidaatti (VTK),2400,0,Niko-Tapio Rauno,0,11728,0,SDP,11280,0,6000,Suomen Sosialidemokraattinen Puolue,Pohjois-Savon vaalipiiri,Korte,1740,800
+Kuopio,"filosofian tohtori, informaatioanalyytikko",0,0,Aki Juhani,560,590,0,M11,590,0,0,Muutos 2011 r.p.,Pohjois-Savon vaalipiiri,Järvinen,30,0
+Nivala,metsäkoneasentaja,0,0,Jari Markku Juhani,108,110,0,VP,0,0,0,Vapauspuolue (VP) - Suomen tulevaisuus r.p.,Oulun vaalipiiri,Kaarlela,1,0
+Siikajoki,"pappi, teologian maisteri",0,0,Pekka,3000,4000,1000,VIHR,0,0,0,Vihreä liitto r.p.,Oulun vaalipiiri,Elonheimo,0,0
+Haukipudas,"yhteiskuntatieteiden maisteri, sosiodraamaohjaaja",0,0,Terttu,1800,2050,0,VIHR,2050,0,200,Vihreä liitto r.p.,Oulun vaalipiiri,Kuusela,50,0
+Oulu,"emeritusprofessori, kansanedustaja",800,0,Erkki,21900,23200,0,VIHR,23200,0,0,Vihreä liitto r.p.,Oulun vaalipiiri,Pulliainen,500,0
+Oulu,"opiskelija, filosofian ylioppilas",0,0,Janne,612,1617,0,VIHR,1005,0,0,Vihreä liitto r.p.,Oulun vaalipiiri,Hakkarainen,1005,0
+Kempele,"yhteiskuntatieteiden maisteri, palvelusihteeri",0,0,Sirkku,120,1929,0,VIHR,1929,0,809,Vihreä liitto r.p.,Oulun vaalipiiri,Asheesh,1000,0
+Kajaani,opiskelija,200,0,Marika,500,1175,0,VIHR,1175,0,175,Vihreä liitto r.p.,Oulun vaalipiiri,Kemppainen,300,0
+Oulu,filosofian maisteri,0,0,Otto,1634,3500,0,VIHR,3500,0,1000,Vihreä liitto r.p.,Oulun vaalipiiri,Simola,865,0
+Siikalatva,maanviljelijä,0,0,Sakari,480,2050,0,VIHR,2050,0,470,Vihreä liitto r.p.,Oulun vaalipiiri,Hankonen,1100,0
+Oulu,luonnontieteiden ylioppilas,0,0,Miia,748,3540,0,VIHR,0,0,2792,Vihreä liitto r.p.,Oulun vaalipiiri,Hirsikangas,0,0
+Oulunsalo,tietoliikenneinsinööri,335,0,Latekoe,1243,2203,0,VIHR,2203,0,500,Vihreä liitto r.p.,Oulun vaalipiiri,Lawson Hellu,125,0
+Kalajoki,"biologian ja maantiedon opettaja, filosofian maisteri",20,0,Hanna,3210,9000,0,VIHR,9000,0,1000,Vihreä liitto r.p.,Oulun vaalipiiri,Halmeenpää,4770,0
+Suomussalmi,maaseudun kehittäjä,0,1000,Juhani,1800,2000,0,VIHR,2000,0,100,Vihreä liitto r.p.,Oulun vaalipiiri,Kela,0,0
+Oulu,"filosofian maisteri, liiketoimintajohtaja",0,0,Marja,1280,1500,0,VIHR,1500,0,220,Vihreä liitto r.p.,Oulun vaalipiiri,Lähde,0,0
+Oulu,yhteisötyöntekijä,0,0,Aruna,679,679,0,VIHR,679,0,0,Vihreä liitto r.p.,Oulun vaalipiiri,Somani,0,0
+Oulu,"toimitusjohtaja, pelisuunnittelija",0,0,Jussi,0,0,0,VIHR,1500,0,0,Vihreä liitto r.p.,Oulun vaalipiiri,Autio,1160,0
+Oulu,"toimitusjohtaja, fysioterapeutti",0,0,Maarit,4200,4584,0,VIHR,4584,0,384,Vihreä liitto r.p.,Oulun vaalipiiri,Sihvonen,0,0
+Oulu,opiskelija,0,0,Hanna Maria Katariina,500,9500,0,VAS,9500,0,7000,Vasemmistoliitto r.p.,Oulun vaalipiiri,Sarkkinen,2000,0
+Kempele,"sosionomi, erityisohjaaja",500,00,Sirkka Liisa,5700,6700,00,VAS,6700,00,500,Vasemmistoliitto r.p.,Oulun vaalipiiri,Pinola,20,00
+Oulu,"kasvatustieteen maisteri, luokanopettaja",625,0,Satu,15000,20895,200,VIHR,20895,0,140,Vihreä liitto r.p.,Oulun vaalipiiri,Haapanen,4930,0
+Puolanka,"yrittäjä, toimitusjohtaja",0,0,Johan,500,500,0,VIHR,0,0,0,Vihreä liitto r.p.,Oulun vaalipiiri,Heino,0,0
+Oulu,päätoimittaja,0,0,Paavo Johannes,0,5000,0,VAS,5000,3000,0,Vasemmistoliitto r.p.,Oulun vaalipiiri,Heinonen,0,0
+Oulu,"palvelupäällikkö, puolueen varapuheenjohtaja",9300,5000,Risto Olavi,3000,31000,3998,VAS,34384,0,2075,Vasemmistoliitto r.p.,Oulun vaalipiiri,Kalliorinne,11011,0
+Kuusamo,luokanopettaja,500,0,Tarmo Tapani,0,2000,0,VAS,2000,0,1000,Vasemmistoliitto r.p.,Oulun vaalipiiri,Raatikainen,500,0
+Suomussalmi,"kansanedustaja, bioanalyytikko",5000,0,Merja Sinikka,10000,15000,0,VAS,15000,0,0,Vasemmistoliitto r.p.,Oulun vaalipiiri,Kyllönen,0,0
+Oulu,"filosofian maisteri, projektisuunnittelija",6000,15000,Tytti Johanna,0,29600,3000,SDP,29600,0,600,Suomen Sosialidemokraattinen Puolue,Oulun vaalipiiri,Tuppurainen,8000,0
+Oulu,"kouluttaja, entinen kansanedustaja",2000,0,Anne Päivi Aulikki,1500,8000,1000,VAS,8000,0,2000,Vasemmistoliitto r.p.,Oulun vaalipiiri,Huotari,1000,500
+Haukipudas,kirvesmies,6600,0,Jarmo Tuomas,0,8500,0,VAS,8500,0,1700,Vasemmistoliitto r.p.,Oulun vaalipiiri,Salo,200,0
+Kajaani,palveluasiantuntija,0,0,Jaana Anne Kristiina,700,1100,0,PS,1100,0,400,Perussuomalaiset r.p.,Oulun vaalipiiri,Sankilampi,0,0
+Vaala,nuorisotyönohjaaja,0,0,Jere Oskari,250,250,0,PIR,250,0,0,Piraattipuolue r.p.,Oulun vaalipiiri,Hakkarainen,0,0
+Oulu,"erikoissairaanhoitaja, tutkimuskoordinaattori",0,0,Pirjo Hannele,2000,2000,0,SDP,2000,0,0,Suomen Sosialidemokraattinen Puolue,Oulun vaalipiiri,Sirviö,0,0
+Kuusamo,opiskelija,0,0,Niko Kristian,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Oulun vaalipiiri,Mourujärvi,0,0
+Suomussalmi,rajavartija evp.,0,0,Yrjö Allan,14250,15000,0,PS,15000,0,0,Perussuomalaiset r.p.,Oulun vaalipiiri,Puurunen,750,0
+Tampere,filosofian maisteri,0,0,Juuso Elja-Eemeli,200,200,0,M11,200,0,0,Muutos 2011 r.p.,Oulun vaalipiiri,Raitala,0,0
+Inari,tuntiopettaja,0,0,Yrjö Väinö Ensio,50,50,0,PIR,0,0,0,Piraattipuolue r.p.,Oulun vaalipiiri,Mäntykangas,0,0
+Kempele,"diplomi-insinööri, yrittäjä",0,0,Juha Petri,15000,55000,25000,KESK,55000,0,0,Suomen Keskusta r.p.,Oulun vaalipiiri,Sipilä,15000,0
+Oulu,opiskelija,416,0,Lauri Oskari,160,579,0,M11,579,0,0,Muutos 2011 r.p.,Oulun vaalipiiri,Pekkarinen,0,0
+Vantaa,taksiautoilija,0,0,Ahti Johannes,1850,3500,0,VAS,3500,0,250,Vasemmistoliitto r.p.,Uudenmaan vaalipiiri,Dahl,1400,0
+Vantaa,"maatalous-  ja metsätieteiden maisteri, projektipäällikkö",6000,0,Kati Kyllikki,5000,15000,0,VAS,15000,0,2000,Vasemmistoliitto r.p.,Uudenmaan vaalipiiri,Tyystjärvi,2000,0
+Paltamo,"koordinaattori, hallintotieteiden maisteri",1000,15000,Anu Marisanna Kristiina,5000,40000,3500,KESK,40000,1500,10000,Suomen Keskusta r.p.,Oulun vaalipiiri,Jarva,4000,0
+Haapajärvi,"maanviljelijä, agrologi",2000,0,Sanna Kristiina,3000,39000,16500,KESK,39000,0,500,Suomen Keskusta r.p.,Oulun vaalipiiri,Isola,17000,0
+Siuntio,kenttämies,0,0,Veikko Antero,300,2000,0,VAS,1700,0,0,Vasemmistoliitto r.p.,Uudenmaan vaalipiiri,Tanskanen,0,0
+Vantaa,opiskelija,2550,0,Antti Pekka,100,2875,0,VAS,2875,225,0,Vasemmistoliitto r.p.,Uudenmaan vaalipiiri,Hartikainen,0,0
+Espoo,"sosionomi AMK, päihde- ja mielenterveystyöntekijä",0,0,Tiina Marjo Anniina,350,2390,0,VAS,2000,0,2000,Vasemmistoliitto r.p.,Uudenmaan vaalipiiri,Ahlfors,0,0
+Espoo,rehtori,0,0,Jukka Tapio,3000,4500,0,VAS,4500,0,1500,Vasemmistoliitto r.p.,Uudenmaan vaalipiiri,Karhula,0,0
+Vantaa,"pääluottamusmies, kirvesmies",3163,0,Jari Tapani,3500,7463,500,VAS,7463,0,0,Vasemmistoliitto r.p.,Uudenmaan vaalipiiri,Jääskeläinen,300,0
+Vihti,"valtiotieteiden  kandidaatti, opiskelija",750,0,Marissa Eveliina,860,2890,0,VAS,2890,0,0,Vasemmistoliitto r.p.,Uudenmaan vaalipiiri,Varmavuori,1280,0
+Nummi-Pusula,diplomi-insinööri,0,0,Sanna Johanna,100,200,0,VAS,0,0,0,Vasemmistoliitto r.p.,Uudenmaan vaalipiiri,Puranen,100,0
+Vantaa,"puolueen poliittinen sihteeri, tietotekniikan asentaja",3200,0,Jussi Antero,19800,26000,0,VAS,26000,0,500,Vasemmistoliitto r.p.,Uudenmaan vaalipiiri,Saramo,2500,0
+Espoo,kansanedustaja,9460,0,Kari Antero,15000,30000,0,VAS,30000,0,3540,Vasemmistoliitto r.p.,Uudenmaan vaalipiiri,Uotila,2000,0
+Mäntsälä,"luottamusmies, stuertti",0,0,Sami Mikael,200,1700,140,VAS,1700,0,1060,Vasemmistoliitto r.p.,Uudenmaan vaalipiiri,Heikkilä,300,0
+Kerava,"valtiotieteiden maisteri, järjestö- ja koulutuspäällikkö",5000,0,Pia Marjaana,1682,16341,0,VAS,16341,4956,1000,Vasemmistoliitto r.p.,Uudenmaan vaalipiiri,Lohikoski,2702,1000
+Vantaa,"valtiotieteen maisteri, toimittaja",0,0,Pirkko Sinikka,9000,16900,0,VAS,16900,500,1400,Vasemmistoliitto r.p.,Uudenmaan vaalipiiri,Kotila,6000,0
+Loviisa,"sairaanhoitaja, kotiäiti",6300,0,Armi Maarit,3400,12800,600,VAS,12800,0,1200,Vasemmistoliitto r.p.,Uudenmaan vaalipiiri,Lindell,1300,0
+Raasepori,"johtava sosiaalityöntekijä, ledande socialarbetare",0,0,Harry Juhani,1000,1500,0,VAS,1500,0,500,Vasemmistoliitto r.p.,Uudenmaan vaalipiiri,Yltävä,0,0
+Lohja,"kasvatustieteen maisteri, rehtori",0,0,Hannu Johannes,500,7000,0,VAS,7000,0,6000,Vasemmistoliitto r.p.,Uudenmaan vaalipiiri,Makkonen,500,0
+Vihti,"filosofian maisteri, kehittämisjohtaja",11340,0,Sari Outi Susanna,500,21775,0,VAS,21775,0,2000,Vasemmistoliitto r.p.,Uudenmaan vaalipiiri,Virta,7435,500
+Helsinki,"poliisi, ensihoitaja-sairaanhoitaja AMK",0,0,Mari Pia Susanna,932,1493,0,SDP,1512,0,0,Suomen Sosialidemokraattinen Puolue,Uudenmaan vaalipiiri,Rantanen,580,0
+Vantaa,"valtiotieteen tohtori, kansanedustaja",9000,30000,Kimmo Roobert,0,40000,0,SDP,40000,0,0,Suomen Sosialidemokraattinen Puolue,Uudenmaan vaalipiiri,Kiljunen,1000,0
+Vantaa,"postinjakaja, luottamusmies",750,0,Reko Mauno Ilmari,1000,3305,0,VAS,3305,0,0,Vasemmistoliitto r.p.,Uudenmaan vaalipiiri,Ravela,1555,0
+Kirkkonummi,"filosofian kandidaatti, tähtitieteilijä",0,0,Seppo Samuli,160,700,0,VAS,700,0,540,Vasemmistoliitto r.p.,Uudenmaan vaalipiiri,Linnaluoto,0,0
+Järvenpää,"hallintotieteiden ylioppilas, opiskelija",400,0,Pekka Viljami,300,13250,0,SDP,13250,0,11500,Suomen Sosialidemokraattinen Puolue,Uudenmaan vaalipiiri,Tuuri,1050,0
+Espoo,"professor, ylilääkäri",0,0,Sven Fredrik,4000,6000,0,SDP,6000,0,1500,Suomen Sosialidemokraattinen Puolue,Uudenmaan vaalipiiri,Almqvist,500,0
+Raasepori,"kansanedustaja, riksdagsledamot",6500,0,Maarit Kristiina,0,0,2350,SDP,0,0,14650,Suomen Sosialidemokraattinen Puolue,Uudenmaan vaalipiiri,Feldt-Ranta,7105,0
+Helsinki,työelämän asiantuntija,37600,0,Lauri Armas,2500,46500,6400,SDP,46500,0,0,Suomen Sosialidemokraattinen Puolue,Uudenmaan vaalipiiri,Ihalainen,0,0
+Nurmijärvi,"filosofian tohtori, pääsihteeri",0,0,Jussi Lauri Juhani,7800,10000,0,PS,10000,0,400,Perussuomalaiset r.p.,Uudenmaan vaalipiiri,Niinistö,1800,0
+Loviisa,koneteknikko,0,0,Kimmo Kalervo,100,600,0,PS,600,0,0,Perussuomalaiset r.p.,Uudenmaan vaalipiiri,Nykänen,100,400
+Kauniainen,"valtiotieteen maisteri, ministerin erityisavustaja",0,0,Miia Susanna,2500,3500,0,RKP,3500,0,0,Suomen ruotsalainen kansanpuolue r.p.,Uudenmaan vaalipiiri,Korpivaara,0,1000
+Nummi-Pusula,nuoriso- ja vapaa-ajanohjaaja,0,0,Mikki Seponpoika,3600,4000,0,PS,4000,0,0,Perussuomalaiset r.p.,Uudenmaan vaalipiiri,Nieminen,0,400
+Espoo,"teknologia-alan yrittäjä, aikuisviihdenäyttelijä",0,0,Carl Oskar,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Uudenmaan vaalipiiri,Elmgren,0,0
+Järvenpää,"dosentti, ylilääkäri",0,0,Heikki Juhani,875,1500,0,PS,1500,0,625,Perussuomalaiset r.p.,Uudenmaan vaalipiiri,Tala,0,0
+Porvoo,"kansanedustaja, riksdagsledamot",0,0,Pirkko Anneli,9300,10000,0,PS,10000,0,700,Perussuomalaiset r.p.,Uudenmaan vaalipiiri,Ruohonen-Lerner,0,0
+Espoo,"filosofian tohtori, biologi",0,0,Sampo Heikki,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Uudenmaan vaalipiiri,Smolander,0,0
+Hollola,"puolueen puheenjohtaja, järjestelmäasiantuntija",0,0,Pasi Petteri,900,1000,0,PIR,1000,0,0,Piraattipuolue r.p.,Uudenmaan vaalipiiri,Palmulehto,100,0
+Helsinki,projekti-insinööri,0,0,Pasi Antero,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Uudenmaan vaalipiiri,Vähämartti,0,0
+Helsinki,"puutarhuri, taiteilija",0,0,Taija Birgitta,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Uudenmaan vaalipiiri,Chanth,0,0
+Helsinki,koneistaja,0,0,Ari Ilmari,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Uudenmaan vaalipiiri,Vaarnas,0,0
+Espoo,"tekniikan ylioppilas, Test Specialist",0,0,Janne Erkki Antero,0,2000,0,PIR,2000,0,0,Piraattipuolue r.p.,Uudenmaan vaalipiiri,Paalijärvi,0,0
+Espoo,opiskelija,0,0,Aarne Olavi,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Uudenmaan vaalipiiri,Wallén,0,0
+Helsinki,tekninen asiantuntija,0,0,Aleksander,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Uudenmaan vaalipiiri,Torfayeh,0,0
+Espoo,tietoliikenneteknikko,0,0,Taivas Konsta,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Uudenmaan vaalipiiri,Gogoljuk,0,0
+Espoo,"diplomi-insinööri, Internet-tutkija",0,0,Mikko Johannes,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Uudenmaan vaalipiiri,Särelä,0,0
+Helsinki,filosofian tohtori,0,0,Tuomas Tapio,40,40,0,PIR,40,0,0,Piraattipuolue r.p.,Uudenmaan vaalipiiri,Korppi,0,0
+Espoo,media-assistentti,0,0,Sari Kaarina,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Uudenmaan vaalipiiri,Niemi,0,0
+Joensuu,opiskelija,0,0,Ari Juhani,500,500,0,PIR,500,0,0,Piraattipuolue r.p.,Uudenmaan vaalipiiri,Tervashonka,0,0
+Helsinki,"filosofian ylioppilas, ohjelmoija",0,0,Sampo Antero,0,130,0,PIR,130,0,0,Piraattipuolue r.p.,Uudenmaan vaalipiiri,Syreeni,130,0
+Helsinki,"taiteilija, opiskelija",0,0,Laura Emilia,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Uudenmaan vaalipiiri,Toivola,0,0
+Helsinki,konsultti,0,0,Thomas Mikael,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Uudenmaan vaalipiiri,Nybergh,0,0
+Espoo,ATK-asentaja,0,0,Joni Mikael,30,30,0,PIR,30,0,0,Piraattipuolue r.p.,Uudenmaan vaalipiiri,Tarvainen,0,0
+Kerava,rahoitusalan toimihenkilö,0,0,Martti Juhani,340,340,0,M11,340,0,0,Muutos 2011 r.p.,Uudenmaan vaalipiiri,Munne,0,0
+Helsinki,"tekniikan kandidaatti, yrittäjä",0,0,Petter Paulus Daniel,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Uudenmaan vaalipiiri,Junni,0,0
+Espoo,diplomi-insinööri,0,0,Jukka Petteri,10000,10000,0,KOK,10000,0,0,Kansallinen Kokoomus r.p.,Uudenmaan vaalipiiri,Järvinen,0,0
+Järvenpää,"ylitarkastaja, esseekirjailija",0,0,Eino Juhani,150,150,0,KOY,150,0,0,Köyhien Asialla r.p.,Uudenmaan vaalipiiri,Kahelin,0,0
+Espoo,"diplomi-insinööri, kauppatieteiden maisteri",0,0,Elina Maria,20000,45000,0,KOK,45000,0,10000,Kansallinen Kokoomus r.p.,Uudenmaan vaalipiiri,Lepomäki,15000,0
+Espoo,"valtiotieteiden maisteri, tiedottaja MTi",0,0,Mari Laelia Susanna,21055,21055,0,KOK,21055,0,0,Kansallinen Kokoomus r.p.,Uudenmaan vaalipiiri,Nevalainen,0,0
+Vantaa,"kauppatieteiden maisteri, tuotepäällikkö",0,0,Saara Pauliina,1851,1851,0,KESK,1851,0,0,Suomen Keskusta r.p.,Uudenmaan vaalipiiri,Puukko,0,0
+Espoo,"kauppatieteiden maisteri, opettaja",0,0,Marika Kaarina,22000,25000,0,KOK,25000,0,0,Kansallinen Kokoomus r.p.,Uudenmaan vaalipiiri,Niemi,3000,0
+Vantaa,"pankkitoimihenkilö, toimintoluottamusmies",500,0,Pertti Tapani,886,1391,5,KESK,0,0,0,Suomen Keskusta r.p.,Uudenmaan vaalipiiri,Hallikainen,0,0
+Mäntsälä,eläinlääkäri,0,0,Kalevi Johannes,4800,10000,500,KESK,10000,0,4700,Suomen Keskusta r.p.,Uudenmaan vaalipiiri,Heinonen,0,0
+Tuusula,kansanedustaja,500,0,Antti Samuli,12000,25000,1000,KESK,25000,0,0,Suomen Keskusta r.p.,Uudenmaan vaalipiiri,Kaikkonen,11500,0
+Askola,"agrologi, johtava talousneuvoja",0,0,Simo Antero,1900,15000,6500,KESK,15000,600,2000,Suomen Keskusta r.p.,Uudenmaan vaalipiiri,Sorsa,4000,0
+Vantaa,"varatuomari, johtaja",0,0,Johannes Fredrik,9959,11479,1500,KESK,11479,0,0,Suomen Keskusta r.p.,Uudenmaan vaalipiiri,Hirvaskoski,20,0
+Nurmijärvi,"elintarviketieteiden maisteri, tutkija",0,0,Virpi Marianna,2180,9423,0,KESK,9423,0,800,Suomen Keskusta r.p.,Uudenmaan vaalipiiri,Korhonen,6443,0
+Loviisa,"tehdastyöntekijä, sähköasentaja",0,0,Per-David Alexander,0,0,0,,0,0,0,"Yhteislistoihin kuulumattomien valitsijayhdistysten ehdokkaat Salminen, Per-David",Uudenmaan vaalipiiri,Salminen,0,0
+Helsinki,"kansanedustaja, ympäristöministeri",3000,0,Paula Ilona,11000,33000,11000,KESK,33000,0,0,Suomen Keskusta r.p.,Uudenmaan vaalipiiri,Lehtomäki,8000,0
+Tampere,"opiskelija, tekniikan kandidaatti",0,0,Emilia,2341,4898,0,VIHR,4898,0,520,Vihreä liitto r.p.,Pirkanmaan vaalipiiri,Olkanen,2037,0
+Nokia,"lehtori, filosofian kandidaatti",1300,0,Leo,2300,7400,900,VIHR,7400,0,2000,Vihreä liitto r.p.,Pirkanmaan vaalipiiri,Lähde,900,0
+Tampere,"freelance-yrittäjä, medianomi (AMK)",0,0,Olli-Poika,8000,11400,0,VIHR,0,0,1200,Vihreä liitto r.p.,Pirkanmaan vaalipiiri,Parviainen,2200,0
+Tampere,"pääluottamusmies, sairaanhoitaja",0,0,Petri,5883,6673,0,VIHR,6673,0,0,Vihreä liitto r.p.,Pirkanmaan vaalipiiri,Siuro,790,0
+Tampere,"yhteiskuntatieteiden maisteri, tutkija",0,2000,Aziz,4000,7080,0,VIHR,7000,0,0,Vihreä liitto r.p.,Pirkanmaan vaalipiiri,Sheikhani,1000,0
+Tampere,lukiolainen,0,0,Paavo-Einari,1100,1500,0,VIHR,1500,0,0,Vihreä liitto r.p.,Pirkanmaan vaalipiiri,Kaipila,400,0
+Ylöjärvi,tv-ohjaaja,100,0,Anssi Elias,5000,20000,0,VAS,20000,0,14500,Vasemmistoliitto r.p.,Pirkanmaan vaalipiiri,Repo,400,0
+Tampere,"lähihoitaja, sosionomi",1500,0,Minna Maria,800,3000,0,VAS,3000,0,500,Vasemmistoliitto r.p.,Pirkanmaan vaalipiiri,Minkkinen,200,500
+Akaa,aluepäällikkö,12000,0,Niina-Maija,5000,18500,0,VAS,18500,8400,500,Vasemmistoliitto r.p.,Pirkanmaan vaalipiiri,Koivuniemi,1000,0
+Tampere,"kansanedustaja, filosofian maisteri",0,0,Minna Maaria,6525,13200,1000,VAS,13200,5335,0,Vasemmistoliitto r.p.,Pirkanmaan vaalipiiri,Sirnö,340,0
+Tampere,sairaanhoitaja,0,0,Emilia Anna-Sofia,100,3200,0,VAS,3200,0,0,Vasemmistoliitto r.p.,Pirkanmaan vaalipiiri,Lehtomäki,0,0
+Tampere,"talouspäällikkö, hallintotieteiden maisteri",0,0,Mikko Petteri,5000,5600,500,VAS,5600,0,0,Vasemmistoliitto r.p.,Pirkanmaan vaalipiiri,Aaltonen,100,0
+Tampere,tutkija,4500,7250,Anna Liisa,10800,29000,0,VAS,29000,0,1250,Vasemmistoliitto r.p.,Pirkanmaan vaalipiiri,Kontula,5200,0
+Ylöjärvi,moottoriasentaja,2000,0,Erkki Antero,3000,10000,0,VAS,10000,3500,1100,Vasemmistoliitto r.p.,Pirkanmaan vaalipiiri,Moisio,400,0
+Tampere,"yhteiskuntatieteiden maisteri, koti-isä",0,0,Jaakko Heikki,120,120,0,PIR,120,0,0,Piraattipuolue r.p.,Pirkanmaan vaalipiiri,Koivula,0,0
+Tampere,sijaisvanhempikouluttaja,1900,0,Ulla-Leena,2500,12400,0,VAS,12400,0,500,Vasemmistoliitto r.p.,Pirkanmaan vaalipiiri,Alppi,7500,0
+Lempäälä,diplomi-insinööri,0,0,Kirsi Kyllikki,400,400,0,PS,400,0,0,Perussuomalaiset r.p.,Pirkanmaan vaalipiiri,Kallio,0,300
+Tampere,opiskelija,0,0,Aapo Petteri,50,50,0,PIR,0,0,0,Piraattipuolue r.p.,Pirkanmaan vaalipiiri,Alasuutari,0,0
+Tampere,"yhteiskuntatieteiden tohtori, sairaanhoitaja",500,0,Taimi Sinikka,1500,6000,200,VAS,6000,0,0,Vasemmistoliitto r.p.,Pirkanmaan vaalipiiri,Torkkola,3800,0
+Tampere,"yrittäjä, toimituspäällikkö",0,0,Kyuu Antti Arimo,400,400,0,PIR,400,0,0,Piraattipuolue r.p.,Pirkanmaan vaalipiiri,Eturautti,0,0
+Tampere,tekniikan ylioppilas,0,0,Panu Rikhard,139,139,0,PIR,139,0,0,Piraattipuolue r.p.,Pirkanmaan vaalipiiri,Horsmalahti,0,0
+Tampere,"yrittäjä, opiskelija",0,0,Mika Matias,129,209,0,PIR,209,0,0,Piraattipuolue r.p.,Pirkanmaan vaalipiiri,Isomaa,80,0
+Kangasala,"ylioppilas, ohjelmoija",0,0,Henri Esa Henrik,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Pirkanmaan vaalipiiri,Tuhola,0,0
+Tampere,"yrittäjä, muusikko",0,0,Olli Sakari,200,350,0,PIR,150,0,0,Piraattipuolue r.p.,Pirkanmaan vaalipiiri,Soppela,0,150
+Tampere,opiskelija,0,0,Juha Kalle Kalervo,0,416,0,PIR,416,0,0,Piraattipuolue r.p.,Pirkanmaan vaalipiiri,Oksanen,0,0
+Pirkkala,toimitusjohtaja,0,0,Raili Marja Leena,15000,0,0,KESK,15000,0,0,Suomen Keskusta r.p.,Pirkanmaan vaalipiiri,Naskali,0,0
+Ikaalinen,"metsätalousinsinööri (AMK), metsäluontosuunnittelija",500,0,Matti Kalevi,7400,8000,0,KESK,8000,0,0,Suomen Keskusta r.p.,Pirkanmaan vaalipiiri,Äijö,100,0
+Lempäälä,"valtiotieteiden tohtori, diakoniajohtaja",0,0,Matti Olavi,13505,22103,2407,KOK,22103,0,0,Kansallinen Kokoomus r.p.,Pirkanmaan vaalipiiri,Helin,6191,0
+Akaa,"tekniikan ylioppilas, lehdenjakaja",0,0,Oula-Antti,100,1200,0,M11,1200,500,0,Muutos 2011 r.p.,Pirkanmaan vaalipiiri,Lintula,600,0
+Pälkäne,"hallintotieteiden kandidaatti, kansanedustajan avustaja",0,0,Matias Tuukka Petteri,4600,10000,500,KESK,10000,0,2400,Suomen Keskusta r.p.,Pirkanmaan vaalipiiri,Hilden,2500,0
+Pori,"lääketieteen tohtori, ylilääkäri",0,0,Esa Matti,11566,11766,0,VIHR,11766,0,0,Vihreä liitto r.p.,Satakunnan vaalipiiri,Rintala,200,0
+Pori,"filosofian maisteri, kauppatieteiden maisteri",0,0,Maria Annika,630,1650,0,VIHR,1650,0,220,Vihreä liitto r.p.,Satakunnan vaalipiiri,Väkiparta,800,0
+Pori,"kasvatustieteen maisteri, opettaja",0,0,Anne Elina,4986,5663,0,VIHR,5663,0,220,Vihreä liitto r.p.,Satakunnan vaalipiiri,Liinamaa,457,0
+Rauma,"filosofian maisteri, biologi",0,0,Ville Veijo Wilhelm,150,150,0,VIHR,150,0,0,Vihreä liitto r.p.,Satakunnan vaalipiiri,Vasko,0,0
+Luvia,"filosofian maisteri, biologian ja maantieteen opettaja",0,0,Piia Kaarina,550,770,0,VIHR,770,0,220,Vihreä liitto r.p.,Satakunnan vaalipiiri,Risku-Myllyharju,0,0
+Eura,"psykiatrinen sairaanhoitaja, perheterapeutti",0,0,Hannele Anna-Liisa,1700,2000,0,VIHR,2000,0,0,Vihreä liitto r.p.,Satakunnan vaalipiiri,Helander,300,0
+Pori,sosiaalityöntekijä,0,0,Marika,300,300,0,VIHR,300,0,0,Vihreä liitto r.p.,Satakunnan vaalipiiri,Nirhamo,0,0
+Kankaanpää,"filosofian maisteri, lehtori",0,0,Vesa-Matti,490,1390,0,VIHR,1390,0,250,Vihreä liitto r.p.,Satakunnan vaalipiiri,Velhonoja,650,0
+Pori,"lääketieteen lisensiaatti, erikoislääkäri",0,0,Mia Christina,6100,7500,1400,VIHR,0,0,0,Vihreä liitto r.p.,Satakunnan vaalipiiri,Fagerlund,0,0
+Rauma,opiskelija,0,0,Noora-Stiina,282,282,0,VIHR,282,0,0,Vihreä liitto r.p.,Satakunnan vaalipiiri,Kekki,0,0
+Harjavalta,"yhteiskuntatieteiden ylioppilas, opiskelija",0,0,Klaus Antero Tapio,1100,1200,0,VIHR,1200,0,0,Vihreä liitto r.p.,Satakunnan vaalipiiri,Unkuri,100,0
+Ulvila,"projektipäällikkö, hallintotieteiden tohtori",0,0,Heikki Pekka,967,972,0,VIHR,972,0,0,Vihreä liitto r.p.,Satakunnan vaalipiiri,Rantala,5,0
+Pori,"teologian maisteri, psykoterapeutti",0,0,Heikki Juhani,1771,1771,0,VIHR,1771,0,0,Vihreä liitto r.p.,Satakunnan vaalipiiri,Kruus,0,0
+Huittinen,"kirvesmies, yrittäjä",700,0,Mikko Juhani,1500,5500,2100,VAS,5500,0,1000,Vasemmistoliitto r.p.,Satakunnan vaalipiiri,Kaunisto,200,0
+Huittinen,yrittäjä,0,0,Anne Maarit,4680,5400,0,VIHR,5400,0,220,Vihreä liitto r.p.,Satakunnan vaalipiiri,Bland,500,0
+Rauma,dokumentaatioassistentti,2720,0,Susanna Tuulikki,100,2820,0,VAS,2820,0,0,Vasemmistoliitto r.p.,Satakunnan vaalipiiri,Ruponen,20,0
+Helsinki,työllisyyspalveluiden johtaja,400,0,Katja Maarika,3700,12200,0,VAS,12200,4200,0,Vasemmistoliitto r.p.,Satakunnan vaalipiiri,Syvärinen,2900,1000
+Pori,"yhteiskuntatieteiden maisteri, hankintasuunnittelija",900,0,Juha Harry Erik,200,5000,3000,VAS,5000,0,0,Vasemmistoliitto r.p.,Satakunnan vaalipiiri,Sandberg,200,700
+Pori,"hankeneuvoja, insinööri",1100,0,Raisa Anne-Maria,650,6000,0,VAS,6000,0,1400,Vasemmistoliitto r.p.,Satakunnan vaalipiiri,Ranta,2350,500
+Pori,"yhteiskuntatieteiden maisteri, projektipäällikkö",17165,0,Aki Nikolai,3977,26978,1000,VAS,26978,0,3556,Vasemmistoliitto r.p.,Satakunnan vaalipiiri,Nummelin,1280,0
+Rauma,postityöntekijä,4000,0,Ilkka Tapio,800,5000,0,VAS,0,0,0,Vasemmistoliitto r.p.,Satakunnan vaalipiiri,Ailasmaa,200,0
+Pomarkku,"perhepäivähoitaja, pääluottamusmies",0,0,Jaana Hannele,0,5049,0,VAS,4438,0,0,Vasemmistoliitto r.p.,Satakunnan vaalipiiri,Heininen,0,0
+Rauma,"lehtori, eläkeläinen",0,0,Anita Orvokki,1788,2580,0,PS,2580,0,346,Perussuomalaiset r.p.,Satakunnan vaalipiiri,Koivu,170,276
+Kankaanpää,rovasti,0,0,Taito Anssi Ilmari,30000,46220,3420,PS,46220,0,12800,Perussuomalaiset r.p.,Satakunnan vaalipiiri,Joutsenlahti,0,0
+Pori,yrittäjä,0,0,Olli-Pekka Ensio,375,400,0,M11,25,0,0,Muutos 2011 r.p.,Satakunnan vaalipiiri,Hakala,25,0
+Pori,"yhteiskuntatieteiden maisteri, aluekehitysasiantuntija",0,0,Susa Viveka,100,3000,0,KESK,3000,0,1000,Suomen Keskusta r.p.,Satakunnan vaalipiiri,Lanne,400,1500
+Pori,everstiluutnantti evp.,1000,0,Tapio Mikael,4500,12000,3500,KESK,12000,0,2400,Suomen Keskusta r.p.,Satakunnan vaalipiiri,Huhtanen,600,0
+Pori,tekniikan ylioppilas,600,0,Tuomas Tapio,1500,6000,0,KESK,6000,0,3000,Suomen Keskusta r.p.,Satakunnan vaalipiiri,Meriniemi,900,0
+Espoo,ylioppilasmerkonomi,0,0,Marita Helena,3300,3300,0,,3300,0,0,"Yhteislistoihin kuulumattomien valitsijayhdistysten ehdokkaat Marttunen, Marita",Uudenmaan vaalipiiri,Marttunen,0,0
+Suomussalmi,toimittaja,0,0,Sirkku Sonja Anneli,125,600,0,KD,600,0,200,Suomen Kristillisdemokraatit (KD),Oulun vaalipiiri,Kianto,275,0
+Sastamala,maatalousyrittäjä,1000,0,Pertti Arvo Konrad,5000,30000,7500,KESK,30000,0,8500,Suomen Keskusta r.p.,Pirkanmaan vaalipiiri,Hakanen,8000,0
+Laihia,"merkonomi, yrittäjä",2000,0,Raimo Olavi,300,2500,0,VAS,2500,0,0,Vasemmistoliitto r.p.,Vaasan vaalipiiri,Kinnari,200,0
+Rauma,"tekniikan tohtori, yliopettaja",0,0,Sauli Sakari,500,40600,0,KD,40600,0,39000,Suomen Kristillisdemokraatit (KD),Satakunnan vaalipiiri,Ahvenjärvi,1100,0
+Veteli,"toimittaja, FM",1000,0,Vuokko Maria,4431,12281,4300,PS,12281,0,1350,Perussuomalaiset r.p.,Vaasan vaalipiiri,Lahti,1200,0
+Jalasjärvi,lähihoitaja,0,0,Satu Sinikka,0,2330,0,VAS,2330,1500,600,Vasemmistoliitto r.p.,Vaasan vaalipiiri,Niemi,230,0
+Kurikka,"europarlamentaarikon avustaja, puolueen 3. varapuheenjohtaja",0,0,Vesa-Matti,7900,16500,3500,PS,16500,0,600,Perussuomalaiset r.p.,Vaasan vaalipiiri,Saarakkala,4500,0
+Vaasa,runoilija,0,0,Jussi Jaakko Kasperi,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Vaasan vaalipiiri,Koiranen,0,0
+Vaasa,opiskelija,0,0,Henrik Mikael,0,0,0,PIR,0,0,0,Piraattipuolue r.p.,Vaasan vaalipiiri,Sandberg,0,0
