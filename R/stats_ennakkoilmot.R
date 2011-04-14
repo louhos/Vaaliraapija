@@ -135,6 +135,24 @@ p <- ggplot(data.puolueet.vpiiri, aes(x=puolue_lyh, y=ilmoittaneita_pros, fill=p
        labs(x="", y="Ennakkoilmoitusprosentti")
 p + scale_fill_manual(values = colours)
 
+## PERUSTILASTOT ###############################################################
+
+data$kokonimi  <- paste(data$etunimi, data$sukunimi)
+
+# Funktio, jolla voi plotata DataFrame (data) tilastoja EI TOIMI
+plottaa.tilastot  <- function(x, sarake, raja, y.otsake) {
+  
+  rajaus  <- subset(x, sarake >= raja)
+  browser()
+  ggplot(rajaus) + geom_bar(aes(x=reorder(kokonimi, sarake), 
+                        y=sarake, fill=puolue_lyh), stat='identity') + 
+      opts(axis.text.x=theme_text(angle=90, hjust=1.0)) + 
+      scale_fill_manual(values = colours) +
+      labs(x="", y=y.otsake) + coord_flip()
+}
+
+plottaa.tilastot(data, sarake=data$rahoitus_kaikki, 30000, "Ilmoitettu rahoitus (€)")
+
 # Isoimmat budjetit
 rahakkaat  <- subset(data, rahoitus_kaikki >= 30000)
 rahakkaat$kokonimi  <- paste(rahakkaat$etunimi, rahakkaat$sukunimi)
@@ -143,7 +161,17 @@ ggplot(rahakkaat) + geom_bar(aes(x=reorder(kokonimi, rahoitus_kaikki),
       opts(axis.text.x=theme_text(angle=90, hjust=1.0)) + 
       scale_fill_manual(values = colours) +
       labs(x="", y="Ilmoitettu rahoitus (€)") + coord_flip()
-      
+
+# Eniten yksityistukea saaneet
+yksityis.rahakkaat  <- subset(data, yksityinen_tuki >= 6000)
+yksityis.rahakkaat$kokonimi  <- paste(yksityis.rahakkaat$etunimi, 
+                                    yksityis.rahakkaat$sukunimi)
+ggplot(yksityis.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, yksityinen_tuki), 
+                        y=yksityinen_tuki, fill=puolue_lyh), stat='identity') + 
+      opts(axis.text.x=theme_text(angle=90, hjust=1.0)) + 
+      scale_fill_manual(values = colours) +
+      labs(x="", y="Ilmoitettu yksiyishenkilöiltä saatu tuki (€)") + coord_flip()
+
 # Eniten yritystukea saaneet
 yritys.rahakkaat  <- subset(data, yritys_tuki >= 3000)
 yritys.rahakkaat$kokonimi  <- paste(yritys.rahakkaat$etunimi, 
@@ -153,6 +181,36 @@ ggplot(yritys.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, yritys_tuki),
       opts(axis.text.x=theme_text(angle=90, hjust=1.0)) + 
       scale_fill_manual(values = colours) +
       labs(x="", y="Ilmoitettu yrityksiltä saatu tuki (€)") + coord_flip()
+
+# Muu tuki
+muu.rahakkaat  <- subset(data, muu_tuki >= 5000)
+muu.rahakkaat$kokonimi  <- paste(muu.rahakkaat$etunimi, 
+                                    muu.rahakkaat$sukunimi)
+ggplot(muu.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, muu_tuki), 
+                        y=muu_tuki, fill=puolue_lyh), stat='identity') + 
+      opts(axis.text.x=theme_text(angle=90, hjust=1.0)) + 
+      scale_fill_manual(values = colours) +
+      labs(x="", y="Ilmoitettu muu tuki (€)") + coord_flip()
+      
+# Lainat
+laina.rahakkaat  <- subset(data, lainat >= 2000)
+laina.rahakkaat$kokonimi  <- paste(laina.rahakkaat$etunimi, 
+                                    laina.rahakkaat$sukunimi)
+ggplot(laina.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, lainat), 
+                        y=lainat, fill=puolue_lyh), stat='identity') + 
+      opts(axis.text.x=theme_text(angle=90, hjust=1.0)) + 
+      scale_fill_manual(values = colours) +
+      labs(x="", y="Ehdokkaan ja tukiryhmien lainat (€)") + coord_flip()
+
+# Puoluetuki
+puoluetuki.rahakkaat  <- subset(data, puolue_tuki >= 1000)
+puoluetuki.rahakkaat$kokonimi  <- paste(puoluetuki.rahakkaat$etunimi, 
+                                    puoluetuki.rahakkaat$sukunimi)
+ggplot(puoluetuki.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, puolue_tuki), 
+                        y=puolue_tuki, fill=puolue_lyh), stat='identity') + 
+      opts(axis.text.x=theme_text(angle=90, hjust=1.0)) + 
+      scale_fill_manual(values = colours) +
+      labs(x="", y="Ehdokkaan puolueelta saatu tuki  (€)") + coord_flip()
 
 # Suhteellinen rahoitus ~ ennakkoilmoitusprosentti + kaikkien ehdokkaiden lkm
 p <- ggplot(data.puolueet, aes(x=suht_rahoitus, y=ilmoittaneita_pros, 
@@ -177,3 +235,11 @@ p + geom_text(aes(size=ehdokkaita_tot)) + scale_size(to=c(4,8)) +
                             labels=c('10%','20%','30%','40%','50%','60%','70%',
                                      '80%','90%','100%')) +
          scale_x_continuous(limits=c(0,4000))
+         
+# GoogleVis
+library(googleVis)
+data.puolueet$vuosi  <- 2011
+m  <- gvisMotionChart(data.puolueet, idvar="puolue_lyh", timevar="vuosi",
+                      options=list(width=1000, height=800))
+plot(m)
+print(m, file="motionChart.html")
