@@ -1,0 +1,7 @@
+#!/bin/bash
+
+LOKI=vaaliraapija.log
+
+echo "Vaaliraapija aloittaa..."
+scrapy crawl vaalirahoitusvalvonta.fi --set FEED_URI="aineisto/ennakkoilmoitus_%(time)s.csv" --set FEED_FORMAT=csv --set LOG_FILE=$LOKI
+echo "valmista tuli. Loki kirjoitettu tiedostoon $LOKI"

@@ -17,10 +17,15 @@
 # Tämän ohjelman mukana pitäisi tulla kopio GPL-lisenssistä. Jos näin ei ole, 
 # katso <http://www.gnu.org/licenses/>. 
 
+import os
+
+DATADIR = os.path.abspath(os.path.join('../', 'aineisto'))
+
 vaalipiirit = {'01': 'Helsingin vaalipiiri', 
                '02': 'Uudenmaan vaalipiiri', 
                '03': 'Varsinais-Suomen vaalipiiri', 
                '04': 'Satakunnan vaalipiiri', 
+               '05': 'Ahvenanmaan vaalipiiri',
                '06': 'Hämeen vaalipiiri',
                '07': 'Pirkanmaan vaalipiiri',
                '08': 'Kymen vaalipiiri', 
