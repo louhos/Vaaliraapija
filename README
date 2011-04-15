@@ -47,13 +47,25 @@ Samassa kansiossa on myös www.vaalit.fi sivuilta 10.4.2011 noudettu
 xls-tiedosto (e2011ehd.xls), jossa on listattu kaikki vuoden 2011 
 eduskuntavaaleissa ehdolla olevat henkilöt.
 
+Kansiossa "R" on R-skripti "stats_ennakkoilmot.R", joka muokkaa aineisto-kansioon 
+haetun datan ja tekee muutamia kuvaajia.
+
 1. Asentaminen
 
-Vaaliraapija riippu seuraavistaa ohjelmista/paketeista:
+Vaaliraapija riippuu seuraavistaa ohjelmista/paketeista.
+
+Pakolliset:
 
  * Python 2.7 (testattu ainoastaan 2.7:lla, voi toimia vanhemmillakin 
    versioilla)
- * Scrapy 0.12
+ * Scrapy 0.12 (Python-paketti)
+
+Valinnaiset:
+ 
+ * R (testattu versioilla 2.12.1 ja 2.13)
+ * ggplot2 (R-paketti)
+ * plyr (R-paketti)
+ * googleVis (R-paketti)
 
 2. Käyttö
 
@@ -67,8 +79,8 @@ toimia.
 Ohjelma on testattu 32-bittisellä (Fedora 14) ja 64-bittisellä (OpenSUSE 11.4)
 asennuksilla.
 
-Projektin juuressa (vaalirahoitus-kansio) on run.sh-skripti, joka kutsuu Scrapya
-tarvittavilla parametreillä ja tallentaa tulokset aineisto-kansioon.
+Projektin juuressa (vaalirahoitus-kansio) on run-skripti, joka kutsuu Scrapya
+tarvittavilla parametreillä, tallentaa tulokset aineisto-kansioon ja kirjaa syötteen lokitiedostoon.
 
 2.3 Mac
 
