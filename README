@@ -37,6 +37,21 @@ B. Vaalikampanjan kulujen ja rahoituksen yhteenveto
  2.6 Rahoitus sisältää puolueyhdistyksiltä saatua tukea yhteensä
  2.7 Rahoitus sisältää muilta tahoilta saatua tukea yhteensä
  2.8 Rahoitus sisältää välitettyä tukea yhteensä
+C. Vaalikampanjan kulujen erittely
+ 1. Vaalikampanjan kulut yhteensä (kulut eriteltävä alla olevaan taulukkoon)
+    Vaalimainonta
+    	- Sanoma, ilmaisjakelu- ja aikakauslehdet
+		- Radio
+		- Televisio
+		- Tietoverkot
+		- Muut viestintävälineet
+		- Ulkomainonta
+		- Vaalilehtien, esitteiden ja muun painetun materiaalin hankinta
+	Mainonnan suunnittelu
+	Vaalitilaisuudet
+	Vastikkeellisen tuen hankintakulut
+	Muut kulut
+
 
 Ohjelma on hyvin yksinkertainen Scrapy-sovellus ja sen laajentaminen (kts. TODO) 
 hakemaan muuta tietoa vaalirahoitusvalvonnan sivuilta pitäisi olla kohtuullisen 

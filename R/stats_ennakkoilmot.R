@@ -28,7 +28,7 @@ setwd('/home/jlehtoma/Dropbox/Code/vaalirahoitus/R/')
 ehdokkaat <- read.csv('../aineisto/e2011ehd.csv',
                  header=TRUE, as.is=TRUE, sep="\t")
 # Vaalirahoitustiedot
-data <- read.csv('../aineisto/ennakkoilmoitus_2011-04-15T15-49-04.csv',
+data <- read.csv('../aineisto/ennakkoilmoitus_2011-04-16T07-16-38.csv',
                  header=TRUE, as.is=TRUE, sep=",")
                  
 # Muunna puoluelyhenne ja vaalipiiri faktoreiksi
@@ -40,21 +40,26 @@ data <- read.csv('../aineisto/ennakkoilmoitus_2011-04-15T15-49-04.csv',
 
 data = data[which(data$puolue_lyh != ""),]
 
+# Vaalimainonnan summa
+data$kulut_vaalimainonta  <- data$kulut_lehdet + data$kulut_radio + 
+                             data$kulut_televisio + data$kulut_tietoverkot +
+                             data$kulut_muut_viestintavalineet +
+                             data$kulut_ulkomainonta + data$kulut_painettu_mat
+
 # Laske puoluekohtaisia tilastoja
 data.sum <- aggregate(rahoitus_kaikki~puolue_lyh, data, sum)
 data.sum.yritys <- aggregate(yritys_tuki~puolue_lyh, data, sum)
 data.count <- aggregate(etunimi~puolue_lyh, data, length)
 ehdokkaat.count <- aggregate(ehdokasnumero~puolue_lyh, ehdokkaat, length)
 
-
 # Ota mukaan vain yli 10 ehdokkaan puolueet
-ehdokkaat.count.isot <- subset(ehdokkaat.count, ehdokasnumero >= 10)
-ehdokkaat.isot <- subset(ehdokkaat, puolue_lyh %in% ehdokkaat.count.isot$puolue_lyh)
-ehdokkaat.isot$puolueen_lyh <- as.factor(ehdokkaat.isot$puolue_lyh)
-ehdokkaat.isot$vaalipiiri <- as.factor(ehdokkaat.isot$vaalipiiri)
+#ehdokkaat.count.isot <- subset(ehdokkaat.count, ehdokasnumero >= 10)
+#ehdokkaat.isot <- subset(ehdokkaat, puolue_lyh %in% ehdokkaat.count.isot$puolue_lyh)
+#ehdokkaat.isot$puolueen_lyh <- as.factor(ehdokkaat.isot$puolue_lyh)
+#ehdokkaat.isot$vaalipiiri <- as.factor(ehdokkaat.isot$vaalipiiri)
 
 # Puolue- ja vaalipiirikohtaiset tilastot
-ehdokkaat.count.vpiiri <- ddply(ehdokkaat.isot, c("puolue_lyh", "vaalipiiri"),
+ehdokkaat.count.vpiiri <- ddply(ehdokkaat, c("puolue_lyh", "vaalipiiri"),
                           function(df)length(df$ehdokasnumero))                       
 colnames(ehdokkaat.count.vpiiri)[3] <- "ehdokkaita_tot"
 
@@ -72,9 +77,11 @@ data.puolueet <- ddply(data,
                                  puolue_tuki = sum(df$puolue_tuki),
                                  puolueyhdistys_tuki = sum(df$puolueyhdistys_tuki),
                                  valitettu_tuki = sum(df$valitetty_tuki),
-                                 muu_tuki = sum(df$muu_tuki)))
+                                 muu_tuki = sum(df$muu_tuki),
+                                 vaalimainonta = sum(df$kulut_vaalimainonta),
+                                 vaalimainonta_suunnittelu = sum(df$kulut_mainonnan_suunnittelu)))
                               
-data.puolueet <- merge(data.puolueet, ehdokkaat.count.isot)	
+data.puolueet <- merge(data.puolueet, ehdokkaat.count)	
 colnames(data.puolueet)[length(data.puolueet)] <- "ehdokkaita_tot"
 # %-ilmoituksia kaikista ehdokkaista
 data.puolueet$ilmoittaneita_pros <- round(data.puolueet$ilmoittaneita / 
@@ -83,7 +90,9 @@ data.puolueet$suht_rahoitus  <- round(data.puolueet$rahoitus_tot /
                                       data.puolueet$ilmoittaneita,2)
 data.puolueet$suht_yritys_rahoitus  <- round(data.puolueet$yritys_tuki / 
                                       data.puolueet$ilmoittaneita,2)
-
+# Suhteellinen vaalimainonta
+data.puolueet$suht_vaalimainonta <- round(data.puolueet$vaalimainonta / 
+                                      data.puolueet$ilmoittaneita,2)
 
 # Laske puolue- ja vaalipiirikohtaiset ennakkoilmoitusprosentit
 data.puolueet.vpiiri <- ddply(data, 
@@ -110,6 +119,7 @@ data.puolueet.vpiiri$suht_rahoitus  <- round(data.puolueet.vpiiri$rahoitus_tot /
                                       data.puolueet.vpiiri$ilmoittaneita,2)
 data.puolueet.vpiiri$suht_yritys_rahoitus  <- round(data.puolueet.vpiiri$yritys_tuki / 
                                       data.puolueet.vpiiri$ilmoittaneita,2)
+
 # Puoluekohtaiset värit
 # KD, KESK, KOK, KOY, M11, PIR, PS, RKP, SDP, SIT, SKP, VAS, VIHR, VP
 colours <- c("KD" = "#5C7EB8", "KESK" = "#008700", "KOY" = "#36496B", 
@@ -160,9 +170,26 @@ rahakkaat  <- subset(data, rahoitus_kaikki >= 37000)
 rahakkaat$kokonimi  <- paste(rahakkaat$etunimi, rahakkaat$sukunimi)
 ggplot(rahakkaat) + geom_bar(aes(x=reorder(kokonimi, rahoitus_kaikki), 
                         y=rahoitus_kaikki, fill=puolue_lyh), stat='identity') + 
-      opts(axis.text.x=theme_text(angle=90, hjust=1.0)) + 
+      opts(axis.text.x=theme_text(angle=90, hjust=1.0, size=10),
+           axis.text.y=theme_text(hjust=1.0, size=12, colour="#7F7F7F"),
+           axis.title.x = theme_text(family = "sans", size=16),
+           legend.title = theme_text(family = "sans", size=12, hjust=0)) + 
       scale_fill_manual(values = colours) +
       labs(x="", y="Ilmoitettu rahoitus (€)") + coord_flip()
+ggsave("kuvaajat/isoimmat_budjetit.png", width=10.417, height=8.333, dpi=72)
+
+# Isoimmat omat varat
+rahakkaat.omat  <- subset(data, omat_varat >= 20500)
+rahakkaat.omat$kokonimi  <- paste(rahakkaat.omat$etunimi, rahakkaat.omat$sukunimi)
+ggplot(rahakkaat.omat) + geom_bar(aes(x=reorder(kokonimi, omat_varat), 
+                        y=omat_varat, fill=puolue_lyh), stat='identity') + 
+      opts(axis.text.x=theme_text(angle=90, hjust=1.0, size=10),
+           axis.text.y=theme_text(hjust=1.0, size=12, colour="#7F7F7F"),
+           axis.title.x = theme_text(family = "sans", size=16),
+           legend.title = theme_text(family = "sans", size=12, hjust=0)) + 
+      scale_fill_manual(values = colours) +
+      labs(x="", y="Ilmoitetut omat varat (€)") + coord_flip()
+ggsave("kuvaajat/isoimmat_omat_varat.png", width=10.417, height=8.333, dpi=72)
 
 # Eniten yksityistukea saaneet
 yksityis.rahakkaat  <- subset(data, yksityinen_tuki >= 8010)
@@ -170,9 +197,13 @@ yksityis.rahakkaat$kokonimi  <- paste(yksityis.rahakkaat$etunimi,
                                     yksityis.rahakkaat$sukunimi)
 ggplot(yksityis.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, yksityinen_tuki), 
                         y=yksityinen_tuki, fill=puolue_lyh), stat='identity') + 
-      opts(axis.text.x=theme_text(angle=90, hjust=1.0)) + 
+      opts(axis.text.x=theme_text(angle=90, hjust=1.0, size=10),
+           axis.text.y=theme_text(hjust=1.0, size=12, colour="#7F7F7F"),
+           axis.title.x = theme_text(family = "sans", size=16),
+           legend.title = theme_text(family = "sans", size=12, hjust=0)) + 
       scale_fill_manual(values = colours) +
       labs(x="", y="Ilmoitettu yksiyishenkilöiltä saatu tuki (€)") + coord_flip()
+ggsave("kuvaajat/isoimmat_yksityis_tuet.png", width=10.417, height=8.333, dpi=72)
 
 # Eniten yritystukea saaneet
 yritys.rahakkaat  <- subset(data, yritys_tuki >= 7000)
@@ -180,9 +211,13 @@ yritys.rahakkaat$kokonimi  <- paste(yritys.rahakkaat$etunimi,
                                     yritys.rahakkaat$sukunimi)
 ggplot(yritys.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, yritys_tuki), 
                         y=yritys_tuki, fill=puolue_lyh), stat='identity') + 
-      opts(axis.text.x=theme_text(angle=90, hjust=1.0)) + 
+      opts(axis.text.x=theme_text(angle=90, hjust=1.0, size=10),
+           axis.text.y=theme_text(hjust=1.0, size=12, colour="#7F7F7F"),
+           axis.title.x = theme_text(family = "sans", size=16),
+           legend.title = theme_text(family = "sans", size=12, hjust=0)) + 
       scale_fill_manual(values = colours) +
       labs(x="", y="Ilmoitettu yrityksiltä saatu tuki (€)") + coord_flip()
+ggsave("kuvaajat/isoimmat_yritys_tuet.png", width=10.417, height=8.333, dpi=72)
 
 # Muu tuki
 muu.rahakkaat  <- subset(data, muu_tuki >= 6300)
@@ -190,19 +225,27 @@ muu.rahakkaat$kokonimi  <- paste(muu.rahakkaat$etunimi,
                                     muu.rahakkaat$sukunimi)
 ggplot(muu.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, muu_tuki), 
                         y=muu_tuki, fill=puolue_lyh), stat='identity') + 
-      opts(axis.text.x=theme_text(angle=90, hjust=1.0)) + 
+      opts(axis.text.x=theme_text(angle=90, hjust=1.0, size=10),
+           axis.text.y=theme_text(hjust=1.0, size=12, colour="#7F7F7F"),
+           axis.title.x = theme_text(family = "sans", size=16),
+           legend.title = theme_text(family = "sans", size=12, hjust=0)) + 
       scale_fill_manual(values = colours) +
       labs(x="", y="Ilmoitettu muu tuki (€)") + coord_flip()
-      
+ggsave("kuvaajat/isoimmat_muut_tuet.png", width=10.417, height=8.333, dpi=72)
+
 # Lainat
 laina.rahakkaat  <- subset(data, lainat >= 5100)
 laina.rahakkaat$kokonimi  <- paste(laina.rahakkaat$etunimi, 
                                     laina.rahakkaat$sukunimi)
 ggplot(laina.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, lainat), 
                         y=lainat, fill=puolue_lyh), stat='identity') + 
-      opts(axis.text.x=theme_text(angle=90, hjust=1.0)) + 
+      opts(axis.text.x=theme_text(angle=90, hjust=1.0, size=10),
+           axis.text.y=theme_text(hjust=1.0, size=12, colour="#7F7F7F"),
+           axis.title.x = theme_text(family = "sans", size=16),
+           legend.title = theme_text(family = "sans", size=12, hjust=0)) + 
       scale_fill_manual(values = colours) +
       labs(x="", y="Ehdokkaan ja tukiryhmien lainat (€)") + coord_flip()
+ggsave("kuvaajat/isoimmat_lainat.png", width=10.417, height=8.333, dpi=72)
 
 # Puoluetuki
 puoluetuki.rahakkaat  <- subset(data, puolue_tuki >= 1000)
@@ -210,19 +253,27 @@ puoluetuki.rahakkaat$kokonimi  <- paste(puoluetuki.rahakkaat$etunimi,
                                     puoluetuki.rahakkaat$sukunimi)
 ggplot(puoluetuki.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, puolue_tuki), 
                         y=puolue_tuki, fill=puolue_lyh), stat='identity') + 
-      opts(axis.text.x=theme_text(angle=90, hjust=1.0)) + 
+      opts(axis.text.x=theme_text(angle=90, hjust=1.0, size=10),
+           axis.text.y=theme_text(hjust=1.0, size=12, colour="#7F7F7F"),
+           axis.title.x = theme_text(family = "sans", size=16),
+           legend.title = theme_text(family = "sans", size=12, hjust=0)) +
       scale_fill_manual(values = colours) +
       labs(x="", y="Ehdokkaan puolueelta saatu tuki  (€)") + coord_flip()
+ggsave("kuvaajat/isoimmat_puoluetuet.png", width=10.417, height=8.333, dpi=72)
 
-# Välitetty tuki
-valitetty.rahakkaat  <- subset(data, valitetty_tuki >= 100)
-valitetty.rahakkaat$kokonimi  <- paste(valitetty.rahakkaat$etunimi, 
-                                    valitetty.rahakkaat$sukunimi)
-ggplot(valitetty.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, valitetty_tuki), 
-                        y=valitetty_tuki, fill=puolue_lyh), stat='identity') + 
-      opts(axis.text.x=theme_text(angle=90, hjust=1.0)) + 
+# Vaalimainonta
+vaalimainonta.rahakkaat  <- subset(data, kulut_vaalimainonta >= 30000)
+vaalimainonta.rahakkaat$kokonimi  <- paste(vaalimainonta.rahakkaat$etunimi, 
+                                    vaalimainonta.rahakkaat$sukunimi)
+ggplot(vaalimainonta.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, kulut_vaalimainonta), 
+                        y=kulut_vaalimainonta, fill=puolue_lyh), stat='identity') + 
+      opts(axis.text.x=theme_text(angle=90, hjust=1.0, size=10),
+           axis.text.y=theme_text(hjust=1.0, size=12, colour="#7F7F7F"),
+           axis.title.x = theme_text(family = "sans", size=16),
+           legend.title = theme_text(family = "sans", size=12, hjust=0)) + 
       scale_fill_manual(values = colours) +
-      labs(x="", y="Ilmoitettu välitetty tuki  (€)") + coord_flip()
+      labs(x="", y="Ehdokkaan vaalimainontaan käyttämä raha (€)") + coord_flip()
+ggsave("kuvaajat/isoimmat_vaalimainonta.png", width=10.417, height=8.333, dpi=72)
 
 # Suhteellinen rahoitus ~ ennakkoilmoitusprosentti + kaikkien ehdokkaiden lkm
 p <- ggplot(data.puolueet, aes(x=suht_rahoitus, y=ilmoittaneita_pros, 
@@ -234,7 +285,6 @@ p + geom_text(aes(size=ehdokkaita_tot)) + scale_size(to=c(4,8)) +
                             labels=c('10%','20%','30%','40%','50%','60%','70%',
                                      '80%','90%','100%')) +
          scale_x_continuous(limits=c(0,30000))
-                                     
 ggsave("kuvaajat/suhteellinen_rahoitus.png", scale=0.75)
 
 # Suhteellinen yritysrahoitus ~ ennakkoilmoitusprosentti + kaikkien ehdokkaiden lkm
@@ -248,6 +298,29 @@ p + geom_text(aes(size=ehdokkaita_tot)) + scale_size(to=c(4,8)) +
                                      '80%','90%','100%')) +
          scale_x_continuous(limits=c(0,5000))
          
+# Vaalimainonta
+p <- ggplot(data.puolueet, aes(x=vaalimainonta, y=ilmoittaneita_pros, 
+            label=puolue_lyh)) 
+p + geom_text(aes(size=ehdokkaita_tot)) + scale_size(to=c(4,8)) + 
+    labs(x="Vaalimainontaan käytetty raha (€)", 
+         y="Ennakkoilmoitusprosentti") + 
+         scale_y_continuous(breaks=c(seq(0.1, 1, 0.1)), 
+                            labels=c('10%','20%','30%','40%','50%','60%','70%',
+                                     '80%','90%','100%')) +
+         scale_x_continuous(limits=c(0,2000000))
+ggsave("kuvaajat/absoluuttinen_vaalimainonta.png", scale=0.75)
+
+p <- ggplot(data.puolueet, aes(x=suht_vaalimainonta, y=ilmoittaneita_pros, 
+            label=puolue_lyh)) 
+p + geom_text(aes(size=ehdokkaita_tot)) + scale_size(to=c(4,8)) + 
+    labs(x="Vaalimainontaan käytetty raha (€) / ilmoittanut ehdokas", 
+         y="Ennakkoilmoitusprosentti") + 
+         scale_y_continuous(breaks=c(seq(0.1, 1, 0.1)), 
+                            labels=c('10%','20%','30%','40%','50%','60%','70%',
+                                     '80%','90%','100%')) +
+         scale_x_continuous(limits=c(0,20000))
+ggsave("kuvaajat/suhteellinen_vaalimainonta.png", scale=0.75)
+
 # GoogleVis
 library(googleVis)
 data.puolueet$vuosi  <- 2011

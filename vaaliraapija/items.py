@@ -50,3 +50,30 @@ class VaalirahoitusItem(Item):
     puolueyhdistys_tuki = Field()
     muu_tuki = Field()
     valitetty_tuki = Field()
+    
+    # C. Vaalikampanjan kulujen erittely
+    # 1. Vaalikampanjan kulut yhteensä
+    # Vaalimainonta
+    #    - Sanoma, ilmaisjakelu- ja aikakauslehdet
+    #    - Radio
+    #    - Televisio
+    #    - Tietoverkot
+    #    - Muut viestintävälineet
+    #    - Ulkomainonta
+    #    - Vaalilehtien, esitteiden ja muun painetun materiaalin hankinta
+    # Mainonnan suunnittelu
+    # Vaalitilaisuudet
+    # Vastikkeellisen tuen hankintakulut
+    # Muut kulut
+    
+    kulut_lehdet = Field()
+    kulut_radio = Field()
+    kulut_televisio = Field()
+    kulut_tietoverkot = Field()
+    kulut_muut_viestintavalineet = Field()
+    kulut_ulkomainonta = Field()
+    kulut_painettu_mat = Field()
+    kulut_mainonnan_suunnittelu = Field()
+    kulut_vaalitilaisuudet = Field()
+    kulut_tuen_hankintakulut = Field()
+    kulut_muut = Field()
