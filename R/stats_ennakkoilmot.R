@@ -28,14 +28,11 @@ setwd('/home/jlehtoma/Dropbox/Code/vaalirahoitus/R/')
 ehdokkaat <- read.csv('../aineisto/e2011ehd.csv',
                  header=TRUE, as.is=TRUE, sep="\t")
 # Vaalirahoitustiedot
-data <- read.csv('../aineisto/ennakkoilmoitus_2011-04-16T16-37-10.csv',
+data <- read.csv('../aineisto/ennakkoilmoitus_2011-04-16T17-20-19.csv',
                  header=TRUE, as.is=TRUE, sep=",")
 
 # Korjaukset dataan
-# 1. Saarikorpi, Kaisa (VIHR, Uusimaa) ilmoittanut vaalikampanjan kuluiksi
-# 12,11, yhteenlaskettuna kuitenkin 12 110 €
-data[which(data$sukunimi == "Saarikorpi"),]$rahoitus_kaikki  <- 12110
-# 2. Järvenpää, Kari (KOK, Uusimaa) ilmoittanut vaalikampanjan kuluiksi
+# 1. Järvenpää, Kari (KOK, Uusimaa) ilmoittanut vaalikampanjan kuluiksi
 # 850 000 €, yhteenlaskettuna kuitenkin 85 000 €
 data[which(data$sukunimi == "Järvenpää"),]$rahoitus_kaikki  <- 85000
 
@@ -150,7 +147,8 @@ colours <- c("KD" = "#5C7EB8", "KESK" = "#008700", "KOY" = "#36496B",
              "M11" = "#1DB4E3", "PIR" = "#000000", "PS" = "#AD5700", 
              "RKP" = "#FBF000", "SDP" = "#AD0000", "SIT" = "#FFFFFF", 
              "SKP" = "#FF5500", "VAS" = "#FF0000", "VIHR" = "#00FF00", 
-             "VP" = "#B3B000", "KOK" = "#0003A6", "STP" = "#333333")
+             "VP" = "#B3B000", "KOK" = "#0003A6", "STP" = "#333333",
+             "ITSP" = "#FF6699", "SSP" = "#330033")
 
 
 # Ehdokkaita / puolue / vaalipiiri
@@ -244,7 +242,7 @@ ggplot(yritys.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, yritys_tuki),
 ggsave("kuvaajat/isoimmat_yritys_tuet.png", width=10.417, height=8.333, dpi=72)
 
 # Muu tuki
-muu.rahakkaat  <- subset(data, muu_tuki >= 6500)
+muu.rahakkaat  <- subset(data, muu_tuki >= 6700)
 muu.rahakkaat$kokonimi  <- paste(muu.rahakkaat$etunimi, 
                                     muu.rahakkaat$sukunimi)
 ggplot(muu.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, muu_tuki), 
