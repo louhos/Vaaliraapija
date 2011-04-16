@@ -28,7 +28,7 @@ setwd('/home/jlehtoma/Dropbox/Code/vaalirahoitus/R/')
 ehdokkaat <- read.csv('../aineisto/e2011ehd.csv',
                  header=TRUE, as.is=TRUE, sep="\t")
 # Vaalirahoitustiedot
-data <- read.csv('../aineisto/ennakkoilmoitus_2011-04-16T07-16-38.csv',
+data <- read.csv('../aineisto/ennakkoilmoitus_2011-04-16T10-01-49.csv',
                  header=TRUE, as.is=TRUE, sep=",")
 
 # Pyyntö A. Poikonen 16.4.2011:
@@ -41,6 +41,7 @@ data <- read.csv('../aineisto/ennakkoilmoitus_2011-04-16T07-16-38.csv',
 # Puolueita (valitsijayhdistyksen mukana) 32 kpl"
 
 data.yhdistelma  <- data
+colnames(data.yhdistelma)[7]  <- "nimietu"
 # Otetaan mukaan vain 1. etunimi, jotta ulkoliitos ei tuota duplikaattirivejä
 f <- function(s) strsplit(s, " ")[[1]][1]
 data.yhdistelma$etunimi  <- sapply(data.yhdistelma$etunimi, f)

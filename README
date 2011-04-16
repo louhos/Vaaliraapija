@@ -60,7 +60,10 @@ helppoa (http://doc.scrapy.org/index.html).
 Kaikki tulokset tallennetaan projektin juuressa olevaan kansioon "aineisto". 
 Samassa kansiossa on myös www.vaalit.fi sivuilta 10.4.2011 noudettu 
 xls-tiedosto (e2011ehd.xls), jossa on listattu kaikki vuoden 2011 
-eduskuntavaaleissa ehdolla olevat henkilöt.
+eduskuntavaaleissa ehdolla olevat henkilöt. Aineisto-kansiossa oleva "data_yhdistelmä.csv"
+sisältää kaikki ehdokkaat sekä ennakkoilmoitusdatan niille ehdokkaille, jotka
+ovat ilmoituksen tehneet. HUOM! tässä tiedostossa on toistaiseksi duplikaattirivejä
+ehdokkaille, jotka käyttävät kutsumanimenään jotain muuta kuin ensimmäistä nimeään.
 
 Kansiossa "R" on R-skripti "stats_ennakkoilmot.R", joka muokkaa aineisto-kansioon 
 haetun datan ja tekee muutamia kuvaajia.

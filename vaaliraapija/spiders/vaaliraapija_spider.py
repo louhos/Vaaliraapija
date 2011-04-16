@@ -148,7 +148,7 @@ class VaaliraapijaSpider(CrawlSpider):
             # osumaa
             luku = p.findall(luku)
             if luku:
-                # findall palautta listan osumia, joita pitäisi olla vain 1
+                # findall palautta lis	tan osumia, joita pitäisi olla vain 1
                 # -> valitaan listan 1. alkio
                 item[attr] = luku[0]
             else:
