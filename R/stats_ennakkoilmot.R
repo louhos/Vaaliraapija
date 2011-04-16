@@ -28,8 +28,16 @@ setwd('/home/jlehtoma/Dropbox/Code/vaalirahoitus/R/')
 ehdokkaat <- read.csv('../aineisto/e2011ehd.csv',
                  header=TRUE, as.is=TRUE, sep="\t")
 # Vaalirahoitustiedot
-data <- read.csv('../aineisto/ennakkoilmoitus_2011-04-16T10-01-49.csv',
+data <- read.csv('../aineisto/ennakkoilmoitus_2011-04-16T16-37-10.csv',
                  header=TRUE, as.is=TRUE, sep=",")
+
+# Korjaukset dataan
+# 1. Saarikorpi, Kaisa (VIHR, Uusimaa) ilmoittanut vaalikampanjan kuluiksi
+# 12,11, yhteenlaskettuna kuitenkin 12 110 €
+data[which(data$sukunimi == "Saarikorpi"),]$rahoitus_kaikki  <- 12110
+# 2. Järvenpää, Kari (KOK, Uusimaa) ilmoittanut vaalikampanjan kuluiksi
+# 850 000 €, yhteenlaskettuna kuitenkin 85 000 €
+data[which(data$sukunimi == "Järvenpää"),]$rahoitus_kaikki  <- 85000
 
 # Pyyntö A. Poikonen 16.4.2011:
 # "Datan jatkokäsittelyä ja yhdistelyä muihin datoihin helpottaisi, jos 
@@ -42,9 +50,10 @@ data <- read.csv('../aineisto/ennakkoilmoitus_2011-04-16T10-01-49.csv',
 
 data.yhdistelma  <- data
 colnames(data.yhdistelma)[7]  <- "nimietu"
+colnames(data.yhdistelma)[26]  <- "mammatti"
 # Otetaan mukaan vain 1. etunimi, jotta ulkoliitos ei tuota duplikaattirivejä
-f <- function(s) strsplit(s, " ")[[1]][1]
-data.yhdistelma$etunimi  <- sapply(data.yhdistelma$etunimi, f)
+#f <- function(s) strsplit(s, " ")[[1]][1]
+#data.yhdistelma$etunimi  <- sapply(data.yhdistelma$etunimi, f)
 # FIXME: ei toimi täysin, koska ehdokkaat saattavat käyttää toista nimeään 
 # kutsumanimenä -> syntyy duplikaattirivejä. Pitäisi perata käsin.
 data.yhdistelma  <- merge(ehdokkaat, data.yhdistelma, all=TRUE)
@@ -57,6 +66,9 @@ data$kulut_vaalimainonta  <- data$kulut_lehdet + data$kulut_radio +
                              data$kulut_televisio + data$kulut_tietoverkot +
                              data$kulut_muut_viestintavalineet +
                              data$kulut_ulkomainonta + data$kulut_painettu_mat
+
+# Omavaraisuusaste
+data$omav_aste <- data$omat_varat / data$rahoitus_kaikki
 
 # Laske puoluekohtaisia tilastoja
 data.sum <- aggregate(rahoitus_kaikki~puolue_lyh, data, sum)
@@ -178,7 +190,7 @@ plottaa.tilastot  <- function(x, sarake, raja, y.otsake) {
 plottaa.tilastot(data, sarake=data$rahoitus_kaikki, 30000, "Ilmoitettu rahoitus (€)")
 
 # Isoimmat budjetit
-rahakkaat  <- subset(data, rahoitus_kaikki >= 37000)
+rahakkaat  <- subset(data, rahoitus_kaikki >= 38500)
 rahakkaat$kokonimi  <- paste(rahakkaat$etunimi, rahakkaat$sukunimi)
 ggplot(rahakkaat) + geom_bar(aes(x=reorder(kokonimi, rahoitus_kaikki), 
                         y=rahoitus_kaikki, fill=puolue_lyh), stat='identity') + 
@@ -191,7 +203,7 @@ ggplot(rahakkaat) + geom_bar(aes(x=reorder(kokonimi, rahoitus_kaikki),
 ggsave("kuvaajat/isoimmat_budjetit.png", width=10.417, height=8.333, dpi=72)
 
 # Isoimmat omat varat
-rahakkaat.omat  <- subset(data, omat_varat >= 20500)
+rahakkaat.omat  <- subset(data, omat_varat >= 21000)
 rahakkaat.omat$kokonimi  <- paste(rahakkaat.omat$etunimi, rahakkaat.omat$sukunimi)
 ggplot(rahakkaat.omat) + geom_bar(aes(x=reorder(kokonimi, omat_varat), 
                         y=omat_varat, fill=puolue_lyh), stat='identity') + 
@@ -218,7 +230,7 @@ ggplot(yksityis.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, yksityinen_tuki),
 ggsave("kuvaajat/isoimmat_yksityis_tuet.png", width=10.417, height=8.333, dpi=72)
 
 # Eniten yritystukea saaneet
-yritys.rahakkaat  <- subset(data, yritys_tuki >= 7000)
+yritys.rahakkaat  <- subset(data, yritys_tuki >= 7900)
 yritys.rahakkaat$kokonimi  <- paste(yritys.rahakkaat$etunimi, 
                                     yritys.rahakkaat$sukunimi)
 ggplot(yritys.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, yritys_tuki), 
@@ -232,7 +244,7 @@ ggplot(yritys.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, yritys_tuki),
 ggsave("kuvaajat/isoimmat_yritys_tuet.png", width=10.417, height=8.333, dpi=72)
 
 # Muu tuki
-muu.rahakkaat  <- subset(data, muu_tuki >= 6300)
+muu.rahakkaat  <- subset(data, muu_tuki >= 6500)
 muu.rahakkaat$kokonimi  <- paste(muu.rahakkaat$etunimi, 
                                     muu.rahakkaat$sukunimi)
 ggplot(muu.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, muu_tuki), 
@@ -260,7 +272,7 @@ ggplot(laina.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, lainat),
 ggsave("kuvaajat/isoimmat_lainat.png", width=10.417, height=8.333, dpi=72)
 
 # Puoluetuki
-puoluetuki.rahakkaat  <- subset(data, puolue_tuki >= 1000)
+puoluetuki.rahakkaat  <- subset(data, puolue_tuki >= 1100)
 puoluetuki.rahakkaat$kokonimi  <- paste(puoluetuki.rahakkaat$etunimi, 
                                     puoluetuki.rahakkaat$sukunimi)
 ggplot(puoluetuki.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, puolue_tuki), 
@@ -274,7 +286,7 @@ ggplot(puoluetuki.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, puolue_tuki),
 ggsave("kuvaajat/isoimmat_puoluetuet.png", width=10.417, height=8.333, dpi=72)
 
 # Vaalimainonta
-vaalimainonta.rahakkaat  <- subset(data, kulut_vaalimainonta >= 30000)
+vaalimainonta.rahakkaat  <- subset(data, kulut_vaalimainonta >= 31000)
 vaalimainonta.rahakkaat$kokonimi  <- paste(vaalimainonta.rahakkaat$etunimi, 
                                     vaalimainonta.rahakkaat$sukunimi)
 ggplot(vaalimainonta.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, kulut_vaalimainonta), 
@@ -332,6 +344,19 @@ p + geom_text(aes(size=ehdokkaita_tot)) + scale_size(to=c(4,8)) +
                                      '80%','90%','100%')) +
          scale_x_continuous(limits=c(0,20000))
 ggsave("kuvaajat/suhteellinen_vaalimainonta.png", scale=0.75)
+
+# Omavaraisuus
+
+data.omav  <- subset(data, !is.na(omav_aste) & is.finite(omav_aste))
+p <- ggplot(data.omav, aes(rahoitus_kaikki, omav_aste, colour=factor(puolue_lyh))) + 
+     scale_colour_manual(values = colours) + 
+     scale_y_continuous(breaks=c(seq(0.1, 1, 0.1)), 
+                            labels=c('10%','20%','30%','40%','50%','60%','70%',
+                                     '80%','90%','100%'),
+                            limits=c(0, 1))
+p + geom_point()
+
+omavaraiset  <- subset(data, omav_aste >= 0.99)
 
 # GoogleVis
 library(googleVis)
