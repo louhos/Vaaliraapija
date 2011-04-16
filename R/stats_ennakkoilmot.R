@@ -30,13 +30,24 @@ ehdokkaat <- read.csv('../aineisto/e2011ehd.csv',
 # Vaalirahoitustiedot
 data <- read.csv('../aineisto/ennakkoilmoitus_2011-04-16T07-16-38.csv',
                  header=TRUE, as.is=TRUE, sep=",")
-                 
-# Muunna puoluelyhenne ja vaalipiiri faktoreiksi
-#ehdokkaat$puolueen_lyhenne <- as.factor(ehdokkaat$puolue_lyh)
-#ehdokkaat$vaalipiiri <- as.factor(ehdokkaat$vaalipiiri)
 
-#data$puolue_lyh <- as.factor(data$puolue_lyh)
-#data$vaalipiiri <- as.factor(data$vaalipiiri)
+# Pyyntö A. Poikonen 16.4.2011:
+# "Datan jatkokäsittelyä ja yhdistelyä muihin datoihin helpottaisi, jos 
+# vaalirahoitusilmoitukset ehdokkaittain ja puolueittain ilmoitettaisiin 
+# Oikeusministeriön julkaisemien täydellisten ehdokas- ja puoluelistausten 
+# mukaisesti. Ne, jotka eivät ole ilmoittaneet näkyisivät datassa tyhjinä 
+# riveinä.
+# Ehdokkaita 2315 kpl
+# Puolueita (valitsijayhdistyksen mukana) 32 kpl"
+
+data.yhdistelma  <- data
+# Otetaan mukaan vain 1. etunimi, jotta ulkoliitos ei tuota duplikaattirivejä
+f <- function(s) strsplit(s, " ")[[1]][1]
+data.yhdistelma$etunimi  <- sapply(data.yhdistelma$etunimi, f)
+# FIXME: ei toimi täysin, koska ehdokkaat saattavat käyttää toista nimeään 
+# kutsumanimenä -> syntyy duplikaattirivejä. Pitäisi perata käsin.
+data.yhdistelma  <- merge(ehdokkaat, data.yhdistelma, all=TRUE)
+write.csv(data.yhdistelma, '../aineisto/data_yhdistelmä.csv')
 
 data = data[which(data$puolue_lyh != ""),]
 
