@@ -28,13 +28,13 @@ setwd('/home/jlehtoma/Dropbox/Code/vaalirahoitus/R/')
 ehdokkaat <- read.csv('../aineisto/e2011ehd.csv',
                  header=TRUE, as.is=TRUE, sep="\t")
 # Vaalirahoitustiedot
-data <- read.csv('../aineisto/ennakkoilmoitus_2011-04-16T17-20-19.csv',
+data <- read.csv('../aineisto/ennakkoilmoitus_2011-04-16T22-54-54.csv',
                  header=TRUE, as.is=TRUE, sep=",")
 
-# Korjaukset dataan
-# 1. Järvenpää, Kari (KOK, Uusimaa) ilmoittanut vaalikampanjan kuluiksi
-# 850 000 €, yhteenlaskettuna kuitenkin 85 000 €
-data[which(data$sukunimi == "Järvenpää"),]$rahoitus_kaikki  <- 85000
+# Datan korjaus
+# 1. Astrid Thorsille on ilmoitettu 44,00 € vaalikampanjan kuluiksi, ositus
+# summautuu 44 000 €
+data[which(data$sukunimi == 'Thors'),]  <- 44000
 
 # Pyyntö A. Poikonen 16.4.2011:
 # "Datan jatkokäsittelyä ja yhdistelyä muihin datoihin helpottaisi, jos 
@@ -188,7 +188,7 @@ plottaa.tilastot  <- function(x, sarake, raja, y.otsake) {
 plottaa.tilastot(data, sarake=data$rahoitus_kaikki, 30000, "Ilmoitettu rahoitus (€)")
 
 # Isoimmat budjetit
-rahakkaat  <- subset(data, rahoitus_kaikki >= 38500)
+rahakkaat  <- subset(data, rahoitus_kaikki >= 40000)
 rahakkaat$kokonimi  <- paste(rahakkaat$etunimi, rahakkaat$sukunimi)
 ggplot(rahakkaat) + geom_bar(aes(x=reorder(kokonimi, rahoitus_kaikki), 
                         y=rahoitus_kaikki, fill=puolue_lyh), stat='identity') + 
@@ -201,7 +201,7 @@ ggplot(rahakkaat) + geom_bar(aes(x=reorder(kokonimi, rahoitus_kaikki),
 ggsave("kuvaajat/isoimmat_budjetit.png", width=10.417, height=8.333, dpi=72)
 
 # Isoimmat omat varat
-rahakkaat.omat  <- subset(data, omat_varat >= 21000)
+rahakkaat.omat  <- subset(data, omat_varat >= 23000)
 rahakkaat.omat$kokonimi  <- paste(rahakkaat.omat$etunimi, rahakkaat.omat$sukunimi)
 ggplot(rahakkaat.omat) + geom_bar(aes(x=reorder(kokonimi, omat_varat), 
                         y=omat_varat, fill=puolue_lyh), stat='identity') + 
@@ -214,7 +214,7 @@ ggplot(rahakkaat.omat) + geom_bar(aes(x=reorder(kokonimi, omat_varat),
 ggsave("kuvaajat/isoimmat_omat_varat.png", width=10.417, height=8.333, dpi=72)
 
 # Eniten yksityistukea saaneet
-yksityis.rahakkaat  <- subset(data, yksityinen_tuki >= 8010)
+yksityis.rahakkaat  <- subset(data, yksityinen_tuki >= 9000)
 yksityis.rahakkaat$kokonimi  <- paste(yksityis.rahakkaat$etunimi, 
                                     yksityis.rahakkaat$sukunimi)
 ggplot(yksityis.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, yksityinen_tuki), 
@@ -228,7 +228,7 @@ ggplot(yksityis.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, yksityinen_tuki),
 ggsave("kuvaajat/isoimmat_yksityis_tuet.png", width=10.417, height=8.333, dpi=72)
 
 # Eniten yritystukea saaneet
-yritys.rahakkaat  <- subset(data, yritys_tuki >= 7900)
+yritys.rahakkaat  <- subset(data, yritys_tuki >= 10000)
 yritys.rahakkaat$kokonimi  <- paste(yritys.rahakkaat$etunimi, 
                                     yritys.rahakkaat$sukunimi)
 ggplot(yritys.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, yritys_tuki), 
@@ -242,7 +242,7 @@ ggplot(yritys.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, yritys_tuki),
 ggsave("kuvaajat/isoimmat_yritys_tuet.png", width=10.417, height=8.333, dpi=72)
 
 # Muu tuki
-muu.rahakkaat  <- subset(data, muu_tuki >= 6700)
+muu.rahakkaat  <- subset(data, muu_tuki >= 7000)
 muu.rahakkaat$kokonimi  <- paste(muu.rahakkaat$etunimi, 
                                     muu.rahakkaat$sukunimi)
 ggplot(muu.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, muu_tuki), 
@@ -256,7 +256,7 @@ ggplot(muu.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, muu_tuki),
 ggsave("kuvaajat/isoimmat_muut_tuet.png", width=10.417, height=8.333, dpi=72)
 
 # Lainat
-laina.rahakkaat  <- subset(data, lainat >= 5100)
+laina.rahakkaat  <- subset(data, lainat >= 9000)
 laina.rahakkaat$kokonimi  <- paste(laina.rahakkaat$etunimi, 
                                     laina.rahakkaat$sukunimi)
 ggplot(laina.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, lainat), 
@@ -270,7 +270,7 @@ ggplot(laina.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, lainat),
 ggsave("kuvaajat/isoimmat_lainat.png", width=10.417, height=8.333, dpi=72)
 
 # Puoluetuki
-puoluetuki.rahakkaat  <- subset(data, puolue_tuki >= 1100)
+puoluetuki.rahakkaat  <- subset(data, puolue_tuki >= 1500)
 puoluetuki.rahakkaat$kokonimi  <- paste(puoluetuki.rahakkaat$etunimi, 
                                     puoluetuki.rahakkaat$sukunimi)
 ggplot(puoluetuki.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, puolue_tuki), 
@@ -284,7 +284,7 @@ ggplot(puoluetuki.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, puolue_tuki),
 ggsave("kuvaajat/isoimmat_puoluetuet.png", width=10.417, height=8.333, dpi=72)
 
 # Vaalimainonta
-vaalimainonta.rahakkaat  <- subset(data, kulut_vaalimainonta >= 31000)
+vaalimainonta.rahakkaat  <- subset(data, kulut_vaalimainonta >= 33000)
 vaalimainonta.rahakkaat$kokonimi  <- paste(vaalimainonta.rahakkaat$etunimi, 
                                     vaalimainonta.rahakkaat$sukunimi)
 ggplot(vaalimainonta.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, kulut_vaalimainonta), 
@@ -354,7 +354,38 @@ p <- ggplot(data.omav, aes(rahoitus_kaikki, omav_aste, colour=factor(puolue_lyh)
                             limits=c(0, 1))
 p + geom_point()
 
-omavaraiset  <- subset(data, omav_aste >= 0.99)
+budjetti.nolla  <- data[which(data$rahoitus_kaikki < 1000),]
+budjetti.nolla.puolueet <- ddply(budjetti.nolla, c('puolue_lyh'), 
+                                 function(df)summarise(df, 
+                                 matala_budjetti = length(df$etunimi)))
+budjetti.nolla.puolueet <- merge(data.puolueet, budjetti.nolla.puolueet)
+budjetti.nolla.puolueet$matala_budjetti_suht  <- round(budjetti.nolla.puolueet$matala_budjetti / 
+                                                       budjetti.nolla.puolueet$ilmoittaneita, 2)
+
+
+ggplot(budjetti.nolla.puolueet) + geom_bar(aes(x=reorder(puolue_lyh, desc(matala_budjetti)), 
+                        y=matala_budjetti, fill=puolue_lyh), stat='identity') + 
+      opts(axis.text.x=theme_text(angle=90, hjust=1.0, size=10),
+           axis.text.y=theme_text(hjust=0.5, size=12, colour="#7F7F7F"),
+           axis.title.x = theme_text(family = "sans", size=16),
+           legend.title = theme_text(family = "sans", size=12, hjust=0)) + 
+      scale_fill_manual(values = colours) +
+      labs(x="", y="Pienen budjetin (< 1000 €) kampanjoiden lukumäärä")
+ggsave("kuvaajat/pienet_budjetit.png", width=10.417, height=8.333, dpi=72)
+p + geom_point()
+
+p <- ggplot(budjetti.nolla.puolueet, aes(x=matala_budjetti_suht, y=ilmoittaneita_pros, 
+            label=puolue_lyh)) 
+p + geom_text(aes(size=ehdokkaita_tot)) + scale_size(to=c(4,8)) + 
+    labs(x="Pienen budjetin (< 1000 €) kampanjoiden lukumäärä", 
+         y="Ennakkoilmoitusprosentti") + 
+         scale_y_continuous(breaks=c(seq(0.1, 1, 0.1)), 
+                            labels=c('10%','20%','30%','40%','50%','60%','70%',
+                                     '80%','90%','100%')) +
+         scale_x_continuous(breaks=c(seq(0, 1, 0.1)), 
+                            labels=c('0%','10%','20%','30%','40%','50%','60%','70%',
+                                     '80%','90%','100%'), limits=c(-.05, 1))
+ggsave("kuvaajat/pienet_budjetit_suhteessa.png", scale=0.75)
 
 # GoogleVis
 library(googleVis)
