@@ -34,8 +34,8 @@ data <- read.csv('../aineisto/ennakkoilmoitus_2011-04-16T22-54-54.csv',
 # Datan korjaus
 # 1. Astrid Thorsille on ilmoitettu 44,00 € vaalikampanjan kuluiksi, ositus
 # summautuu 44 000 €
-data[which(data$sukunimi == 'Thors'),]  <- 44000
-
+data[which(data$sukunimi == 'Thors'),]$rahoitus_kaikki  <- 44000
+data[which(data$sukunimi == 'Thors'),]$kulut_kaikki  <- 44000
 # Pyyntö A. Poikonen 16.4.2011:
 # "Datan jatkokäsittelyä ja yhdistelyä muihin datoihin helpottaisi, jos 
 # vaalirahoitusilmoitukset ehdokkaittain ja puolueittain ilmoitettaisiin 
@@ -57,6 +57,38 @@ data.yhdistelma  <- merge(ehdokkaat, data.yhdistelma, all=TRUE)
 write.csv(data.yhdistelma, '../aineisto/data_yhdistelmä.csv')
 
 data = data[which(data$puolue_lyh != ""),]
+
+# Kaikki ehdokkaat eivät ole ilmoittaneet vaalikampanjan rahoituksen summaa
+# jat/tai kuluja vaan ainoastaan erittelyt -> lasketaan erittelyt yhteen
+# HUOM välitettyä tukea ei lasketa mukaan
+data$rahoitus_kaikki_johdettu <- data$omat_varat + data$lainat + 
+                                 data$yksityinen_tuki + data$yritys_tuki +
+                                 data$puolue_tuki + data$puolueyhdistys_tuki +
+                                 data$muu_tuki
+
+data$kulut_kaikki_johdettu <- data$kulut_muut + data$kulut_muut_viestintavalineet +
+                              data$kulut_vaalitilaisuudet + data$kulut_radio +
+                              data$kulut_tietoverkot + data$kulut_televisio +
+                              data$kulut_painettu_mat + data$kulut_tuen_hankintakulut +
+                              data$kulut_mainonnan_suunnittelu + 
+                              data$kulut_ulkomainonta + data$kulut_lehdet
+
+# Korjaa kokonaisrahoitus jos johdettu tieto on olemassa
+data$rahoitus_kaikki  <- ifelse(data$rahoitus_kaikki == 0, 
+                                data$rahoitus_kaikki_johdettu,
+                                data$rahoitus_kaikki)
+                                
+data$kulut_kaikki  <- ifelse(data$kulut_kaikki == 0, 
+                                data$kulut_kaikki_johdettu,
+                                data$kulut_kaikki)
+
+data$rahoitus_tase  <-  data$rahoitus_kaikki - data$kulut_kaikki
+
+# Kulujen erittelyn erotus ilmoitetusta kokonaiskuluista -> mikä selittää? 
+# A) taulukkoon sopimattomat rahoituslähteet, B) virhe, C) alle 1500 euron
+# yksityislahjoitukset
+
+data$rahoitus_selittamaton <- data$rahoitus_kaikki - data$rahoitus_kaikki_johdettu
 
 # Vaalimainonnan summa
 data$kulut_vaalimainonta  <- data$kulut_lehdet + data$kulut_radio + 
@@ -100,7 +132,8 @@ data.puolueet <- ddply(data,
                                  valitettu_tuki = sum(df$valitetty_tuki),
                                  muu_tuki = sum(df$muu_tuki),
                                  vaalimainonta = sum(df$kulut_vaalimainonta),
-                                 vaalimainonta_suunnittelu = sum(df$kulut_mainonnan_suunnittelu)))
+                                 vaalimainonta_suunnittelu = sum(df$kulut_mainonnan_suunnittelu),
+                                 omav_aste = mean(df$omav_aste)))
                               
 data.puolueet <- merge(data.puolueet, ehdokkaat.count)	
 colnames(data.puolueet)[length(data.puolueet)] <- "ehdokkaita_tot"
@@ -296,6 +329,48 @@ ggplot(vaalimainonta.rahakkaat) + geom_bar(aes(x=reorder(kokonimi, kulut_vaalima
       scale_fill_manual(values = colours) +
       labs(x="", y="Ehdokkaan vaalimainontaan käyttämä raha (€)") + coord_flip()
 ggsave("kuvaajat/isoimmat_vaalimainonta.png", width=10.417, height=8.333, dpi=72)
+
+# Rahoitustaseet
+
+alijaam  <- subset(data, rahoitus_tase < -200)
+alijaam$kokonimi  <- paste(alijaam$etunimi, alijaam$sukunimi)
+ggplot(alijaam) + geom_bar(aes(x=reorder(kokonimi, desc(rahoitus_tase)), 
+                        y=rahoitus_tase, fill=puolue_lyh), stat='identity') + 
+      opts(axis.text.x=theme_text(angle=90, hjust=1.0, size=10),
+           axis.text.y=theme_text(hjust=1.0, size=12, colour="#7F7F7F"),
+           axis.title.x = theme_text(family = "sans", size=16),
+           legend.title = theme_text(family = "sans", size=12, hjust=0)) + 
+      scale_fill_manual(values = colours) +
+      labs(x="", y="Ehdokkaan rahoituksen alijäämä (€)") + coord_flip()
+ggsave("kuvaajat/isoimmat_alijäämät.png", width=10.417, height=8.333, dpi=72)
+
+# HUOM ylijäämää voi johtua myös siitä, ettei kuluja ole ilmoitettu
+
+ylijaam  <- subset(data, rahoitus_tase > 900)
+ylijaam$kokonimi  <- paste(ylijaam$etunimi, ylijaam$sukunimi)
+ggplot(ylijaam) + geom_bar(aes(x=reorder(kokonimi, rahoitus_tase), 
+                        y=rahoitus_tase, fill=puolue_lyh), stat='identity') + 
+      opts(axis.text.x=theme_text(angle=90, hjust=1.0, size=10),
+           axis.text.y=theme_text(hjust=1.0, size=12, colour="#7F7F7F"),
+           axis.title.x = theme_text(family = "sans", size=16),
+           legend.title = theme_text(family = "sans", size=12, hjust=0)) + 
+      scale_fill_manual(values = colours) +
+      labs(x="", y="Ehdokkaan rahoituksen ylijäämä (€)") + coord_flip()
+ggsave("kuvaajat/isoimmat_ylijäämät.png", width=10.417, height=8.333, dpi=72)
+
+# Selittämätön rahoitus
+
+selittamaton  <- subset(data, rahoitus_selittamaton > 4000)
+selittamaton$kokonimi  <- paste(selittamaton$etunimi, selittamaton$sukunimi)
+ggplot(selittamaton) + geom_bar(aes(x=reorder(kokonimi, rahoitus_selittamaton), 
+                        y=rahoitus_selittamaton, fill=puolue_lyh), stat='identity') + 
+      opts(axis.text.x=theme_text(angle=90, hjust=1.0, size=10),
+           axis.text.y=theme_text(hjust=1.0, size=12, colour="#7F7F7F"),
+           axis.title.x = theme_text(family = "sans", size=16),
+           legend.title = theme_text(family = "sans", size=12, hjust=0)) + 
+      scale_fill_manual(values = colours) +
+      labs(x="", y="Ehdokkaan erittelemätön rahoitus (€)") + coord_flip()
+ggsave("kuvaajat/isoimmat_selittämätön.png", width=10.417, height=8.333, dpi=72)
 
 # Suhteellinen rahoitus ~ ennakkoilmoitusprosentti + kaikkien ehdokkaiden lkm
 p <- ggplot(data.puolueet, aes(x=suht_rahoitus, y=ilmoittaneita_pros, 
