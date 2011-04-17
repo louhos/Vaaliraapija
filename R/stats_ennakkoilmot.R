@@ -377,7 +377,7 @@ p + geom_point()
 p <- ggplot(budjetti.nolla.puolueet, aes(x=matala_budjetti_suht, y=ilmoittaneita_pros, 
             label=puolue_lyh)) 
 p + geom_text(aes(size=ehdokkaita_tot)) + scale_size(to=c(4,8)) + 
-    labs(x="Pienen budjetin (< 1000 €) kampanjoiden lukumäärä", 
+    labs(x="Pienen budjetin (< 1000 €) kampanjoiden osuus", 
          y="Ennakkoilmoitusprosentti") + 
          scale_y_continuous(breaks=c(seq(0.1, 1, 0.1)), 
                             labels=c('10%','20%','30%','40%','50%','60%','70%',
