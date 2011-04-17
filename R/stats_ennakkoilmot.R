@@ -37,6 +37,11 @@ data <- read.csv('../aineisto/ennakkoilmoitus_2011-04-16T22-54-54.csv',
 data[which(data$sukunimi == 'Thors'),]$rahoitus_kaikki  <- 44000
 data[which(data$sukunimi == 'Thors'),]$kulut_kaikki  <- 44000
 
+# 2. Eero Akaan-Penttilä on ilmoittanut 250 000, todellisuudessa 25 000
+data[which(data$sukunimi == 'Akaan-Penttilä'),]$rahoitus_kaikki  <- 25000
+data[which(data$sukunimi == 'Akaan-Penttilä'),]$kulut_kaikki  <- 25000
+data[which(data$sukunimi == 'Akaan-Penttilä'),]$omat_varat  <- 20000
+
 # Pyyntö A. Poikonen 16.4.2011:
 # "Datan jatkokäsittelyä ja yhdistelyä muihin datoihin helpottaisi, jos 
 # vaalirahoitusilmoitukset ehdokkaittain ja puolueittain ilmoitettaisiin 
