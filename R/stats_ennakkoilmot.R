@@ -31,6 +31,10 @@ ehdokkaat <- read.csv('../aineisto/e2011ehd.csv',
 data <- read.csv('../aineisto/ennakkoilmoitus_2011-04-16T22-54-54.csv',
                  header=TRUE, as.is=TRUE, sep=",")
 
+# Tulokset
+tulokset <- read.csv('../aineisto/tulokset_edvaalit2011.csv',
+                     header=TRUE, as.is=TRUE, sep=",")
+
 # Datan korjaus
 # 1. Astrid Thorsille on ilmoitettu 44,00 € vaalikampanjan kuluiksi, ositus
 # summautuu 44 000 €
@@ -180,6 +184,25 @@ data.puolueet.vpiiri$suht_rahoitus  <- round(data.puolueet.vpiiri$rahoitus_tot /
                                       data.puolueet.vpiiri$ilmoittaneita,2)
 data.puolueet.vpiiri$suht_yritys_rahoitus  <- round(data.puolueet.vpiiri$yritys_tuki / 
                                       data.puolueet.vpiiri$ilmoittaneita,2)
+
+# Tulokset
+isot  <- c("KOK", "SDP", "PS", "KESK", "VAS", "VIHR")
+tulokset.data <- merge(tulokset, data.puolueet)
+tulokset.data <- subset(tulokset.data, puolue_lyh %in% isot)
+#tulokset.data$ilmoittaneita_pros  <- tulokset.data$ilmoittaneita_pros * 100
+aanet  <- data.frame(puolue_lyh=tulokset.data$puolue_lyh, z=tulokset.data$aani_pros, 
+                                                panel="Kannatusprosentti")
+aanet  <- arrange(aanet, desc(z))
+ilmot  <- data.frame(puolue_lyh=tulokset.data$puolue_lyh, z=tulokset.data$ilmoittaneita_pros, 
+                                                panel="Ennakkoilmoitusprosentti")
+ilmot  <- arrange(ilmot, z)
+d <- rbind(aanet, ilmot)
+ggplot(d, aes(x=reorder(puolue_lyh, z), y=z, fill=puolue_lyh)) + 
+      geom_bar(stat='identity') + facet_wrap(~ panel, scale="free", nrow=2, 
+                                              ncol=1) +
+      scale_fill_manual(values = colours) +
+      labs(x="", y="%")
+ggsave("kuvaajat/tulokset_prossat.png", width=10.417, height=8.333, dpi=72)
 
 # Puoluekohtaiset värit
 # KD, KESK, KOK, KOY, M11, PIR, PS, RKP, SDP, SIT, SKP, VAS, VIHR, VP
@@ -417,7 +440,8 @@ p + geom_text(aes(size=ehdokkaita_tot)) + scale_size(to=c(4,8)) +
                             labels=c('10%','20%','30%','40%','50%','60%','70%',
                                      '80%','90%','100%')) +
          scale_x_continuous(limits=c(0,5000))
-         
+ggsave("kuvaajat/suhteellinen_yritys_rahoitus.png", scale=0.75)
+
 # Vaalimainonta
 p <- ggplot(data.puolueet, aes(x=vaalimainonta, y=ilmoittaneita_pros, 
             label=puolue_lyh)) 
@@ -470,7 +494,6 @@ ggplot(budjetti.nolla.puolueet) + geom_bar(aes(x=reorder(puolue_lyh, desc(matala
       scale_fill_manual(values = colours) +
       labs(x="", y="Pienen budjetin (< 1000 €) kampanjoiden lukumäärä")
 ggsave("kuvaajat/pienet_budjetit.png", width=10.417, height=8.333, dpi=72)
-p + geom_point()
 
 p <- ggplot(budjetti.nolla.puolueet, aes(x=matala_budjetti_suht, y=ilmoittaneita_pros, 
             label=puolue_lyh)) 
