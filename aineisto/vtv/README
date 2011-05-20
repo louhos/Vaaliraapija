@@ -1,0 +1,31 @@
+[HAETTU 20.5.2011 19:16] 
+
+Tietoaineistot
+
+Tällä sivulla julkaistaan jätettyjen ilmoitusten tiedot csv-muodossa. Kustakin vaalista 
+julkaistaan neljä tiedostoa:
+• ennakkoilmoitusten rahoitusrivit
+• vaalirahoitusilmoitusten rahoitusrivit
+• ennakkoilmoitusten rahoituslähteet ja kulujen erittely ja
+• vaalirahoitusilmoitusten rahoituslähteet ja kulujen erittely
+
+
+Muiden kuin valituksi tulleiden ja varasijalle valituksi tulleiden ennakkoilmoitukset 
+poistuvat julkaisusta 30 vuorokauden kuluttua vaalituloksen vahvistamisesta. Tällöin 
+vastaavat tiedot poistetaan julkistettavista tiedostoistakin.
+
+Tiedostojen merkistö on UTF-8 ja erotinmerkkinä on puolipiste. Mikäli ilmoittaja on 
+käyttänyt puolipistettä tekstikentissä, aiheutuu tästä myös tietojen siirtymistä 
+vääriin sarakkeisiin. Mikäli avaat tiedoston suoraan taulukkolaskentaohjelmalla ja 
+esim. ä, ö ja å eivät näy oikein, niin tallenna tiedosto ensin levylle ja avaa se 
+taulukkolaskentaohjelman tuontitoiminnon avulla.
+
+Tiedot julkaistaan yleisessä tietoverkossa ehdokkaan vaalirahoituksesta annetun 
+lain (273/2009) 12 §:n mukaisesti. Vaikka tiedot ovat yleisesti saatavilla, niiden 
+muuta keräämistä, tallettamista ja käsittelyä voivat koskea henkilötietolain 
+(523/1999) säännökset. Tiedoista voi muodostua henkilötietolain mukainen 
+henkilörekisteri. Henkilörekisterin rekisterinpitäjä vastaa henkilötietojen 
+lainmukaisesta käsittelystä sekä henkilötietolain säännösten asianmukaisesta 
+noudattamisesta. Lisätietoja tietosuojasta sekä ohjeita ja lomakkeita 
+rekisterinpitäjälle löytyy tietosuojavaltuutetun toimiston kotisivuilta 
+osoitteesta www.tietosuoja.fi .
