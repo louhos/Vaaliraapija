@@ -27,7 +27,8 @@ setwd('/home/jlehtoma/Dropbox/Code/vaalirahoitus/R/')
 # Kaikki ehdokkaat
 ehdokkaat <- read.csv('../aineisto/e2011ehd.csv',
 		header=TRUE, as.is=TRUE, sep="\t")
-# Vaalirahoitustiedot
+
+# Vaalirahoitustiedot (versio: Vaaliraapija)
 data <- read.csv('../aineisto/ennakkoilmoitus_2011-04-16T22-54-54.csv',
 		header=TRUE, as.is=TRUE, sep=",")
 
@@ -268,7 +269,8 @@ rahakkaat.omat  <- subset(data, omat_varat >= 23000)
 rahakkaat.omat$kokonimi  <- paste(rahakkaat.omat$etunimi, rahakkaat.omat$sukunimi)
 ggplot(rahakkaat.omat) + geom_bar(aes(x=reorder(kokonimi, omat_varat), 
 						y=omat_varat, fill=puolue_lyh), stat='identity') + 
-		opts(axis.text.x=theme_text(angle=90, hjust=1.0, size=10),
+		opts(title="Koivu"
+        axis.text.x=theme_text(angle=90, hjust=1.0, size=10),
 				axis.text.y=theme_text(hjust=1.0, size=12, colour="#7F7F7F"),
 				axis.title.x = theme_text(family = "sans", size=16),
 				legend.title = theme_text(family = "sans", size=12, hjust=0)) + 
